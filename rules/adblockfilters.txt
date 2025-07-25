@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250725003029
-! Last modified: 2025/07/25 00:30:29
-! Blocked Filters: 96800
+! Version: 20250725100402
+! Last modified: 2025/07/25 10:04:02
+! Blocked Filters: 96806
 !
 ###AC_ad
 ###AD_160
@@ -25900,6 +25900,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||adguard.com/*/blog/
 @@||adguard.com/*/support/
 @@||adguard.com^$stealth
+@@||adguardpartner.com^$generichide,genericblock
 @@||adguardteam.github.io/AnonymousRedirect/redirect.html?url=
 @@||adidasoriginals-lookbook.com.tw/js/adtracking.js
 @@||adikpm.github.io/repo/assets/js/prebid_hb_3293_5687.js
@@ -29162,6 +29163,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||givingassistant.org/Advertisers/$~third-party
 @@||gizbot.com^$generichide
 @@||gizchina.com^$stealth=useragent
+@@||glancecdn.net/cobrowse/$domain=payroll.toasttab.com
 @@||glbimg.com/*/300x250/smart/*/original/*.jpg$domain=vogue.globo.com
 @@||gls-group.eu^$extension
 @@||go.ezodn.com/beardeddragon/basilisk.js$domain=humix.com
@@ -41598,7 +41600,7 @@ ceneo.pl##.js_sidebar > aside[data-event-category="adbox"]
 ceneo.pl##.js_top-banner[data-name]
 censored.news,newstarget.com##[href^="https://www.survivalnutrition.com"]
 centoschina.cn##a[href="https://www.linuxprobe.com/"]
-centris.ca,forums.minecraftforge.net,nextdoor.com,staradvertiser.com,uploadvr.com##.promo-container
+centris.ca,forums.minecraftforge.net,leaked.cx,nextdoor.com,staradvertiser.com,uploadvr.com##.promo-container
 centris.ca,minecraftforge.net##.promo-container
 centrum-dramy.pl###overplay
 centurylink.net###sc_home_header_banner
@@ -48953,6 +48955,7 @@ free-play-mahjong.com#$##adareaVideo + #mainarea[style*="margin-right:"] { margi
 free-power-point-templates.com##.aff-unit
 free-power-point-templates.com##.entry__inforial
 free-power-point-templates.com##div[class^="entry__inforial-"]
+free-proxy-list.net##.alert-fpl:has(> a:not([href^="https://free-proxy-list.net/"]))
 free-proxy.cz###as[style]
 free-proxy.cz###navbar_right [onclick^="window.open"]
 free-proxy.cz###navbar_right a:is([rel],[target]) > img
@@ -60029,6 +60032,9 @@ mmacore.tv##.prodlst
 mmacore.tv##.resp_ban
 mmacore.tv#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links.ad-text.adSense.adBlock.adContent.adBanner { display: block !important; }
 mmafighting.com##.c-promo-breaker
+mmajunkie.usatoday.com#$#.gnt_x_w { display: none !important; }
+mmajunkie.usatoday.com#$#body > div.gnt_n_w_w { margin-bottom: 0 !important; }
+mmajunkie.usatoday.com#%#//scriptlet('abort-on-property-write', 'gnt')
 mmarocks.pl##.p-body-pageContent > a[target="_blank"] > img
 mmbang.com##.footer_adver-warp
 mmegi.bw##.mmegi-web-banner
@@ -86005,7 +86011,6 @@ zzzyk.com###Tinfo
 ||fm086.com/Plugins/search
 ||fmgmh.com/template/wap/default/js/lunbo.js
 ||fmhua.com/template/*/images/g_js/*.html
-||fmnetwork.nl/tracking/
 ||fmovies.*/*.hahaadblock
 ||fmovies.*/ajax/banner
 ||fmovies.*/sw.js?
@@ -88850,6 +88855,7 @@ zzzyk.com###Tinfo
 ||leads.media-tools.realestate.com.au/conversions.js
 ||leadster.com.br/api/chatbot/events
 ||leak.sx/fag/style/abdetector.style.min.css
+||leaked.cx/promo/
 ||leakgallery.com/tinder/
 ||learn-cpp.org/static/img/banners/cfk/$image
 ||leboncoin.fr/rav-monitoring/
