@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250729003409
-! Last modified: 2025/07/29 00:34:09
-! Blocked Filters: 97086
+! Version: 20250729102206
+! Last modified: 2025/07/29 10:22:06
+! Blocked Filters: 97082
 !
 ###AC_ad
 ###AD_160
@@ -58286,6 +58286,7 @@ lordz.io###lordz-io_728x90
 losmovies.*###nwmedia
 losmovies.*##.aPlaceHolderOnlay
 losmovies.*#%#//scriptlet("prevent-window-open")
+lostgamer.io##.standard-banner-ad
 lostpix.com#%#//scriptlet('prevent-window-open', 'youtube')
 lostshorts.com##.media-aside
 lostshorts.com#%#//scriptlet("prevent-window-open")
@@ -70512,11 +70513,6 @@ sofascore.com##div[display="none,none,block"]
 sofascore.com##div[elevation=",3"][display="block,none,block"]
 soft.macx.cn#@##googlead
 soft4fun.net###xad_mu
-soft98.ir,~forum.soft98.ir#$##abddh > * { display: none !important; }
-soft98.ir,~forum.soft98.ir#$#[data-href^="https://padvish.com/"] { display: none !important; }
-soft98.ir,~forum.soft98.ir#$#div:has(> header + div > [data-href="https://cdn.hostdl.com/goto/soft98"]) { display: none !important; }
-soft98.ir,~forum.soft98.ir#$#section:has(> header + div > div > div > a[href*="utm_"]) { display: none !important; }
-soft98.ir,~forum.soft98.ir#%#//scriptlet('abort-on-stack-trace', 'NodeList.prototype.forEach', '/\bRi[@\s][^\t]+\/application\.m[a-z0-9]+n\.packed\.js/')
 softarchive.is##.c-un-link
 softarchive.is##.feature-usnt
 softarchive.is##.un-link
@@ -87323,6 +87319,7 @@ zzzyk.com###Tinfo
 ||hentaiworld.tv/footer-banners.html
 ||hentaiworld.tv/wp-content/uploads/*-300x300px-
 ||hentaiworldtv.b-cdn.net/wp-content/uploads/2023/11/ark1.avif
+||hepsiburada.com/api/$ping
 ||hepsiburada.com/api/track
 ||herald.wales/wp-content/*/Carmarthendental1
 ||heraldandtimeslabs.com/sugar.js
@@ -93503,7 +93500,6 @@ zzzyk.com###Tinfo
 ||soft.mumayi.net/images/download.gif
 ||soft.mumayi.net/js/
 ||soft4fun.net/wp-content/themes/arthemia/js/common_footer_min.js
-||soft98.ir/templates/*/js/application.m*.packed.js$script,replace=/\|visibility\|/\|backfaceVisibility\|/
 ||softcab.com/google.php?
 ||softfully.com/downloads/download$image
 ||softpedia-static.com/images/afh/
