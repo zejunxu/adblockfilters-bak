@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250730163549
-! Last modified: 2025/07/30 16:35:49
-! Blocked Filters: 97132
+! Version: 20250731003213
+! Last modified: 2025/07/31 00:32:13
+! Blocked Filters: 97141
 !
 ###AC_ad
 ###AD_160
@@ -5080,6 +5080,7 @@
 ##.a-d-90
 ##.a-dserver
 ##.a-dserver_text
+##.a-media.ex-728-90
 ##.a-sponsor
 ##.a_2mu
 ##.a_cn
@@ -14972,6 +14973,7 @@
 ##a.gggg[href^="https"]
 ##a.hengfu > img.hengfu
 ##a[clickmode="ad"]
+##a[clickmode="cpt"]
 ##a[href$=".cc:8443"]
 ##a[href$=".xyz:8443"]
 ##a[href$="/hjdt9.com"]
@@ -23722,6 +23724,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 24rodopi.com,rodopi24.blogspot.com###HTML14
 24rodopi.com,rodopi24.blogspot.com##.sidebar-inner
 24rodopi.com,rodopi24.blogspot.com##a[style="float:left;width:254px;"]
+24sata.hr##.js_topProducts
 24timezones.com##.ad-container-diff
 24timezones.com##.ad-container-top-index
 24tsag.mn##.main-banner
@@ -24770,6 +24773,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://adn.*/zone/$popup
 ://adn.*/zone/$subdocument
 ://ads.$popup,domain=~smartnews.com
+://ads.$~image,~xmlhttprequest,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.axon.ai|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.chewy.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.flytant.com|~ads.fund|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.realizeperformance.com|~ads.remix.es|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.siriusxmmedia.com|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.tuver.ru|~ads.twitter.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.vk.ru|~ads.watson.ch|~ads.wildberries.ru|~ads.x.com|~ads.yandex|~reempresa.org
 ://ads.$~image,~xmlhttprequest,domain=~ads.8designers.com|~ads.ac.uk|~ads.adstream.com.ro|~ads.allegro.pl|~ads.am|~ads.amazon|~ads.apple.com|~ads.atmosphere.copernicus.eu|~ads.axon.ai|~ads.band|~ads.bestprints.biz|~ads.bikepump.com|~ads.brave.com|~ads.buscaempresas.co|~ads.business.bell.ca|~ads.cafebazaar.ir|~ads.chewy.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.doordash.com|~ads.dosocial.ge|~ads.dosocial.me|~ads.elevateplatform.co.uk|~ads.finance|~ads.fund|~ads.google.cn|~ads.google.com|~ads.gree.net|~ads.gurkerl.at|~ads.harvard.edu|~ads.instacart.com|~ads.jiosaavn.com|~ads.kaipoke.biz|~ads.kifli.hu|~ads.knuspr.de|~ads.listonic.com|~ads.luarmor.net|~ads.magalu.com|~ads.mercadolivre.com.br|~ads.mgid.com|~ads.microsoft.com|~ads.midwayusa.com|~ads.mobilebet.com|~ads.mojagazetka.com|~ads.msstate.edu|~ads.mst.dk|~ads.mt|~ads.nc|~ads.nipr.ac.jp|~ads.olx.pl|~ads.pinterest.com|~ads.realizeperformance.com|~ads.remix.es|~ads.rohlik.cz|~ads.rohlik.group|~ads.route.cc|~ads.safi-gmbh.ch|~ads.scotiabank.com|~ads.selfip.com|~ads.shopee.cn|~ads.shopee.co.th|~ads.shopee.com.br|~ads.shopee.com.mx|~ads.shopee.com.my|~ads.shopee.kr|~ads.shopee.ph|~ads.shopee.pl|~ads.shopee.sg|~ads.shopee.tw|~ads.shopee.vn|~ads.siriusxmmedia.com|~ads.smartnews.com|~ads.snapchat.com|~ads.socialtheater.com|~ads.spotify.com|~ads.studyplus.co.jp|~ads.taboola.com|~ads.tiktok.com|~ads.tuver.ru|~ads.twitter.com|~ads.typepad.jp|~ads.us.tiktok.com|~ads.viksaffiliates.com|~ads.vk.com|~ads.vk.ru|~ads.watson.ch|~ads.wildberries.ru|~ads.x.com|~ads.yandex|~reempresa.org
 ://ads2.
 ://adsbb.
@@ -33973,6 +33977,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||slidesharedownloader.ngelmat.net^$generichide
 @@||slike.indiatimes.com/feed/stream/*.json$domain=timesofindia.indiatimes.com
 @@||slimjet.com/translate.php^$document
+@@||slingcommerce.com/graphql$stealth=3p-auth
 @@||slink.bid^$generichide
 @@||sltrib.com/pb/resources/scripts/utils/ads/ads.js
 @@||sm.ms^$generichide
@@ -37425,6 +37430,7 @@ androidpolice.com###sbar-content > li#ai_widget-6 > .ains > a.no_ul[href^="http:
 androidpolice.com##.adsninja-ad-zone:not(.adsninja-valstream)
 androidpolice.com##.ains-18
 androidpolice.com##.ap-post-footer-banner
+androidpolice.com##.display-card-main-content-wrapper
 androidpolice.com##.home .tag-sponsored
 androidpolice.com##.homepage-sponsor
 androidpolice.com##.w-pencil-banner
@@ -52721,11 +52727,11 @@ hitc.com##.from-the-web
 hitc.com,dualshockers.com#%#//scriptlet("set-constant", "pbjs.setConfig", "noopFunc")
 hitime5.com###gg250
 hitime5.com###gg730
-hitomi.la##.container > div.top-content > div[class]:not([class="list-title"])
 hitomi.la##.container > div[class$="content"] > div[class]:empty
 hitomi.la##.container > div[class$="content"] > div[class]:has(> div[data-clickadilla-banner])
+hitomi.la##.content > div[class]:not([class*="-"]) {min-height:45px !important;}
+hitomi.la##.top-content > div[class]:not([class*="-"]) {min-height:45px !important;}
 hitomi.la#%#//scriptlet('noeval')
-hitomi.la#?#.container > div[class$="content"] > div[class] > script:upward(1)
 hivecomic.com##div[class*="SimpleIconsGoogleadsense"] > div[style] > a[href="https://store.hivetoon.com/"] > img
 hix.ai#$##app-body > .relative:has(> .top-banner-container) { position: absolute!important; left: -4000px!important; }
 hjenglish.com###bottomBar
@@ -65411,6 +65417,7 @@ poczta.onet.pl##.main-container > div[class^="go"]:only-child > nav + [class^="g
 poczta.onet.pl##.main-container > div[class^="go"]:only-child > nav + [class^="go"] > div[class^="go"]:first-child:has(> div[class^="go"]:first-child + div[class^="go"]:last-child > .onet-ad:only-child)
 poczta.onet.pl##.main-container > div[class^="go"]:only-child > nav + [class^="go"] > div[class^="go"]:first-child:has(> div[class^="go"]:only-child > div[class^="go"]:first-child + div[class^="go"]:last-child > .onet-ad:only-child)
 poczta.onet.pl##.main-container > div[class^="go"]:only-child > nav + [class^="go"] > div[class^="go"]:last-child:has(> div[class^="go"]:only-child > div[class^="go"]:first-child + div[class^="go"]:last-child > .onet-ad:only-child)
+poczta.onet.pl##div[data-screening-append] > div[class^="go"] > main + div[class^="go"]:has(> div[class^="go"]:only-child > div[class^="go"]:only-child > div[class^="go"]:only-child > div[class^="go"]:first-child + .onet-ad:last-child)
 poczta.wp.pl##dd-holder[slot="DOUBLE_BILLBOARD"]
 poczta.wp.pl##dd-holder[slot="PANEL_PREMIUM"]
 poczta.wp.pl##div[ng-if="CommonController.showBannerTop"]
@@ -93983,6 +93990,7 @@ zzzyk.com###Tinfo
 ||stileproject.com/boom/d-*.html
 ||stileproject.com/frexo.js
 ||stileproject.com/vhtk/
+||stimaariraco.info^$popup
 ||stirr.com/api/ads/
 ||stirr.com/api/stats
 ||stlog*-local.kakao.com^
@@ -96289,6 +96297,7 @@ zzzyk.com###Tinfo
 ||xchina.*/ad/
 ||xchina.*/plugins/jquery.modal/
 ||xchina.*/plugins/sweetAlert2/
+||xchina.*/scripts/modal/modal.js
 ||xchina.click/upload/*.webp
 ||xchina.co/scripts/push_*.js
 ||xcity.org/tc2ca02c24c5.js
