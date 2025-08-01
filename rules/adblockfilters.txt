@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250801003258
-! Last modified: 2025/08/01 00:32:58
-! Blocked Filters: 97162
+! Version: 20250801102326
+! Last modified: 2025/08/01 10:23:26
+! Blocked Filters: 97160
 !
 ###AC_ad
 ###AD_160
@@ -39593,7 +39593,7 @@ bestjavporn.com,javdock.com,javhdporn.net##.related-native-banner
 bestjavporn.com,javxxx.me,javhdporn.net###player_3x2_container_inner
 bestlifeonline.com,eatthis.com##.inline
 bestlifeonline.com,eatthis.com,hellogiggles.com##.vi-video-wrapper
-bestlifeonline.com,good.is##.placeholder-a-block
+bestlifeonline.com,good.is,pride.com##.placeholder-a-block
 bestlifeonline.com,hellogiggles.com##.widget_gm_karmaadunit_widget
 bestlifeonline.com,zeenews.india.com##.first-ad
 bestlittlebaby.com#?#.row > div[class]:has(> div.info-box > div:contains(/^Advertisement$/))
@@ -45309,6 +45309,8 @@ docin.com##.sider_gg
 docomo.ne.jp,hicbc.com#@#.ad-label
 docs.cfw.lbyczf.com###推广
 docs.cfw.lbyczf.com###推广 + div.list
+docs.openwebui.com##.markdown > .w-full:has-text(Sponsored)
+docs.openwebui.com##.pb-4 > .mb-2:has-text(Sponsored)
 docs.picotorrent.org##.ethical-sidebar
 docsach24.co#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 docsity.com##.dsy-advertising
@@ -50170,6 +50172,9 @@ gays-cruising.com##.c_526x240
 gays-cruising.com##.c_728x265
 gays-cruising.com##.c_728x90
 gays-cruising.com##.c_900x250
+gays-cruising.com##.m-row.h_100
+gays-cruising.com##.m-row.h_250
+gays-cruising.com##.m-row.h_335
 gays-cruising.com##.w-100.h_250
 gaystream.click,gaystream.pw#%#//scriptlet("abort-on-property-read", "adsbyjuicy")
 gaystream.click,gaystream.pw#%#//scriptlet("prevent-window-open")
@@ -51058,7 +51063,7 @@ gonglue.us,kocpc.com.tw###custom_html-6
 goniec.pl#?#.col-span-3 > .justify-center:has(> .ad-placeholder:only-child)
 gonintendo.com##.pt-5
 gonintendo.com##body > div[class~="sm:mx-auto"] > div[class^="min-h-"].text-center
-good.is,papermag.com##.topbarplaceholder
+good.is,papermag.com,pride.com##.topbarplaceholder
 goodav17.com###sticky_ads
 goodav17.com##.ads_pc
 goodav17.com##div[id$="content"] > div[style="margin: 0 auto; text-align:center; margin-top:30px; width:90%;"]
@@ -58063,6 +58068,7 @@ linkedin.com##.premium-search-upsell
 linkedin.com##.scaffold-finite-scroll__content > div > div[data-id^="urn:li:activity:"]:has(.update-components-text-view > span[aria-hidden="true"]):not(:has(li-icon > svg))
 linkedin.com##article[data-is-sponsored]
 linkedin.com##iframe[componentkey="MynetworkDesktopNav_mynetwork_desktop_nav_ad"]
+linkedin.com##iframe[title="Advertisement"]
 linkedin.com##li[data-is-sponsored="true"]
 linkedin.com#$#.ad-banner-container.is-header-zone { padding: 0 0 !important; }
 linkedin.com#?#.core-rail > div > div[id^="ember"]:-abp-has(.feed-shared-actor__description span:-abp-contains(/促銷內容|广告/))
@@ -64766,6 +64772,7 @@ peacemakeronline.com###middle_banner_section
 peachurbate.com##.video-right-banner
 peachurnet.com##.video-right-banner
 peachurnet.com,scotsman.com,warcraftlogs.com###bottom-banner
+peacocktv.com#%#//scriptlet('json-prune', 'avails dashAvailabilityStartTime hlsAnchorMediaSequenceNumber nextToken nonLinearAvails')
 peak.cz#%#//scriptlet("abort-current-inline-script", "$", "adblock-modal")
 peakpx.com##li[style^="width: 300px; height: 250px;"]
 pearos.xyz#%#//scriptlet('prevent-fetch', 'adblockanalytics.com')
@@ -71648,7 +71655,6 @@ startmag.it#$##outer-wrap > #page { padding-top: 0 !important; }
 startmag.it#$#body #outer-wrap { background-image: none !important; }
 startmag.it#%#//scriptlet('abort-on-property-read', 'wpsite_clickable_data')
 startpage.com###main > div[style^="margin-bottom:"] > div[style^="display: block; padding:"]:has(> div[style^="margin-bottom:"] > svg)
-startpage.com##.a-bg
 startpage.com#%#//scriptlet('spoof-css', '.ad.a-bg', 'display', 'block')
 startpage.com#%#//scriptlet('trusted-set-constant', 's1PxyAdsTag', '"01234567890123456789"')
 startribune.com###highImpactAd
@@ -73089,6 +73095,7 @@ telugu360.com##.article_top_ads
 telugu360.com##.td-ss-main-sidebar > aside.td_block_template_5.widget
 telugu360.com#%#//scriptlet('trusted-click-element', '#go-home')
 telugu360.com#%#//scriptlet('trusted-click-element', '.skip_ad_custom')
+telugubulletin.com#%#//scriptlet('adjust-setTimeout', 'window.location.href', '15000')
 telugucinema.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', 'ays-pb-screen-')
 telugupeople.com##.fineprint
 telugupeople.com##td[width="300"]
@@ -76134,7 +76141,6 @@ ultimateclassicrock.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndicatio
 ultimatespecs.com##.horizontal_add_728
 ultimatespecs.com##.left_column_sky_scrapper
 ultimatespecs.com##div[style="width:100%;display:block;height:290px;overflow:hidden"]
-ultimedia.com#%#//scriptlet('adjust-setTimeout', '[native code]', '5000', '0.02')
 ultrabookreview.com###postadsside
 ultrabookreview.com###postzzif
 ultrabookreview.com###widgetad2-top
@@ -84268,6 +84274,7 @@ zzzyk.com###Tinfo
 ||cdn.onnetwork.tv/js/player*/player_prebidm.js
 ||cdn.opecloud.com/ope-adweb.js
 ||cdn.ouo.io/images/download-ad.
+||cdn.peacocktv.com/pck-vod/*/tracking/
 ||cdn.pelcro.com/js/bab/min.js$domain=livenewsus.com
 ||cdn.porngames.tv/images/skyscrapers
 ||cdn.porngames.tv/images/videos
@@ -93922,10 +93929,10 @@ zzzyk.com###Tinfo
 ||startmag.it/wp-content/uploads/Skin_StartMeg-1.jpg
 ||startpage.com/*/adsense/search/async-ads.js
 ||startpage.com/*/afs/ads?adsafe=
-||startpage.com/*/async-ads.js
 ||startpage.com/sp/$ping
 ||startpage.com/sp/dplpxs?
 ||startpage.com/sp/jst
+||startpage.com^*/afs/
 ||starwank.com/api/
 ||starwank.com/bump/
 ||starzplay.com/resources/js/analytics.js
@@ -95230,7 +95237,6 @@ zzzyk.com###Tinfo
 ||u*.takru.com^
 ||u.gg/affiliate/amazon/*.jpg
 ||u.riju.com/click.php
-||u1pmt.com^$popup
 ||ua.financialexpress.com/api/capture
 ||uai.com.br^*/analytics.js
 ||ub.galaxus.
@@ -95280,7 +95286,6 @@ zzzyk.com###Tinfo
 ||ui-portal.de/pos-cdn/tracklib/
 ||uiadmin.net/uview-plus/assets/js/3.1b3a95a0.
 ||uira.live/_next/image?url=%2Fadthing.gif
-||uitopadxdy.com^$popup
 ||uitvconnect.com/wp-content/uploads/2023/01/2-2
 ||uitvconnect.com/wp-content/uploads/2023/01/3-2
 ||uitvconnect.com/wp-content/uploads/2023/01/4-2
@@ -95299,8 +95304,6 @@ zzzyk.com###Tinfo
 ||ulog.*.kwai-pro.com^
 ||ultimate-guitar.com/components/ab/event?
 ||ultimate-guitar.com/static/public/build/prebid_
-||ultimedia.com/deliver/statistiques/
-||ultimedia.com/js/common/smart.js$script,third-party
 ||ultra-soccer.jp/js/analytics.js
 ||ultrahorny.com/media/videos/brazzers
 ||ultrahqporn.com/backend/files/ads/
@@ -96055,7 +96058,6 @@ zzzyk.com###Tinfo
 ||widgetserver.com/metrics/
 ||widgetserver.com/t/
 ||widgetserver.com^*/image.gif?
-||wieistmeineip.de/ip-address/$third-party
 ||wielkahistoria.pl/wp-content/uploads/*/*/banner_okupowana.jpg
 ||wifeo.com/compteurs/$third-party
 ||wikihow.com/x/collect?
@@ -96158,7 +96160,6 @@ zzzyk.com###Tinfo
 ||worthpoint.com/lIUjcOwl/init.js
 ||wowfan.net/static/js/index.
 ||wowow.co.jp/API/new_prg/get_tracking_url.php
-||wowshortvideos.com^$popup
 ||wowtcgloot.com/share/?d=$third-party
 ||woyaoq.com/201904100958_5cad4dbac9c5f.png
 ||wp-engage.org/api/v5/post/activity/log/
@@ -96525,8 +96526,6 @@ zzzyk.com###Tinfo
 ||xtits.*/static/js/custom.js
 ||xtits.xxx/static/js/ppndr*.js
 ||xtrasize.pl/banner/
-||xtremeserve.xyz/*.php$xmlhttprequest,other
-||xtremeserve.xyz/*.php$xmlhttprequest,other,redirect=nooptext
 ||xtv.cz/api/v3/log/
 ||xuan5.com^$third-party
 ||xuehi.cn/reward/reward
@@ -96756,7 +96755,6 @@ zzzyk.com###Tinfo
 ||ynztzh.com^$third-party
 ||yodayo.com/scripts/pixel.js
 ||yorkbbs.ca/crm/section/v1/get/list/open
-||yospace.com/csm/access/*=vast$domain=peacocktv.com
 ||yotpo.com/widget-assets/yotpo-pixel/
 ||yotta.scrolller.com^$media,redirect=noopmp4-1s
 ||yottaa.com/rapid.min.js
