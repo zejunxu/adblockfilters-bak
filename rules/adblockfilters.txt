@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250814002657
-! Last modified: 2025/08/14 00:26:57
-! Blocked Filters: 96264
+! Version: 20250814095812
+! Last modified: 2025/08/14 09:58:12
+! Blocked Filters: 96265
 !
 ###AC_ad
 ###AD_160
@@ -24371,6 +24371,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 5dariyanews.com##a[href="https://www.5dariyanews.com/sponsored-ads.aspx"]
 5dm.app##[src*="sinaimg.cn"]
 5dm.link###player_pausex
+5dm.link##div[id^="player_p"]
 5dm.link#@#.tm-share-this
 5dy15.cc##div[id][class^="is_"][style^="margin"]
 5eplay.com##img[width="1240"]
@@ -59368,6 +59369,7 @@ metro.cz,fights.cz,antiyoutuber.cz,expres.cz,televizeseznam.cz,ahaonline.cz,extr
 metro.tv,discoverychannel.pl,tlcpolska.pl,tvnstyle.pl,tvn7.pl,tvnturbo.pl,tvnfabula.pl,hgtv.pl,foodnetwork.pl,travelchanneltv.pl,ttv.pl,tvn24.pl,tvn.pl##.ado-placeholder
 metrolagu.cam#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 metrolagu.cam#%#//scriptlet('prevent-window-open')
+metropcs.mobi##div[title="Advertisement"]
 metropolitan.si##.billboard
 metrosaga.com##aside[class*="advads_ad_widget-"]
 metruyencv.info###masthead
@@ -66044,8 +66046,6 @@ profitconfidential.com##.spu-bg
 profitconfidential.com##.spu-box
 profitconfidential.com##iframe[name^="dianomi"]
 profullversion.com,warezcrack.net##center > a[href][rel="nofollow"][target="_blank"] > img
-prog.co.il#%#//scriptlet("abort-current-inline-script", "$", "adsBlocked")
-prog.co.il#%#//scriptlet("prevent-setTimeout", "adView")
 progameguides.com###top-sticky-sidebar-container
 progameguides.com##div[id^="content_dynamicAd-"]
 progameguides.com##div[id^="sideAd-"]
@@ -74637,11 +74637,11 @@ tuttoandroid.net##.card-grid div.row > div.col-18.align-self-center
 tuttoandroid.net##.justify-content-around > div[class^="col-"] > a[href^="http://bit.ly/"][target="_blank"] > img
 tuttoandroid.net##.skin-img
 tuttoandroid.net##.ta-adblock-modal-open::before
-tuttoandroid.net##div[class^="widofferte23-"]
 tuttoandroid.net#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 tuttoandroid.net#?#.card-grid.home > div.row > .col-18 > .row > .col-18.preload:has(> article.card-post > span.ribbon.yellow:contains(/^Adv$/))
 tuttoandroid.net#?#.container .card > .card-body > .entry-meta > .entry-meta-item > span > a[href="https://www.tuttoandroid.net/offerte/"]:upward(5)
 tuttoandroid.net,tuttotech.net##body .banner:not(#style_important)
+tuttoandroid.net,tuttotech.net##div[class^="widofferte23-"]
 tuttogreen.it##.advplace
 tuttogreen.it##.block-custom-content-50
 tuttogreen.it##.easyazon-block
@@ -80579,6 +80579,7 @@ zzzyk.com###Tinfo
 ||591.com.tw/stats/
 ||5axxw.com/extends/ad/
 ||5dariyanews.com/images/local-classifieds-online-ad.gif
+||5dm.link/a$image
 ||5dm.link/ablgld/
 ||5dm.link/ancblmszmd/
 ||5dm.tv/html/5dmm.jpg
