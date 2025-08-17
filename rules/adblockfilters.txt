@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250817163043
-! Last modified: 2025/08/17 16:30:43
-! Blocked Filters: 96215
+! Version: 20250818002826
+! Last modified: 2025/08/18 00:28:26
+! Blocked Filters: 96226
 !
 ###AC_ad
 ###AD_160
@@ -17009,6 +17009,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .emlfiles4.com/cmpimg/t/$image
 .emltrk.com/
 .epicgames.com/O/
+.eurowings.com/cl.aspx?$image
 .eventim.de/op/$image
 .everestengagement.com/$image
 .eviq.org.au/CMSModules/$image
@@ -20412,6 +20413,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /js/pushjs/1.0.0/subscriber.js
 /js/quantcast-
 /js/re-ads-
+/js/script.pageview-props.
 /js/script_*.js?$~third-party,domain=video.q34r.org|porntoday.ws|netuplayer.top|netu.ac|speedporn.net|meucdn.vip|yandexcdn.com|waaw1.tv|waaw.*|hqq.*|gledajvideo.top|1069jp.com|diziturk.club|younetu.org|vzlinks.com|fsohd.pro|cinecalidad.vip|vapley.top|player.streaming-integrale.com|xtapes.to|player.igay69.com|troncha.lol|vpge.link|opuxa.lat|filmcdn.top|asdasd1231238das.site|stbpnetu.xyz|pokemonlaserielatino.xyz|gayvidsclub.com|zarato.top|videocdnal24.xyz|play.seriesgod.com|xstream.top|multiup.us
 /js/sextb.js$domain=sextb.date|sextb.net,replace=/if\(checkads\(\)==false\)/if(!0)/
 /js/showgg.js
@@ -24455,7 +24457,10 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 80.lv##.BrandingPromo_skeleton
 80.lv##.ImagePromo_default
 80.lv##[class*="BrndigPrmo_"]
+80.lv##[class*="BrndngBigPrm_"]
+80.lv##[class*="ImgPrmo"]
 80.lv##[id*="Image_bnnr"]
+80.lv##[id^="Image_bner_"]
 80.lv##a[id^="Image_Banner_Mid"]
 80.lv##div[class*="BrndngPrmo"]
 80.lv#?#article[style] > div[class] > aside ~ div[class]:not([data]) > div[class][style^="transform:"] > article > div[class]:has(> div[class][style^="background-color:"])
@@ -24721,6 +24726,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://analytics-cdn.
 ://analytics.*/collect
 ://analytics.*/event
+://analytics.*/hardal
 ://analytics.*/hits/
 ://analytics.*/impression
 ://analytics.*/page_entry
@@ -24804,6 +24810,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ://segment-api.
 ://segment-cdn.
 ://sgtm.*.js?
+://signal.*/hardal
+://signals.*/hardal
 ://sli.*/imp?s=$image
 ://sportframe*.co^
 ://sportframe*.org^
@@ -69817,6 +69825,8 @@ softonic.com##.ad--displayed
 softonic.com##.ad-content-wrapper
 softonic.com##.black-friday-ads
 softonic.com##.modal-di__wrapper-steps > p[class="modal-di__label"]
+softonic.com##.rv-di-modal__label
+softonic.com##.rv-di-step__container
 softonic.com##.sam-slot
 softonic.com##[data-meta="placeholder-slot"]:has([data-label="Advertisement"])
 softonic.com##div[class="modal-di__step"] > div.modal-di__header
@@ -93047,6 +93057,7 @@ zzzyk.com###Tinfo
 ||steelcn.cn/img/bj_*_146_315.jpg
 ||stefanvd.net/images/partner/
 ||sterlingwoods.com^$third-party
+||sterra.web.id/stera2/
 ||stethepsartopo.com^$popup
 ||steuertipps.de/scripts/tracking/
 ||stfly.io/download.png
