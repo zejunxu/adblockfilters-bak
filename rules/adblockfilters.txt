@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250826003017
-! Last modified: 2025/08/26 00:30:17
-! Blocked Filters: 97281
+! Version: 20250826095050
+! Last modified: 2025/08/26 09:50:50
+! Blocked Filters: 97289
 !
 ###AC_ad
 ###AD_160
@@ -1409,7 +1409,6 @@
 ###adsZone
 ###adsZone1
 ###adsZone2
-###ads[style^="position: absolute; z-index: 30; width: 100%; height"]
 ###ads_0_container
 ###ads_160
 ###ads_3
@@ -15069,6 +15068,7 @@
 ##a[href^="http://cam4com.go2cloud.org/aff_c?"]
 ##a[href^="http://com-1.pro/"]
 ##a[href^="http://handgripvegetationhols.com/"]
+##a[href^="http://join.brokestraightboys.com/track/"]
 ##a[href^="http://premonitioninventdisagree.com/"]
 ##a[href^="http://revolvemockerycopper.com/"]
 ##a[href^="http://stickingrepute.com/"]
@@ -16803,7 +16803,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .com/aS/feedclick?s=$all,match-case
 .com/a_d/
 .com/ablck/250-300/
-.com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com
+.com/ad/$~image,third-party,domain=~espn.com|~mediaplex.com|~warpwire.com|~wsj.com
 .com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com,badfilter
 .com/ad_js/
 .com/ads/$domain=hdbraze.com
@@ -54234,6 +54234,7 @@ indianexpress.com##.o-taboola-story
 indianexpress.com##.osv-ad-class
 indianexpress.com##.rhs-banner-carousel
 indianexpress.com##.rhs-banner-wrapn
+indianexpress.com##.taboola-parent
 indianexpress.com##div[data-slug="ie-insurance-form"]
 indianexpress.com#%#window.RunAds = !0;
 indianexpress.com,jansatta.com#@##taboola-below-article-1
@@ -56165,6 +56166,7 @@ justdial.com###gptAdsDiv
 justetf.com###brokerAd
 justetf.com##.m-sep-l:has(#partnerNewsBox)
 justetf.com##.wAd
+justetf.com##div[id^="shadow-teaser-"]:has(div[class="disclaimer mb-1"])
 justfullporn.net,onlyxxxporn.com##.order-1:has(> .video-block-happy)
 justjared.com#%#//scriptlet('abort-current-inline-script', 'document.readyState', 'getAttribute("abp")')
 justjared.com$$script[tag-content="pub_300x250m"][max-length="14000"]
@@ -57196,6 +57198,7 @@ lanazione.it,ilgiorno.it,ilrestodelcarlino.it,quotidiano.net##div[class*=" amp__
 landiannews.com###block-2
 landiannews.com##.sidebar > section#block-4
 landiannews.com##a[href*="ourl.co"]
+landiannews.com##article > .content-gg > a[target="_blank"][rel="nofollow"]
 landiannews.com##section[id^="media_image"]
 landyzone.co.uk##.p-body-header > div.p-description:has(> b > a[href^="https://www.adrianflux.co.uk/"])
 langenscheidt.com##a#vocabulary-trainer[href^="https://www.magiclingua.com/"][href*="&utm_campaign="]
@@ -60298,6 +60301,7 @@ mob.hr##.noa-banner > a
 mob.hr##.side_banner
 mobafire.com##.r-home__guides__ad
 mobafire.com##.venatus-responsive-ad
+mobafire.com##.vid-wrap
 mobalytics.gg##div[style^="width: 400px; height:"]
 mobalytics.gg##main > div[class]:has(> div[class]:only-child > div[data-fuse]:only-child)
 mobalytics.gg##section[data-section-id] > div[class]:has(> section#ad-placeholder-id)
@@ -74781,6 +74785,7 @@ topzone.lt##div[id^="edit"] > .tborder:not([id^="post"])
 tor.link##.col-md-12:has(> a[target="_blank"] > .adbanner)
 toramemoblog.com##.lity-hide + div[id][class*=" "]
 torbay.gov.uk##.track
+torbobit.net###banner-place
 torbobit.net##a[href*="/weboffer/"] > img
 torbobit.net##a[id^="__bgd_link"]
 torbobit.net##div[id^="wpdl_"] > a > img
@@ -78365,7 +78370,7 @@ wired.com##div[data-testid="ContentFooterBottom"] > div[class^="RowWrapper-"]
 wired.com##div[role="presentation"][data-outbrain-url]
 wired.me##.special--container
 wireshark.org##.banner-img-downloads
-wirtualnemedia.pl###article-content > .border-b:has(> div[class*=" "]:only-child > img[src^="/staticfiles/wm-placeholder.png"]:first-child + div[class*=" "] + script:last-child)
+wirtualnemedia.pl###article-content > .border-b:has(> div[class*=" "]:only-child > img[src^="/staticfiles/wm-placeholder.png"]:first-child + div[class] + script:last-child)
 wirtualnemedia.pl##.partner-news-wrapper
 wirtualnemedia.pl##div[class*=" "]:has(> img[src^="/staticfiles/wm-placeholder.png"]:first-child + div[class*=" "] + div[class*=" "] + script:last-child)
 wirtualnemedia.pl##div[class*=" "]:has(> img[src^="/staticfiles/wm-placeholder.png"]:first-child + div[class*=" "] + script:last-child)
@@ -88937,6 +88942,7 @@ zzzyk.com###Tinfo
 ||justjared.com/index_revive.php
 ||justjared.com/tools.js
 ||justswallows.net/js/script-*.js
+||justusboys.com/advertising/
 ||jutarnji.hr/template/js/eph_analytics.js
 ||juvepoland.com/wp-content/uploads/*/torggler.gif
 ||juweixin.com/static/spk
@@ -94921,6 +94927,8 @@ zzzyk.com###Tinfo
 ||topthink.com/uploads/assistant/$image,domain=doc.thinkphp.cn
 ||toptoon03.xyz/app/tuijian.html
 ||topxxxlist.net/eroclick.js
+||torbobit.net/fd1/js/brinpopup.js
+||torbobit.net/js/analytics/
 ||torguard.net/blog/wp-content/uploads/2019/10/PrivateMail-Neon-300x250.gif
 ||tori.fi/img/none.gif$image
 ||tornadomovies.co/site/kasdl7asd
