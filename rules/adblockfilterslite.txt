@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20250829002931
-! Last modified: 2025/08/29 00:29:31
-! Blocked Filters: 42052
+! Version: 20250829094644
+! Last modified: 2025/08/29 09:46:44
+! Blocked Filters: 42036
 !
 ###AC_ad
 ###AD_160
@@ -11117,13 +11117,11 @@
 ##.header-advertise
 ##.header-advertisement
 ##.header-advertising
-##.header-and-footer--banner-ad
 ##.header-article-ads
 ##.header-banner-ad
 ##.header-banner-ads
 ##.header-banner-advertising
 ##.header-bannerad
-##.header-bottom-adboard-area
 ##.header-pencil-ad
 ##.header-sponsor
 ##.header-top-ad
@@ -11503,7 +11501,6 @@
 ##.js-advert-container
 ##.js-adzone
 ##.js-anchor-ad
-##.js-article-advert-injected
 ##.js-billboard-advert
 ##.js-cui-pt-item[data-qhb]
 ##.js-dfp-ad
@@ -11534,17 +11531,10 @@
 ##.js-widget-distroscale
 ##.js-widget-send-to-news
 ##.jsAdSlot
-##.jsMPUSponsor
 ##.js_adContainer
 ##.js_ad_wrapper
-##.js_deferred-ad
-##.js_desktop-horizontal-ad
 ##.js_midbanner_ad_slot
 ##.js_movable_ad_slot
-##.js_preheader-ad-container
-##.js_slideshow-full-width-ad
-##.js_slideshow-sidebar-ad
-##.js_sticky-top-ad
 ##.jsv > .mobile-adv
 ##.jsv-layer > .image > a[href^="http"]
 ##.jsx-adcontainer
@@ -11576,22 +11566,18 @@
 ##.l-bottom-ads
 ##.l-grid--ad-card
 ##.l-header-advertising
-##.l-section--ad
 ##.l1-ads-wrapper
 ##.label-ad
-##.label_advertising_text
 ##.labelads
 ##.large-advert
 ##.largeAd
 ##.largeRectangleAd
 ##.largeUnitAd
 ##.large_ad
-##.lastAdHolder
 ##.lastads
 ##.lates-adlabel
 ##.latest-ad
 ##.layout-ad
-##.layout__right-ads
 ##.layout_h-ad
 ##.lazy-ad
 ##.lazy-ad-unit
@@ -11619,20 +11605,15 @@
 ##.leaderBoardAdWrapper
 ##.leaderBoardAdvert
 ##.leader_ad
-##.leader_aol
 ##.leaderad
 ##.leaderboard-ad
-##.leaderboard-ad-belt
 ##.leaderboard-ad-component
 ##.leaderboard-ad-container
-##.leaderboard-ad-dummy
 ##.leaderboard-ad-fixed
-##.leaderboard-ad-grid
 ##.leaderboard-ad-main
 ##.leaderboard-ad-module
 ##.leaderboard-ad-pane
 ##.leaderboard-ad-placeholder
-##.leaderboard-ad-section
 ##.leaderboard-ad-unit
 ##.leaderboard-ad-wrapper
 ##.leaderboard-adblock
@@ -11647,8 +11628,6 @@
 ##.leaderboard1AdWrapper
 ##.leaderboardAd
 ##.leaderboardAdWrapper
-##.leaderboardFooter_ad
-##.leaderboardRectAdWrapper
 ##.leaderboard_ad_container
 ##.leaderboard_ad_unit
 ##.leaderboard_ads
@@ -11670,8 +11649,6 @@
 ##.leftAdContainer
 ##.leftAds
 ##.leftAdsEnabled
-##.leftAdsFix
-##.leftAdvDiv
 ##.leftAdvert
 ##.leftCol_advert
 ##.leftColumnAd
@@ -25268,7 +25245,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=f5haber.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=zattoo.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=10play.com.au|10.com.au
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|clickorlando.com|digi24.ro|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|clickorlando.com|digi24.ro|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|watchcharge.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=bloomberg.com,stealth=referrer
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=cbs.com|paramountplus.com|history.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=click2houston.com
@@ -28192,6 +28169,7 @@ bilibili.com##.bili-dyn-ads
 bilibili.com##.bili-feed-card:has(> div.bili-video-card[style*="display: none !important;"])
 bilibili.com##.bili-video-card.is-rcmd:has(> div.bili-video-card__wrap .bili-video-card__stats--icon > path[d*="M16.9122 1.50323C17.4366 1.48358 17.99745 1.54938 18.4701 1.8207C18.9423 2.09168 19.28085"])
 bilibili.com##.bili-video-card__wrap > a[href^="http"]:not([href*=".bilibili.com/"])
+bilibili.com##.container > .bili-feed-card:has(> div.bili-video-card  div.bili-video-card__info--no-interest + h3 > a[target="_blank"]:not([href^="https://www.bilibili.com/"]))
 bilibili.com##.container > div.bili-video-card.is-rcmd:not(:has(> *))
 bilibili.com##.desktop-download-tip
 bilibili.com##.eva-banner
@@ -28322,6 +28300,7 @@ bkjia.com,zol.com.cn##.hot_tj
 blackamericaweb.com,bossip.com,cassiuslife.com,charlieintel.com,dexerto.com,hiphopwired.com,madamenoire.com,newsone.com,tvone.tv###player-wrapper
 blackedraw.com,blacked.com#$#div[class^="TopBanner__"] { display: none !important; }
 blackedraw.com,blacked.com#$#header { top: 0px !important; }
+blanktext.co,finbold.com,gizmodo.com,kotaku.com,op.gg,outsideonline.com,radio.net##.min-h-\[250px\]
 blanktext.co,finbold.com,gizmodo.com,op.gg,outsideonline.com,radio.net##.min-h-\[250px\]
 bleacherreport.com,coles.com.au##[data-testid="ad"]
 bleachmyeyes.com,kojka.com##.spot-box
@@ -28407,7 +28386,7 @@ boards.4chan.org,b2bhint.com##.adl
 boatsonline.com.au,yachthub.com##.js-sticky
 bobs-tube.com,tubsexer.*##.sponsored_top
 bobvila.com,outdoorlife.com,popsci.com,taskandpurpose.com,thedrive.com,twz.com###pw-top-right-sidebar-aib
-bobvila.com,popsci.com,thedrive.com,twz.com###pw-iab-leaderboard
+bobvila.com,outdoorlife.com,popsci.com,thedrive.com,twz.com###pw-iab-leaderboard
 boce.com##.index-top-long
 boce.com##.page10Box1 > a[href^="http"]:not([href*="boce."])
 boce.com##div[class^="money"]
@@ -30875,7 +30854,9 @@ gitlink.pro,shtms.co,gitizle.vip,ay.live,yindex.xyz,uzunversiyon.xyz,aylink.co##
 giveawayoftheday.com,informer.com##.top_ab
 gizbot.com,goodreturns.in,inc.com##div[style^="min-height: 250px"]
 gizguide.com,techcracked.com,novelasesp.blogspot.com###HTML7
+gizmodo.com,kotaku.com##.lg\:min-h-\[300px\]
 gizmodo.com,kotaku.com##.od-wrapper
+gizmodo.com,kotaku.com##.widget_keleops-ad
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.ad-no-mobile
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.sidebar-outbrain
 gizmodo.com.au,kotaku.com.au,lifehacker.com.au,pedestrian.tv##.top-ad-leaderboard
@@ -31057,7 +31038,6 @@ guitarchina.com,iqiyi.com##.banner4
 gumtree.com.au,s.tabelog.com#@#[data-ad-name]
 guokr.com##.guokr-layer-beforelogin
 guokr.com##.side-adv
-guozaoke.com,100ec.cn,159i.com,1905.com,22vd.com,2345.cn,234fang.com,3gsc.com.cn,52youpiao.com,72g.com,8se.me,acg.bz,acg13.cn,acgbenzi.com,baiduyunpan.net,baike.com,bbs-mychat.com,cdyee.com,ce.cn,chinaqking.com,chinatimes.com,chinatruck.org,chinaz.com,cnforex.com,cnsoftnews.com,codepub.com,cq.xinhuanet.com,cxryun.cn,dav01.com,discuss.com.hk,djwma.com,dmzj.com,dmzj1.com,dngz.net,douban.com,dzwww.com,eastday.com,fengniao.com,focus.cn,fx112.com,gongkong.com,henan100.com,honglingjin.co.uk,house.jschina.com.cn,iciba.com,ifeng.com,ipeen.com.tw,isharebest.com,itavcn.com,jojf.cn,jrj.com.cn,kumi.cn,landiannews.com,lawtv.com.cn,lieyunwang.com,lncn.org,loveshang.com,ltn.com.tw,luo8.com,maxpda.com,mm111.net,moxing.net,mvcat.com,ncdiy.com,neotv.com.cn,newsmth.net,njdaily.cn,pc0359.cn,people.com.cn,pharmnet.com.cn,pixnet.net,pptv.com,ptbus.com,qncye.com,r3sub.com,sogou.com,sozi.cn,toolfk.com,tv.sohu.com,u-car.com.tw,weather.com.cn,xianbao.fun,yawin.cn,yb983.com,ydss.cn,yesky.com,yiche.com,yqxxs.com,zhihu.com,ziyuanyo.com##.ad
 guozhivip.com##.tit > a[style="color: #f80"]
 gushiwen.cn###threeWeixin2
 gxeea.cn##.m-wrap-school
@@ -33626,6 +33606,9 @@ movie76.com,wardhanime.net##div[id^="teaser"]
 movieapne.biz,watchapne.biz#%#//scriptlet('trusted-set-local-storage-item', 'adExpiryTime', '9000000000000')
 moviekhhd.biz,webcarstory.com###Ads
 movielinkbd.*,anime4up.rest,1movielinkbd.com#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.addEventListener', 'window.open')
+movieparadise.*###text-3:has(a[href*="rapidgator-premium"])
+movieparadise.*##.fixed-sidebar-blank > #text-8
+movieparadise.*##.module_home_rg
 movies4u.*##.popSc
 movies4u.*#%#//scriptlet('abort-on-property-write', 'app_advert')
 movies4u.*#%#//scriptlet('abort-on-property-write', 'checkAdsStatus')
@@ -40570,6 +40553,7 @@ zzzyk.com###Tinfo
 ||mop.com/newIndex/gg.html
 ||morfo.*.amazonaws.com/*/banner_*.gif$domain=sciaga.pl
 ||morfo.*.amazonaws.com/*/screning-*_*.jpg$domain=sciaga.pl
+||movieparadise.*/wp-content/uploads/*/VPN-banner-2.gif
 ||mp.weixin.qq.com/mp/appmsgreport?
 ||mp.weixin.qq.com/mp/getappmsgad?
 ||mp.weixin.qq.com/mp/jsmonitor?
