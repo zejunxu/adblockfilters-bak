@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250830002829
-! Last modified: 2025/08/30 00:28:29
-! Blocked Filters: 97419
+! Version: 20250830094136
+! Last modified: 2025/08/30 09:41:36
+! Blocked Filters: 97435
 !
 ###AC_ad
 ###AD_160
@@ -36023,13 +36023,11 @@ accuradio.com##.MobileSquareAd__Container-sc-1p4cjdt-0
 accuweather.com###connatix
 accuweather.com##.ad-lr
 accuweather.com##.adhesion-header
-accuweather.com##.connatix-player
 accuweather.com##.feature-tag
 accuweather.com##.glacier-ad
 accuweather.com##.panel-ad-mr
 accuweather.com##body #header-davek
 accuweather.com#$#.base-header.has-banner { height: calc(100%) !important; }
-accuweather.com#@#.connatix-player
 accuweather.com,cheddar.tv,deadline.com,elnuevoherald.com,heraldsun.com,olhardigital.com.br,tvinsider.com#@#.cnx-player-wrapper
 accuweather.com,phonescoop.com###top
 ace.mu.nu###google-banner
@@ -62538,8 +62536,6 @@ newsmth.net###ban_ner
 newsmth.net##.Smthtwenty_float
 newsmth.net##.b-content > #sogou_banner:nth-child(3)
 newsmth.net##.ns-ad
-newsnationnow.com##.nxs-player-wrapper
-newsnationnow.com#@#.nxs-player-wrapper
 newsner.com##div[id^="ad-"]
 newsnext.live##.size-large
 newsnow.co.uk##.c-blockmsg
@@ -64036,6 +64032,7 @@ osmanonline.co.uk,pridesource.com,fuxdeluxe.com,nationalchronicle.in,techspite.c
 ososedki.com###masonry > div.thumbs:has(> center > noindex > div[style^="min-height:"])
 ososedki.com##.grid-more > div.thumbs-more:has(> center > noindex > div[style^="min-height:"])
 osradar.com##a[href="http://insiderapps.com/"]
+oss-cn-hangzhou.aliyuncs.com##A.hm_item[href^='https://tcs-devops.aliyuncs.com/thumbnail/']
 ostrowiecka.pl,esopot.pl,lowiczanin.info,gwarek.com.pl,tyna.info.pl,tusochaczew.pl,myglogow.pl,plonskwsieci.pl,spotradomsko.pl,portalsremski.pl,ekstrasierpc.pl,ki24.info,uniejow.net.pl,e-krajna.pl,gwio.pl,faktypilskie.pl,swiecie24.pl,grudziadz365.pl,mielec.pl,iszczecinek.pl,gniewkowo.eu,mojakruszwica.pl,expresskaszubski.pl,gorlice24.pl,gostyn24.pl,wpu24.pl,ddwloclawek.pl,ddtorun.pl#%#//scriptlet('set-constant', 'adInitializer', 'undefined')
 osuskinner.com#%#//scriptlet('prevent-xhr', 's.nitropay.com')
 osuskins.net##.vad-container
@@ -75784,6 +75781,7 @@ tweaktown.com##.DesktopRightBA
 tweaktown.com##.adcon
 tweaktown.com##.center-tag-rightad
 tweaktown.com##.outbrainad
+tweaktown.com##.tldrad
 tweaktown.com##center[style*="margin-bottom:"]
 tweaktown.com##center[style*="margin:"]
 tweaktown.com##center[style^="min-height:250px"]
@@ -82302,6 +82300,15 @@ zzzyk.com###Tinfo
 ||alishop*.ru^
 ||alixixi.com/adsview/
 ||aliyun.com/actionlog/
+||aliyuncs.com/ad/jd-smoofit-ad.jpg
+||aliyuncs.com/gg/
+||aliyuncs.com/ghdb.gif
+||aliyuncs.com/public/v1/js/ad-config.
+||aliyuncs.com/r.png
+||aliyuncs.com/vss/haotu.js
+||aliyuncs.com/wjy99re/
+||aliyuncs.com^$domain=5kym.com
+||aliyuncs.com^$domain=9xav.cc
 ||aljazeera.com/thirdparty/nr.js
 ||all-gay-video.com/uploads^$image
 ||all-top.ru/cgi-bin/topcount.cgi?
@@ -82704,6 +82711,7 @@ zzzyk.com###Tinfo
 ||apimg.net/2022/zeydoo-*.gif$domain=affplus.com
 ||apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-*.amazonaws.com^
 ||apis.pchome.com.tw/js/idlead.js
+||apk-01.oss-cn-beijing.aliyuncs.com/dp/
 ||apk.tw/static/js/showpic.js
 ||apkmody.io/ads
 ||apkmody.io/pa-ad.js
@@ -87087,6 +87095,7 @@ zzzyk.com###Tinfo
 ||girlsofdesire.org/images/girlsofdesire.org/analytics.js
 ||girlsofdesire.org/php/*_fl.js
 ||girlstaste.life^$popup
+||gitbook.com/v1/integrations/googleanalytics/
 ||github.com/_private/browser/stats
 ||github.dev/diagnostic?
 ||githubusercontent.com/vip888vip/ug/main/*.gif
@@ -87504,6 +87513,7 @@ zzzyk.com###Tinfo
 ||hboav.com/guga/
 ||hboav.com/guga/*.php$domain=5278.cc
 ||hboav.com/guga/images/$xmlhttprequest,redirect=nooptext
+||hcbbsoss.oss-cn-hangzhou.aliyuncs.com^*-banner
 ||hcbdsm.com/exo1.html
 ||hcbdsm.com/frtl.js
 ||hcbdsm.com/rbtop.html
@@ -87942,6 +87952,7 @@ zzzyk.com###Tinfo
 ||huhumh.com/js/
 ||huibaihe.net/js/dddd.js
 ||huibaihe.net/static/730-580.
+||huiji-fs.oss-cn-qingdao.aliyuncs.com/huijiad/
 ||huimg.cn/e/hd.e.wap.
 ||huizu100.com/data/attachment/portal/
 ||hujiang.com/Web/tx.ashx
@@ -88285,6 +88296,7 @@ zzzyk.com###Tinfo
 ||imctransfer.com^*/promo/
 ||imdb.com/_json/getads/
 ||imdb.com/api/_ajax/metrics/
+||imdbtv.amazon.dev/2021-01-01/ads?$domain=imdb.com
 ||imedown.info/03.jpg
 ||imedown.info^*.gif
 ||imeee.cn/DA_HTML/*.js
@@ -88983,6 +88995,7 @@ zzzyk.com###Tinfo
 ||jrjimg.cn/stock/adjsok.js
 ||jrmianban.com/img/images/g-g/
 ||js*.abolezi.com^
+||js-js.oss-cn-beijing.aliyuncs.com/mnpc-umeng.js$domain=dianyingim.com
 ||js.*2023*.live^
 ||js.*2023*.xyz^
 ||js.cncrk.com/
@@ -91462,6 +91475,7 @@ zzzyk.com###Tinfo
 ||oschina.net/uploads/ad/
 ||oschina.net/uploads/cooperation/
 ||oshkosh.com/0F3091f3/init.js
+||oss-ap-southeast-1.aliyuncs.com/js/copy.js
 ||ossfloetteor.com^$popup
 ||osswc.pplive.cn/cccms/$image
 ||ostjob.ch/public/statistic/teaser/hit/
@@ -93663,6 +93677,7 @@ zzzyk.com###Tinfo
 ||sinoptik.pl/js/*/concat.min.js$replace=/(document\.createElement\("script"\)\)\.textContent=')[\s\S]*?(zmctrack|ShadowRoot)[\s\S]*?('\,)/\$1\$3/,domain=sinoptik.pl
 ||sirdata.eu^$third-party
 ||sishik.ru/counter.php?
+||site-bk.oss-cn-shenzhen.aliyuncs.com/img/aliyun/
 ||site24x7rum.jp/beacon/
 ||sitebooster.com/sb/wix/p?$third-party
 ||sitefinity.com/collect/
@@ -97278,6 +97293,7 @@ zzzyk.com###Tinfo
 ||zhongyi.ifeng.com/a/zt.js
 ||zhongyoo.com/img/js/tongji.js
 ||zhongyoo.com/shuju/
+||zhuashi.oss-cn-beijing.aliyuncs.com^$domain=~zhuashi.com
 ||zhuji.net/2007_ad/
 ||zhujiwiki.com/ad/
 ||zhulang.com/zlpv.php
