@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250901002552
-! Last modified: 2025/09/01 00:25:52
-! Blocked Filters: 97219
+! Version: 20250901100153
+! Last modified: 2025/09/01 10:01:53
+! Blocked Filters: 97229
 !
 ###AC_ad
 ###AD_160
@@ -17448,6 +17448,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /Events/Impression?
 /FacebookEvent/PageView$xmlhttprequest
 /FduttjAlivqpo/*
+/Fingerprintjs2/fpt2.js
 /GTag/general_tracker.js
 /GetPlaybackResources?$jsonprune=\$.cuepointPlaylist,all,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
 /GetPlaybackResources?$jsonprune=\$.vodPlaybackUrls.result.playbackUrls.cuepoints,all,domain=amazon.com|amazon.co.jp|amazon.de|amazon.co.uk|primevideo.com
@@ -30728,7 +30729,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||m.olx.pl/api/v*/ads/*?adId=
 @@||m.rp5.*/mobile/scripts/adblocker.js$domain=m.rp5.ru|m.rp5.by|m.rp5.kz|rp5.md
 @@||m.rp5.*/mobile/scripts/adtop.js$domain=m.rp5.ru|m.rp5.by|m.rp5.kz|rp5.md
-@@||m.sktuniverse.co.kr/html/template/*.html$xmlhttprequest,elemhide,jsinject,extension
 @@||m.thepiratebay.org/comments.php
 @@||m.thepiratebay.org/js/prototype-min.js
 @@||m.thepiratebay.org/search.php?
@@ -31728,6 +31728,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arhplyrics.in
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arkadium.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=asiaon.top
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=asiatv.one
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=askpaccosi.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=assistouest.fr
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=audiostereo.pl
@@ -38042,6 +38043,7 @@ asiaon.top#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com', 'true')
 asiaone.com##.trending-ad-wrapper
 asiaone.com##section[id*="-qoo10-box-"]
 asiaone.com#@#.main-ads
+asiatv.one#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'adblock')
 asilmedia.org###banner
 asilmedia.org##a[href^="http://yangi-kinolar.ru/"]
 asilmedia.org##a[href^="https://yourbonus.online/"]
@@ -39262,10 +39264,14 @@ behealthymagazine.abczdrowie.pl##article a[href^="https://www.zabka.pl/?utm_sour
 behindwoods.com##.body_bg_anchor
 behindwoods.com#@##sponsorText
 beianbeian.com##div[style="height: 62px;margin-bottom: 20px;"] + .layui-table
+beincrypto.com##.aff-primary
+beincrypto.com##.aff-secondary
 beincrypto.com##.badge--sponsored
 beincrypto.com##.before-author-block-bio:has-text(Sponsored)
 beincrypto.com##.cont-wrapper
+beincrypto.com##.multi-news-card:has(> .cont-wrapper)
 beincrypto.com#%#//scriptlet('abort-on-property-write', 'absrc')
+beincrypto.com#?#.before-author-block-bio:contains(Реклама)
 beinmatch.*###sponsor
 beinmatch.*#%#//scriptlet("abort-on-property-read", "S9tt")
 beinmatch.*#%#//scriptlet("prevent-window-open", "!/home/")
@@ -67051,6 +67057,7 @@ quizlet.com###targetDiv-setpage_billboard
 quizlet.com##.SiteAd
 quizlet.com#%#//scriptlet('adjust-setTimeout', '-1', '*', '0.02')
 quizlet.com#%#//scriptlet('set-constant', 'Object.prototype.isRenderingAdInFlashcardAd', 'false')
+quizlet.com#%#//scriptlet('set-constant', 'adshield', 'emptyObj')
 quizlet.com#?##__next > div[class] > div[class][style] > div[class][style*="--"][style*="block"]:has(> .SiteAd:only-child)
 quizlet.com#?#.ExplanationsSolutionStep ~ div:has(> div.SiteAd)
 qunar.com##.flight_ad
@@ -86410,6 +86417,7 @@ zzzyk.com###Tinfo
 ||forex.com.cn/statics/images/ewm.jpg
 ||forexforum.co/banad.jpg
 ||forgood.co.za/api/tracking/
+||form.typeform.com/forms/*/insights/
 ||forms.aweber.com^*/displays.htm?id=
 ||formstack.com/forms/analytics.php
 ||formstack.com/forms/js/*/analytics_
@@ -89609,6 +89617,7 @@ zzzyk.com###Tinfo
 ||loli.net/2020/06/17/vGALJ4mQx26T75u.gif
 ||loli.net/2023/05/08/w4aGFUIVmKgOT78.
 ||loli.net^$domain=9kanqq.com|acglover.me|hdsky.me|magnet2048.com|nulltm.com
+||lolithon.nl/affiliates/
 ||lolshipin.com/zt/sxx/
 ||lolwot.com/B5xaqzSGvMTM.js
 ||lone-pack.com^$popup
@@ -92637,6 +92646,7 @@ zzzyk.com###Tinfo
 ||res.ab.qq.com/tab/$script
 ||res.cloudinary.com/*/Ads*/preroll_candy$media,redirect=noopmp3-0.1s
 ||res.cngoldres.com/web/index/img/*_ad_
+||res.sooplive.co.kr/script/player/service-maintenance.js
 ||res.vps234.com/resources/images/hosting-promotion/
 ||resdata.nftbaoyi.com/images/ad/
 ||researchers.pw^$domain=yodesiserial.su
