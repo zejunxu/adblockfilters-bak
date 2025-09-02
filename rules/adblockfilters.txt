@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250902163111
-! Last modified: 2025/09/02 16:31:11
-! Blocked Filters: 97445
+! Version: 20250903002902
+! Last modified: 2025/09/03 00:29:02
+! Blocked Filters: 97458
 !
 ###AC_ad
 ###AD_160
@@ -36908,6 +36908,7 @@ amazingribs.com###main-body-wedge
 amazingribs.com##div[class*="ad-space-"]
 amazon.*###desktop-dp-ilm_feature_div_01
 amazon.*###dp-container > #px-profile_feature_div[data-csa-c-type="widget"]
+amazon.*###faceoutContainer:has(> [class$="sponsored-label"])
 amazon.*###nav-swmslot
 amazon.*###sc-rec-bottom
 amazon.*###sc-rec-right
@@ -36951,7 +36952,6 @@ amazon.*##div[class*="SponsoredProducts"]
 amazon.*##div[class*="_dpNoOverflow_"][data-idt]
 amazon.*##div[class*="btf_ad-placements-"]
 amazon.*##div[data-a-carousel-options*="\\\"isSponsoredProduct\\\":\\\"true\\\""]
-amazon.*##div[data-ad-id]
 amazon.*##div[data-cel-widget="sp-rhf-desktop-carousel_desktop-rhf_1"]
 amazon.*##div[data-cel-widget="sp-shiptrack-desktop-carousel_desktop-yo-shiptrack_0"]
 amazon.*##div[data-cel-widget^="MAIN-SHOPPING_ADVISER-"]
@@ -37652,6 +37652,7 @@ apkandroidhub.in#$#.g-recaptcha { margin-top:60px !important; }
 apkandroidhub.in#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 apkcombo.app##.diseanmevrtt
 apkcombo.app##div[style^="margin-bottom"]:has(> script[data-cfasync])
+apkcombo.com##.ad-pss
 apkcombo.com##.ads-revamp
 apkcombo.com##.calc-container
 apkcombo.com##.diseanmevrtt
@@ -50916,6 +50917,9 @@ gohome.com.hk,idv.st#@##adFrame
 gold-24.net#%#//scriptlet("set-constant", "getalladblocks", "noopFunc")
 gold-24.net,bedavahesap.org##.back-top + div[id][class*=" "]
 goldderby.com##.adma
+goldengoalsfinance.com###AdbModel
+goldengoalsfinance.com##div[class^="pro_ad_"]
+goldengoalsfinance.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'pagead2.googlesyndication.com')
 golderotica.com,nudeplayboygirls.com##body > div#topbar
 goldprice.org##.kenbi
 goldtraders.or.th##div[class^="banner"]
@@ -52486,6 +52490,7 @@ herexxx.com###video-interlacing
 herexxx.com##.videos > div:not([id])
 herexxxtube.com#?#body > div.container:has(> h2:contains(/^Recommended$/))
 herfamily.ie,sportsjoe.ie###div-gpt-top_page
+hermitcraft.com###sidebaradcontainer
 heroesfire.com,vaingloryfire.com##.sidebar-feature.add.box
 heroine.cz##.n-ads-branding-spacer
 herokuapp.com#%#//scriptlet("set-constant", "gadb", "false")
@@ -67751,6 +67756,10 @@ realgfporn.com##.video-bottom-a
 realgfporn.com#@#.large-right-ad
 realityblurb.com##.Desktop-Sticky
 realitytea.com##.roadblock
+realitytvshrine.com,thedailymash.co.uk,thetab.com###ad-sidebar-1
+realitytvshrine.com,thedailymash.co.uk,thetab.com###ad-sidebar-2
+realitytvshrine.com,thedailymash.co.uk,thetab.com###ad-sidebar-3
+realitytvshrine.com,thedailymash.co.uk,thetab.com###ad-sidebar-4
 realitytvworld.com##[style="background-color: white; background: white"]
 realitytvworld.com##[style="margin: 5px 0px 5px; display: inline-block; text-align: center; height: 250;"]
 realitytvworld.com##font[size="1"][color="gray"]
@@ -69046,7 +69055,8 @@ scriptinghelpers.org##.shvertise-skyscraper
 scroll.in##.in-article-adx
 scrolller.com###object_container
 scrolller.com##.gallery-view > .vertical-view > .vertical-view__columns > .vertical-view__column > a[href^="https://trk.scrolller.com/"]
-scrolller.com##.popup--sticky:not(:has(div.login_popup_box))
+scrolller.com##.popup--sticky:has(img[class^="HeaderImage_"][src*="-ads.png"])
+scrolller.com##.popup--sticky:not(:has(:is(div.login_popup_box, button[class^="PrimaryCloseButton_"])))
 scrolller.com##.vertical-view__column > .vertical-view__item:has(> div[style$="overflow: hidden;"])
 scrolller.com##a[href^="https://trk.scrolller.com/"]
 scrolller.com##button[aria-label="Close fullscreen"] + div[class^="sc-"]
@@ -70114,6 +70124,11 @@ skipol.pl##div[id^="makler-"]
 skipol.pl#$#header { height: 10px !important; }
 skipol.pl#?##content > aside > h2:contains(/^Reklama$/)
 skipser.com##.skipserad
+sklinker.in#$##modalpop { display: none !important; }
+sklinker.in#$##overlaypop { display: none !important; }
+sklinker.in#$#body { overflow: auto !important; }
+sklinker.in#%#//scriptlet('abort-current-inline-script', '$', 'Adblock')
+sklinker.in#%#//scriptlet('abort-current-inline-script', 'EventTarget.prototype.addEventListener', 'document.body.innerHTML')
 skmedix.pl###__nuxt > div > .text-center[style^="position: fixed; bottom:"][style*="background-color"]
 skmedix.pl#$#.adsbygoogle { height: 3px !important; display: block !important; }
 skmedix.pl#$#body .textads.adsbox { display: block !important; height: 2px !important; }
@@ -73349,10 +73364,6 @@ thedailybeast.com##aside > div[style*="min-height:600px"][style*="min-width:300p
 thedailybeast.com##div[data-pos2]
 thedailydigest.com##.promocion_celda
 thedailymash.co.uk##.border-brand
-thedailymash.co.uk,thetab.com###ad-sidebar-1
-thedailymash.co.uk,thetab.com###ad-sidebar-2
-thedailymash.co.uk,thetab.com###ad-sidebar-3
-thedailymash.co.uk,thetab.com###ad-sidebar-4
 thedailystar.net###dsspHS
 thedailystar.net##.block-region-footer-sticky
 thedailystar.net##.pane-ad-pane
@@ -74061,7 +74072,9 @@ theweathernetwork.com##.gGthWi
 theweathernetwork.com##[data-testid="content-feed-ad-slot"]
 theweathernetwork.com##[data-testid="header-ad-content"]
 theweathernetwork.com##[data-testid="pre-ad-text"]
+theweathernetwork.com##div[data-testid="ad-with-pre-text"]
 theweathernetwork.com##div[data-testid="div-gpt-ad-topbanner"]
+theweathernetwork.com##div[data-testid="forecast-module-row"] > div[class^="sc-"]:has(> div[data-testid="ad-with-pre-text"]:only-child)
 theweathernetwork.com##div[data-testid="post-ad-text"]
 theweathernetwork.com##div[data-testid="pre-ad-text"]
 theweathernetwork.com##div[data-testid="pre-ad-text"] + div[class]
@@ -82342,6 +82355,7 @@ zzzyk.com###Tinfo
 ||allsportsflix.$document
 ||allsportsflix.best^$popup
 ||allsportsflix.top^$popup
+||allsportsflix.xyz^$popup
 ||allsporttv.com^$popup
 ||allyes.
 ||allyes.$third-party
@@ -85075,7 +85089,6 @@ zzzyk.com###Tinfo
 ||crxs.me/upload/ad/
 ||crypto-coins.com^$third-party
 ||crypto-fire.website/mine/partner/$third-party
-||cryptobara.com^$third-party
 ||cryptofans.news/frame/OfferPack?
 ||cryptomininggame.com/uploads/partner/images/
 ||cryptonoter.com^$third-party
@@ -86362,7 +86375,6 @@ zzzyk.com###Tinfo
 ||fbsbx.com/paid_ads_pixel/
 ||fc.lc/*.html$~third-party,subdocument
 ||fc.lc/CustomTheme/img/ref$third-party
-||fc2.com/counter_img.php?
 ||fc2fan.net/js/check_focus.js
 ||fcw45.com/js/layer1.js^
 ||fd.nl/pixel/
@@ -87907,7 +87919,6 @@ zzzyk.com###Tinfo
 ||hqq.tv/out.php?$popup
 ||hqtube.xxx/api/pu/
 ||hqtube.xxx/tmp/
-||hrbpark.bid^$third-party
 ||hrjg.com.cn^$third-party
 ||hs.cnfol.com/Cm/Imgs/Load.gif
 ||hs.fi/stats
@@ -89898,6 +89909,7 @@ zzzyk.com###Tinfo
 ||lxax.com/_ad
 ||lxbjs.baidu.com^$third-party
 ||lycc72.com/resources/js/content.js
+||lycheenews.com^$popup
 ||lycos.com/catman/
 ||lycos.com/hb.js
 ||lyd.com.cn^*950-90.
@@ -93255,6 +93267,7 @@ zzzyk.com###Tinfo
 ||script.idgentertainment.de/gt.js
 ||script.mixi.net/static/js/build/mixi-analysis-.production.js
 ||scripts.dailymail.co.uk/static/mol-adverts/*.css
+||scripts.dkmedia.vercel.app/popunders/
 ||scripts.swifteq.com/hc_events.js
 ||scriptsgratuits.com/sg/stats/
 ||sd.yhzzzs*.com^
