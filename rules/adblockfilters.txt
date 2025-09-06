@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250906002605
-! Last modified: 2025/09/06 00:26:05
-! Blocked Filters: 97206
+! Version: 20250906094054
+! Last modified: 2025/09/06 09:40:54
+! Blocked Filters: 97211
 !
 ###AC_ad
 ###AD_160
@@ -15529,7 +15529,7 @@ $script,third-party,domain=hitomi.la|rule34hentai.net,badfilter
 $script,third-party,domain=imgbox.com
 $script,third-party,domain=ouo.io|ouo.press
 $script,third-party,domain=rule34hentai.net
-$script,third-party,domain=torkitty.net|torkitty.com|torrentkitty.app|torrentkitty.asia|torrentkitty.cam|torrentkitty.ink|torrentkitty.io|torrentkitty.live|torrentkitty.lol|torrentkitty.net|torrentkitty.one|torrentkitty.se|torrentkitty.tv|torrkitty.com
+$script,third-party,domain=torkitty.net|torkitty.com|torrentkitty.app|torrentkitty.asia|torrentkitty.cam|torrentkitty.ink|torrentkitty.io|torrentkitty.live|torrentkitty.lol|torrentkitty.net|torrentkitty.one|torrentkitty.tv|torrkitty.com
 $script,third-party,domain=xiaoyakankan.com|52movieba.com|audio699.com|kan-tv.com|m.supfree.net|movieffm.net|xiaoxintv.cc|xiaoxintv.com|xiaoxintv.net
 $script,third-party,websocket,domain=52codes.net
 $script,third-party,xmlhttprequest,domain=abcvideo.cc
@@ -27638,6 +27638,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||connatix.com*/connatix.player.$script,domain=ebaumsworld.com|funker530.com|tvinsider.com|washingtonexaminer.com
 @@||connatix.com/min/connatix.renderer.infeed.min.js$domain=accuweather.com|collider.com|gamepress.gg|salon.com
 @@||connatix.com^$domain=accuweather.com
+@@||connatix.com^$domain=euronews.com
 @@||connatix.com^$domain=sport-fm.gr|sport24.gr|variety.com
 @@||connect.facebook.*/en_US/AudienceNetworkPrebid.js$domain=cbssports.com
 @@||connect.facebook.net/en_US/fbevents.js$domain=irishradiolive.com|myonlineradio.at|myonlineradio.de|myonlineradio.hu|myonlineradio.nl|myonlineradio.sk|myradioendirect.fr|myradioenvivo.ar|myradioenvivo.mx|myradioonline.cl|myradioonline.es|myradioonline.it|myradioonline.pl|myradioonline.ro|ukradiolive.com
@@ -46690,6 +46691,10 @@ euronews.com#$#div.pub.ad.advertising.adzone.sponsored[data-ad-name] { display: 
 euronews.com#$?##o-site-hr__leaderboard-wallpaper.u-show-for-xlarge { remove: true; }
 euronews.com#?#.m-object:has(.m-object__quote:-abp-contains(/In partnership with|En partenariat avec|Mit Unterstützung von|In collaborazione con|En colaboración con|Em parceria com|Совместно с|ile birlikte|Σε συνεργασία με|Együttműködésben a|با همکاری|بالمشاركة مع/))
 euronews.com#?#.u-hide-for-medium-only:has(> div[class] div[data-ad-id])
+euronews.com#@##connatix-container
+euronews.com#@#.cnx-player-wrapper
+euronews.com#@#.connatix-container
+euronews.com#@#[data-ad-name]
 europaplus.ru#@#img[width="240px"][height="400px"]
 europeangaming.eu###mvp-leader-wrap > a[href^="https://www.softswiss.com/"]
 europeanpharmaceuticalreview.com##.europ-fixed-footer
