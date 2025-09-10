@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250910002844
-! Last modified: 2025/09/10 00:28:44
-! Blocked Filters: 97389
+! Version: 20250910094242
+! Last modified: 2025/09/10 09:42:42
+! Blocked Filters: 97396
 !
 ###AC_ad
 ###AD_160
@@ -15612,6 +15612,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 *##.adbox
 *##.adtable
 *##div.a_mu,div.a_h,div.ad_pic,div.wp.a_f,div.wp.a_t,div.a_pb,div.a_pt,div.a_pr,div.a_cn,#ggPar,#preAdContent
+*$denyallow=123dua.com,domain=123dua.com,script,xmlhttprequest
 *$denyallow=efuxs.com,domain=efuxs.com,script,subdocument,xmlhttprequest
 *$denyallow=qiexs.cc|ququge.cc,domain=qiexs.cc|ququge.cc,xmlhttprequest,image,script
 *$denyallow=tszw.org,subdocument,script,xmlhttprequest,domain=tszw.org
@@ -29263,8 +29264,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||haaretz.co.il/htz/js/advertisement.js
 @@||haaretz.co.il/logger/p.gif?$image,xmlhttprequest
 @@||haaretz.co.il^$elemhide
-@@||haaretz.com/ad/dclk^
-@@||haaretz.com/htz/js/advertisement.js
 @@||haaretz.com^$generichide
 @@||habbokritik.de/FuckAdBlock/fuckadblock.js
 @@||hackingwithphp.com/js/adsbygoogle.js
@@ -32212,6 +32211,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=getintoway.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=getthit.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=googledrivelinks.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=haaretz.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=hacksnation.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=helper-employer.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=howkteam.vn
@@ -51400,7 +51400,9 @@ haaretz.com##div + div:has(> div[data-adunit])
 haaretz.com##div[data-test="bottomStrip"]
 haaretz.com##div[data-test="topStrip"]
 haaretz.com#%#//scriptlet("prevent-addEventListener", "load", "hblocked?returnTo")
+haaretz.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 haaretz.com#?#div[data-google-interstitial="false"]:has(> div[class] > div[class] > section > a[href^="/promotions-page?"])
+haaretz.com#@#.banner-ad
 habermarmara.com.tr,murekkephaber.com,akdenizbulten.com,thecruiselife.com.tr,mansetizmir.com,denizliekspres.com.tr,izmirhabermerkezi.com,saatbasihaber.com,mahalligundem.com##img[alt="Reklam"]
 hackedfreegames.com#$##Content > div[itemscope="itemscope"] > div[style*="height"][style*="padding-top:"] { position: absolute!important; left: -3000px!important; }
 hackedonlinegames.com##.GameTitle > div[style="height: 110px;"]
@@ -58841,6 +58843,7 @@ majorgeeks.com##.content > b > font[color="#00000f"] + a[rel="nofollow"]
 majorgeeks.com##.content > table.alford
 majorgeeks.com##.geekycolumn > b > font[color="#000000"]
 majorgeeks.com##.geekycolumn > b > font[color="#000000"] + a[rel="nofollow"]
+majorgeeks.com##.geekywraplight > div[style]:has(> a[href^="https://www.majorgeeks.com/mgc/ib/index.php?"])
 majorgeeks.com##.highlight.content > center > font
 majorgeeks.com##[style*="background-color:"]:has(> a[href*="&utm_source"])
 majorgeeks.com#$#.cbola-banner-structure { position: absolute!important; left: -3000px!important; }
@@ -60279,6 +60282,10 @@ mob.hr##.side_banner
 mobafire.com##.r-home__guides__ad
 mobafire.com##.venatus-responsive-ad
 mobafire.com##.vid-wrap
+mobalytics.gg##.m-17psdf9
+mobalytics.gg##.m-1hsuptt
+mobalytics.gg##.m-bz6vl
+mobalytics.gg##aside > [class]:has-text(Advertisement)
 mobalytics.gg##div[style^="width: 400px; height:"]
 mobalytics.gg##main > div[class]:has(> div[class]:only-child > div[data-fuse]:only-child)
 mobalytics.gg##section[data-section-id] > div[class]:has(> section#ad-placeholder-id)
@@ -69153,7 +69160,7 @@ secretmine.net###main-content > br
 secretmine.net###main-content > center
 secretmine.net##.background-cover
 secretmine.net##div[id^="secre-"]
-secretsanfrancisco.com#?##content > .google-ad-manager-ads-header
+secretsanfrancisco.com#?#.google-ad-manager-ads-header
 sector.sk##.conte
 sector.sk##.videtop
 sector.sk##img[style*="max-width:660px;"][style*="width:100%;"]
