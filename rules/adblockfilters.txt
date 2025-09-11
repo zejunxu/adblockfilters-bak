@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250911002841
-! Last modified: 2025/09/11 00:28:41
+! Version: 20250911094525
+! Last modified: 2025/09/11 09:45:25
 ! Blocked Filters: 97239
 !
 ###AC_ad
@@ -17192,7 +17192,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /120_600_
 /120x600-
 /120x600.
-/120x600/*
 /120x600_
 /121sdw/*$script,third-party
 /125x600-
@@ -18137,7 +18136,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /ads_iframe.$subdocument
 /ads_image/*$image
 /ads_images/*$image,domain=~wildlifeauctions.co.za
-/ads_prebid_async.js$script
 /adsadclient
 /adsbanner-$image
 /adsbanner/*$image
@@ -31842,7 +31840,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=forum.release-apk.com,stealth,important
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fox.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebinchecker.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebnbcoin.com|exotictgirl.blogspot.com|bospedia.com|rockmods.net|aiimsneetshortnotes.com|arabseed.onl|miuiku.com|tatangga.com|flash-firmware.blogspot.com|rumahit.id|romfirmware.com|gsmfirmware.net|akwam.*|fc-lc.com|fc.lc|note1s.com|paste1s.com|ipacrack.com|traffic1s.com|adnews.me|ak4eg.*|xn--mgba7fjn.*|akw.to|ak4ar.*|nguyenvanbao.com|ak.sv|akw.cam|indokontraktor.com|shahee4u.cam|batch-kun.com|shahid4u.*|neosatsu.com|shahidd4u.net|shahiid4u.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebnbcoin.com|exotictgirl.blogspot.com|bospedia.com|rockmods.net|aiimsneetshortnotes.com|arabseed.onl|miuiku.com|tatangga.com|flash-firmware.blogspot.com|rumahit.id|romfirmware.com|gsmfirmware.net|akwam.*|fc-lc.com|fc.lc|note1s.com|paste1s.com|ipacrack.com|traffic1s.com|adnews.me|ak4eg.*|xn--mgba7fjn.*|akw.to|ak4ar.*|nguyenvanbao.com|ak.sv|akw.cam|indokontraktor.com|shahee4u.cam|batch-kun.com|shahid4u.*|neosatsu.com|shahidd4u.net|shahiid4u.net|shahid-4u.day
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freecoursesonline.me
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freeiptvgen.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freemagazines.top
@@ -49842,6 +49840,7 @@ gameskinny.com##div[id^="div-sjr-"]
 gameslay.net##a[rel="noreferrer nofollow"] > img
 gameslol.net##.pubGside
 gameslol.net,yabiladi.com##.pub_header
+gamesmarket.global##.MuiBox-root > .MuiBox-root:has(> .adSlot)
 gamesofdesire.com###chat
 gamesofdesire.com###maincol > div.game_box:has(> a[href="https://www.mnfclub.com"])
 gamesofdesire.com##[alt="banner"]
@@ -58550,6 +58549,8 @@ macperformanceguide.com##.placementTL
 macperformanceguide.com##.placementTR
 macperformanceguide.com##div[class^="placement"]
 macrocreator.com,msonglyrics.com##nav + div[id][class*=" "]
+macromicro.me#%#//scriptlet('abort-current-inline-script', '$', '/deposit-bonus?platform=26&utm_source=')
+macromicro.me#%#//scriptlet('abort-current-inline-script', '$', 'mmPopup() {')
 macrotrends.net###leaderboardTag
 macrotrends.net###subLeaderboardTag
 macrotrends.net##.adx_top_ad
@@ -69436,6 +69437,7 @@ shabdkosh.com#?#.col-sm-4 > h3:contains(Sponsored Link)
 shabdkosh.com#?#.text-uppercase.text-center:contains(/^Advertisement$/)
 shabdkosh.com#?#div:not([class], [id]) > .text-center:has(> a[href="/payments/"]:only-child)
 shacknews.com##.lola-affirmation
+shahid-4u.day,shsaahid4u.net,shahiid4u.net,shahidd4u.net,neosatsu.com,shahid4u.*,batch-kun.com,iosviet.com,shahee4u.cam,indokontraktor.com,freebnbcoin.com,exotictgirl.blogspot.com,adnews.me,traffic1s.com,ipacrack.com,oii.io,paste1s.com,note1s.com,fc.lc,fc-lc.com,akwam.*,arabseed.*,miuiku.com,tatangga.com,flash-firmware.blogspot.com,rumahit.id#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'ignielAdBlock')
 shahid.mbc.net#$#.pub_300x250.pub_300x250m.pub_728x90.text-ad.textAd.text_ad.text_ads.text-ads.text-ad-links { display:block!important; }
 shahid.mbc.net#%#//scriptlet('prevent-fetch', 'doubleclick.net/gampad/ads')
 shameless.com##.player > .pause-gift
@@ -69671,7 +69673,6 @@ shrtfly.net#%#//scriptlet("abort-on-property-read", "tabUnder")
 shrtz.me##div[style*="padding-top:10px;"][style*="width:300px;"]
 shsaahid4u.net,shahiid4u.net,shahidd4u.net,neosatsu.com,batch-kun.com,shahee4u.cam,indokontraktor.com,akw.cam,ak.sv,nguyenvanbao.com,ak4ar.*,akw.to,xn--mgba7fjn.*,ak4eg.*,adnews.me,traffic1s.com,ipacrack.com,oii.io,paste1s.com,note1s.com,fc.lc#$#body { overflow: auto !important; }
 shsaahid4u.net,shahiid4u.net,shahidd4u.net,neosatsu.com,shahee4u.cam,indokontraktor.com#$#.ignielAdBlock { display: none !important; }
-shsaahid4u.net,shahiid4u.net,shahidd4u.net,neosatsu.com,shahid4u.*,batch-kun.com,iosviet.com,shahee4u.cam,indokontraktor.com,freebnbcoin.com,exotictgirl.blogspot.com,adnews.me,traffic1s.com,ipacrack.com,oii.io,paste1s.com,note1s.com,fc.lc,fc-lc.com,akwam.*,arabseed.*,miuiku.com,tatangga.com,flash-firmware.blogspot.com,rumahit.id#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'ignielAdBlock')
 shtfplan.com##.overlay-container
 shtms.co,gitizle.vip,ay.live#%#//scriptlet('remove-attr', 'data-ppcnt_ads', 'main')
 shtms.co,gitizle.vip,ay.live#%#//scriptlet('set-constant', 'mainClick', 'undefined')
@@ -90426,8 +90427,8 @@ zzzyk.com###Tinfo
 ||multporn.net/balolo.php
 ||multporn.net/fern*_pen.js
 ||multporn.net/frunti_punti_lad.js
-||mumu66666.com/js/cdn.js
-||mumu66666.com/js/html*.js$script
+||mumu*.com/js/cdn.js$~third-party
+||mumu*.com/js/html*.js$script,~third-party
 ||mundodesconocido.com/tracker/
 ||muragon.com/js/normal/gtag-event.js
 ||museter.com/track.php?
@@ -96866,7 +96867,6 @@ zzzyk.com###Tinfo
 ||youth.cn/qwtf2015/
 ||youtnbe.xyz/asset/*.min.js?*=*&
 ||youtnbe.xyz/asset/bull.js
-||youtube-nocookie.com/api/stats/atr?ns=
 ||youtube-nocookie.com/api/stats/qoe?
 ||youtube-nocookie.com/ptracking?
 ||youtube-nocookie.com/robots.txt?
