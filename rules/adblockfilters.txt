@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250913002438
-! Last modified: 2025/09/13 00:24:38
-! Blocked Filters: 97646
+! Version: 20250913093701
+! Last modified: 2025/09/13 09:37:01
+! Blocked Filters: 97655
 !
 ###AC_ad
 ###AD_160
@@ -20031,6 +20031,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /jquery.peelback.$script
 /jquery.popunder.js
 /jquery.trackstar.js
+/js-responsive/minimal-analytics-$script
 /js-sdk-event.min.js
 /js/AD_tv.js
 /js/_analytics.js
@@ -36202,7 +36203,7 @@ adspecials.us,ajanlatok.hu,akcniletak.cz,catalogosofertas.cl,catalogosofertas.co
 adsrt.com###frme1
 adsrt.com##.SC_TBlock
 adsrt.com##div[id^="M"][id*="Preload"]
-adswikia.com,arcadepunks.com,freemalaysiatoday.com,landandfarm.com,pointblanknews.com,radiotoday.com.au,runt-of-the-web.com,rxresource.org,techworldgeek.com,warisboring.com##.header-banner
+adswikia.com,arcadepunks.com,freemalaysiatoday.com,landandfarm.com,pointblanknews.com,radiotoday.com.au,rsbnetwork.com,runt-of-the-web.com,rxresource.org,techworldgeek.com,warisboring.com##.header-banner
 adtunes.com#@##ad_thread_first_post_content
 adult-sex-games.com###skyscraper
 adult-sex-games.com##div[style$="width: 520; height: 120;"]
@@ -39305,6 +39306,7 @@ beincrypto.com##.before-author-block-bio:has-text(Sponsored)
 beincrypto.com##.cont-wrapper
 beincrypto.com##.entry-content > small.text-grey-600
 beincrypto.com##.multi-news-card:has(> .cont-wrapper)
+beincrypto.com##aside[class^="Aside-"] > div.ant-card:has(div[data-analytics-events])
 beincrypto.com##div[class^="TopAdBanner-"]
 beincrypto.com#%#//scriptlet('abort-on-property-write', 'absrc')
 beincrypto.com#?#.before-author-block-bio:contains(Реклама)
@@ -68618,6 +68620,7 @@ rrjc.com###alertBox
 rrjc.com##.coupletbox
 rrys2020.com###indexNav1
 rrys2020.com##.corner > LI > A[href*="yyets."]
+rsbnetwork.com##div[id^="rsbne-"]
 rshrt.com###headlineatas
 rspro.xyz#@#.body-top-ads
 rspro.xyz#@#.c-ads
@@ -80559,6 +80562,9 @@ zdrowie.wprost.pl##.header-partner
 zedporn.com#?#.main > h2:contains(Suggested for)
 zee5.com##div[playeradtag="ad"]
 zeebiz.com##.daburbanner
+zeeemedia.com##.elementor-element-38f90a1e
+zeeemedia.com##.elementor-element-4be78740
+zeeemedia.com##.elementor-element-ad955f4
 zeefiles.download#%#//scriptlet("prevent-window-open")
 zeekmagazine.com##.td-all-devices
 zeenews.india.com##.add-placeholder
@@ -84501,6 +84507,7 @@ zzzyk.com###Tinfo
 ||centurys.net/promo_
 ||cenyou.net/wp-content/uploads/1200-200.
 ||ceros.com/a?data
+||cesar-it.de/collect/
 ||cesu.ai/uploads/AdvertImages/
 ||cesu.urssaf.fr/clm10
 ||cex.io/img/b/
@@ -87526,6 +87533,7 @@ zzzyk.com###Tinfo
 ||gushiwen.org/getTicket.aspx
 ||gwbnsh.net.cn/hd/unicom/ad.html
 ||gxnews.com.cn/clientscript/index_duilian_
+||gyazo.com^$domain=turbobit.net
 ||gyorietokc.hu/images/partnerek/kiemelt/
 ||gyorietokc.hu/uploads/banner/
 ||gywb.cn/cs_mulu/
@@ -90676,6 +90684,7 @@ zzzyk.com###Tinfo
 ||mon-*.tiktokv.com^
 ||mon-pagerank.com^$third-party
 ||mon-va*.capcutapi.com^
+||monetarygoldgroup.com/_ub/
 ||money.pl^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/,xmlhttprequest,other,~script
 ||money.pl^$replace=/(^(WP\.[\s\S]*?\.bodies)=WP\.[\s\S]*?\.bodies\|\|\{\};[\s\S]*)//,script
 ||money.pl^$replace=/(^.{1\,150}\(\{).*?"bunch".*?"bidRequestId".*(}\);)/\$1\$2/,script
@@ -93192,6 +93201,7 @@ zzzyk.com###Tinfo
 ||rule34.xxx/images/pro.png
 ||rule34.xxx/images/r34_doll.png
 ||rule34.xxx/static/futadoll2.gif
+||rule34.xyz/api/v2/infrastructure/dynamic-meta/user
 ||rule34hentai.net/javascript_rotator*.php$important
 ||rule34hentai.net/javascript_rotator.php$important
 ||rule34hentai.net/javascript_rotatortopbanner.php$important
@@ -95456,7 +95466,6 @@ zzzyk.com###Tinfo
 ||truck1.eu/_BANNERS_/
 ||trucknetuk.com/phpBB2old/sponsors/
 ||trud.bg/public/images/autodoc.bg_300x50.gif
-||trueachievements.com/tgn/ana?*page_view
 ||trueachievements.com/true-api/livehtml/ScriptProbeModal
 ||truepeoplesearch.com/search/widgets?$xmlhttprequest
 ||trumba.com/et.aspx?
