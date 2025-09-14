@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250914002401
-! Last modified: 2025/09/14 00:24:01
-! Blocked Filters: 97698
+! Version: 20250914094914
+! Last modified: 2025/09/14 09:49:14
+! Blocked Filters: 97707
 !
 ###AC_ad
 ###AD_160
@@ -24825,6 +24825,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 ?usid=*&utid=
 ?v=2&tid=G-$~third-party
 ?whichAd=freestar&
+?wmcAction=wmcTrack&
 ?wppaszoneid=
 ?wpstealthadsjs=
 ?zoneid=*&ab=1|$script,third-party
@@ -69110,6 +69111,7 @@ samsung.com###operationBanner
 samsung.com#?#.template-item:-abp-has(> .wrap-sub-title > div > .ad)
 samsungmagazine.eu###ad_popup
 samsungmagazine.eu##.gallery-banner
+samsungmagazine.eu##.lsads-banner
 samsungmagazine.eu,letemsvetemapplem.eu#$#.headerbanner-wrapper { min-height: 0 !important; }
 samsungmagazine.eu,letemsvetemapplem.eu#$#header.lsa { margin-top: 0 !important; }
 samsungmagazine.eu,letemsvetemapplem.eu,jablickar.cz##.lsads-banner
@@ -83137,6 +83139,7 @@ zzzyk.com###Tinfo
 ||apkmody.io/pa-ad.js
 ||app-analytics-*.snapchat.com^
 ||app-bnkr.b-cdn.net/js/lv.js
+||app.abralytics.com/assets/tracker/index.js
 ||app.audiopulsar.com/*/embed/
 ||app.box.com/app-api/split-proxy/api/metrics
 ||app.box.com/gen204
@@ -83500,6 +83503,7 @@ zzzyk.com###Tinfo
 ||backend.academy.cs.cmu.edu/api/v0/event/
 ||backend.alia-cloudflare.com/launcher/events/
 ||backend.alia-cloudflare.com/user/events
+||backend.leadconnectorhq.com/attribution_service/user_session_v3/update_session/
 ||backend.leadconnectorhq.com/forms/form-survey-event
 ||backend.verbolia.com/content/js/velw.min.js
 ||backstage.bada.io/vueController/getAmazonCustomAds
@@ -84588,6 +84592,7 @@ zzzyk.com###Tinfo
 ||cdn.flyingjizz.com/js/cache/x.js
 ||cdn.galacg.me/img/*.gif
 ||cdn.galacg.me/img/*.jpg
+||cdn.gov.cfigroup.com/webmon/s/source/webmon/$domain=weather.gov
 ||cdn.gsmarena.com/vv/assets*/js/_pf-*.js
 ||cdn.gulte.com/wp-content/uploads/*/IndianClicks_Exxeella_Gulte_
 ||cdn.haokongbu1.com^*.js
@@ -92139,6 +92144,7 @@ zzzyk.com###Tinfo
 ||pictoa.com/31.js
 ||picyq.com/index.php/Home/run/get_ad/
 ||pie.org/g/collect?
+||pie.org/v1/experiments/view
 ||pierrebotton.com/global/
 ||pigav.com/cdn-cgi/apps/head/*.js
 ||piguiqproxy.com^$badfilter
@@ -93576,6 +93582,7 @@ zzzyk.com###Tinfo
 ||scribol.com/traffix/widget_tracker/
 ||script-api.kinja.com/script?
 ||script.bloggerku.com/antiadblock/1.0/script.min.js
+||script.claspo.io/forms/v1/event
 ||script.hentaicdn.com/cdn/*assets/js/Feinee
 ||script.hentaicdn.com/cdn/v*.assets/js/NATORI.
 ||script.idgentertainment.de/gt.js
@@ -94373,7 +94380,9 @@ zzzyk.com###Tinfo
 ||ssl.p.jwpcdn.com/player/plugins/vast/v/*/vast.js$xmlhttprequest,redirect=noopjs,domain=avdbapi.com
 ||ssl.p.jwpcdn.com/player/v/*/freewheel.js$domain=nbclosangeles.com
 ||ssl.p.jwpcdn.com/player/v/*/vast.js$important,domain=faselhd.cafe
+||ssl.pstatic.net/static.news/*/js/generated/aside.statistics.js$domain=media.naver.com|news.naver.com
 ||ssl.pstatic.net/static/coreplayer/mclog/media-capable-log.js$domain=naver.com
+||ssl.pstatic.net/tveta/libs/glad/*/gfp-display-sentry-logger.js$domain=news.naver.com
 ||ssl4us.*/pro.js^$third-party
 ||ssl4us.*/pro_all_min.js^$third-party
 ||ssl4us.*/pro_mov_min.js^$third-party
