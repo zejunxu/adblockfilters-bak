@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250918002834
-! Last modified: 2025/09/18 00:28:34
-! Blocked Filters: 97950
+! Version: 20250918094216
+! Last modified: 2025/09/18 09:42:16
+! Blocked Filters: 97958
 !
 ###AC_ad
 ###AD_160
@@ -36485,7 +36485,7 @@ akhbarelyom.com##div[class^="desktop-add_"] center a:not([href*="akhbarelyom.com
 akhbarelyom.com##div[id^="Ads-"]
 akhbarelyom.com##p > img[style="width: 300px; height: 250px;"]
 akhbarelyom.com#?#.internal-sidebar > div.row > div.col-md-12:not(:has(> script[src^="https://akhbarelyom.com/"])):not(:has(> div.Newsmost-reads))
-aki-h.com,archiproducts.com,benzinga.com,primewire.link,slashdot.org##.banner-wrapper
+aki-h.com,archiproducts.com,benzinga.com,dbdiagram.io,primewire.link,slashdot.org##.banner-wrapper
 akiba-online.com##.p-body-inner > div[align="center"] > a:not([href*="akiba-online.com"]) > img
 akiba-online.com##[href^="https://filejoker.net/invite"]
 akirabox.com#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', '?pub=')
@@ -52881,6 +52881,7 @@ hitime5.com###gg730
 hitomi.la##.container > div[class$="content"] > div[class]:empty
 hitomi.la##.container > div[class$="content"] > div[class]:has(> div[data-clickadilla-banner])
 hitomi.la##.content > div[class]:not([class*="-"]) {min-height:45px !important;}
+hitomi.la##.top-content > div:not(.list-title):has(> ins)
 hitomi.la##.top-content > div[class]:not([class*="-"]) {min-height:45px !important;}
 hitomi.la#%#//scriptlet('noeval')
 hivecomic.com##div[class*="SimpleIconsGoogleadsense"] > div[style] > a[href="https://store.hivetoon.com/"] > img
@@ -71831,6 +71832,7 @@ sportshub.to##div[style="margin-bottom: 800px;"]
 sportshub.to#%#//scriptlet('prevent-element-src-loading', 'script', 'pubads.g.doubleclick.net/pagead/js/adsbygoogle.js')
 sportshub.to#%#//scriptlet('remove-node-text', 'script', 'Databffbdb')
 sportshub.to,sportnews.to,topsporter.net#%#//scriptlet('prevent-xhr', 'pubads.g.doubleclick.net/pagead/js/adsbygoogle.js')
+sportsinjuryclinic.net##a[href^="https://www.upmedical.co.uk/"]
 sportsinjuryclinic.net##div[id^="sport-"]:has(> div.sport-adlabel)
 sportskeeda.com###video-player-container--
 sportskeeda.com##.primis-player-container
@@ -73797,6 +73799,7 @@ theboobsblog.com###text-74
 theboobsblog.com###text-94
 theboobsblog.com##.sidebar-content > div[id^="text-"][class$="widget_text"]
 thebookee.net,decomaniacos.es,acapellas.eu,depo-program.blogspot.com,animeuniverse.*,e9china.net,freecoursesonline.me,pianetafanta.it,freesoftpdfdownload.blogspot.com#%#//scriptlet("prevent-addEventListener", "load", "google_ad_client")
+thebrakereport.com##.adplugg
 thebrickfan.com###text-14
 thebridge.in##body .tp-ads:not(#style_important)
 thebrighterside.news##.didna-adhesion-bottom
@@ -79098,7 +79101,12 @@ wooordhunt.ru#?##content > div[style*="min-height"]:not([id]):has(> .adsbygoogle
 woopread.com##.dcads
 woorkup.com##.kinsta
 woorkup.com##.perfmatters
+woot.com##[data-test-ui="advertisement-cdm-zone-01"]
+woot.com##[data-test-ui="advertisement-cdm-zone-02"]
+woot.com##[data-test-ui="advertisement-cdm-zone-03"]
+woot.com##[data-test-ui="advertisement-cdm-zone-06"]
 woot.com##[data-test-ui^="advertisementLeaderboard"]
+woot.com##[dir="auto"]:has-text(ADVERTISEMENT)
 woowebtools.com##div[style^="padding-top:"]:has(a > img[src])
 woozooo.com##.ves
 woozworld.com###ads_iframe
