@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20250923002955
-! Last modified: 2025/09/23 00:29:55
-! Blocked Filters: 97502
+! Version: 20250923094258
+! Last modified: 2025/09/23 09:42:58
+! Blocked Filters: 97497
 !
 ###AC_ad
 ###AD_160
@@ -56439,9 +56439,9 @@ kinopoisk.ru###brandingFlash
 kinopoisk.ru##.direct-kp-customize
 kinox.lat##a[href^="/engine/player.php"]
 kio.ac##main > div:not([class], [id]) > .w-full > .min-h-4 > div[style^="height:"][style*="width:"][style$="overflow: hidden;"]:has(> script:only-child)
-kio.ac#$?#.outline-border.shrink-0 > .min-h-4:has(> .adsbygoogle) { remove: true; }
 kio.ac#%#(()=>{const e={apply:(e,o,t)=>{try{const e=o;e.length>0&&e.length<5&&"object"==typeof e[0]&&null!==e[0]&&Object.hasOwn(e[0],"blocked")&&(e.forEach((e=>{e&&"object"==typeof e&&Object.hasOwn(e,"blocked")&&(e.blocked=!1)})),o=e)}catch(e){}return Reflect.apply(e,o,t)}};window.Array.prototype.some=new Proxy(window.Array.prototype.some,e)})();
 kio.ac#%#(()=>{const n={construct:(n,o,t)=>{const c=o[0];return"function"==typeof c&&c.toString().includes("(){Date.now()>=")&&(o[0]=()=>{}),Reflect.construct(n,o,t)}};window.Promise=new Proxy(window.Promise,n)})();
+kio.ac#%#(()=>{const t=window.Set.prototype.has,o={apply:(o,e,p)=>{try{if(4===p[0])return window.Set.prototype.has=t,!0}catch(t){}return Reflect.apply(o,e,p)}};window.Set.prototype.has=new Proxy(window.Set.prototype.has,o)})();
 kio.ac#%#(()=>{const t={apply:(t,e,r)=>{try{3===e.length&&e.every((t=>"function"==typeof t&&t.toString().includes("element:")))&&(r[0]=()=>!1)}catch(t){}return Reflect.apply(t,e,r)}};window.Array.prototype.map=new Proxy(window.Array.prototype.map,t)})();
 kio.ac#%#//scriptlet('prevent-element-src-loading', 'script', 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
 kio.ac#@#.ad-slot
@@ -85077,7 +85077,6 @@ zzzyk.com###Tinfo
 ||cztv.com/201506/02/124d35111e8f180c96f99acbcbdf5de6.jpg
 ||d*.ruiwen.com^
 ||d*.xinshipu.com^
-||d-1.co^$third-party
 ||d-pa.ppstatic.pl/frames/$image,badfilter
 ||d.line-scdn.net/*/torimochi.js/*/torimochi.js$script,redirect=googletagservices-gpt,domain=line.me
 ||d1.yingyongge.com/production/*/production/ihth.js
@@ -87644,7 +87643,6 @@ zzzyk.com###Tinfo
 ||historyextra.com/static/advertising/
 ||hisurnhuh.com^$popup
 ||hit-360.com^$third-party
-||hit2k.com^$third-party
 ||hitad.lk/Widget/widget_$third-party
 ||hitime5.com/skin/css/*.js
 ||hitleap.com/assets/banner
@@ -89342,7 +89340,6 @@ zzzyk.com###Tinfo
 ||lancdn.com/tmp3/GG_Notice.png
 ||lancenet.com.br/pw.js
 ||lancome-usa.com/IZ/PXq99AlOxk/init.js
-||landingpg.com^$third-party
 ||langxi.org/langxi/*900$image,object
 ||langya.cn/2014html/2014ad_
 ||langya.cn/2014html/ad/
@@ -95630,7 +95627,6 @@ zzzyk.com###Tinfo
 ||updateenow.com^$popup
 ||updateland.com/wp-content/uploads/*/Amazon-Prime-Video
 ||upfastfile.com/upload/natogame_
-||upgiveunsteps.shop^$popup
 ||upi.com/story/stat/
 ||upload.cc/i1/*.gif$domain=ddav.org
 ||upload.cc/i1/2020/07/13/8BGJiL.gif
@@ -95658,7 +95654,6 @@ zzzyk.com###Tinfo
 ||uplynk.com/*.m3u8$replace=/#UPLYNK-SEGMENT: \S*\\,ad\s[\s\S]+?((#UPLYNK-SEGMENT: \S+\\,segment)|(#EXT-X-ENDLIST))/\$1/,domain=hgtv.com|diynetwork.com|abc11.com|abc7.com|abc7news.com|abc13.com|6abc.com|abc7chicago.com|discovery.com|fox.com|investigationdiscovery.com|sciencechannel.com|motortrend.com|tlc.com|abc7ny.com,important
 ||uponelectabuzzor.club^$popup
 ||upornia.com/yxpffpuqtjc/
-||uppit.ml/bootstrap.js
 ||uprinting.com/muffins/UPTracker-
 ||ups.com/assets/resources/images/affiliate/
 ||ups.com/img/icp.gif
