@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251005002505
-! Last modified: 2025/10/05 00:25:05
+! Version: 20251005095232
+! Last modified: 2025/10/05 09:52:32
 ! Blocked Filters: 97828
 !
 ###AC_ad
@@ -56448,7 +56448,6 @@ k-mag.pl##.c-site-banner
 k-mag.pl##.rotating-banners--desktop
 k12reader.com#$#.pub300x250.pub300x250m.pub728x90.text-ad { display: block !important; }
 k1nk.co#%#//scriptlet('abort-current-inline-script', '$', 'advCookie')
-k24tv.co.ke#@#.top-ad
 k2radio.com,kowb1290.com,koel.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 k2s.cc##.label-360p
 k7d.com,kxdao.net,xiaolz.cn###masonry
@@ -59248,6 +59247,7 @@ mangabz.com###cc2
 mangacanblog.com###adrtop
 mangacanblog.com###btm_banner
 mangacanblog.com##.ad
+mangadex.org##[id] > .w-full:has([href$="?tab=recommendations"])
 mangadog.club##a[onclick*="ad_config"]
 mangafire.to,myflixer.is,myflixerz.nl#%#//scriptlet('prevent-window-open')
 mangafire.to,myflixer.is,myflixerz.nl#%#//scriptlet('set-cookie', '__pf', '1')
