@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251008163111
-! Last modified: 2025/10/08 16:31:11
-! Blocked Filters: 97385
+! Version: 20251009002910
+! Last modified: 2025/10/09 00:29:10
+! Blocked Filters: 97393
 !
 ###AC_ad
 ###AD_160
@@ -29480,6 +29480,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||html-load.com^$stealth=referrer
 @@||html5.5games.cc^$stealth=referrer,third-party
 @@||html5.gamedistribution.com/*/$stealth=referrer
+@@||htnovo.net^$generichide
 @@||htz-*upload.spac.me/pics_upload/$stealth=referrer
 @@||hu.adocean.pl/files/js/ado.js$domain=retroradio.hu
 @@||hugo3c.tw^$generichide
@@ -35596,6 +35597,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||zmdownload.zoho.com/zm/imagedisplay$stealth=dpi
 @@||zmovs.com/js/pop.js
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
+@@||zol-img.com.cn^$stealth=referrer,domain=zol.com.cn
 @@||zombicide.com^$stealth
 @@||zonatmo.com/index.php/view_uploads/$stealth=referrer
 @@||zone.msn.com/js/gameplayer/admanager.js$domain=zone.msn.com
@@ -43315,6 +43317,7 @@ coursekingdom.xyz#@#[href^="https://ad.admitad.com/"]
 coursewikia.com##.custom-infeed-wrap-article
 coursewikia.com##.gt-section-ad
 coursewikia.com#?##secondary > .widget_text:has(> div.textwidget ins.adsbygoogle)
+coveragemap.com##.placement-wrapper
 coverapi.store##.home_lefts
 coveteur.com###native_1
 coveteur.com###native_2
@@ -50397,7 +50400,6 @@ genshin.honeyhunterworld.com##.ad_sidebar_video
 genshin.honeyhunterworld.com##div[id^="ad-genshin"]
 genshin.honeyhunterworld.com#@#.a_p
 genshinimpactcalculator.com#@#.adban
-genshinlab.com##div[id^="pw-incontent"]
 genuineactivator.com##.entry-content center > a[href][onclick]
 geo-fs.com##.geofs-adbanner
 geoawesome.com##.single-post__extra-info
@@ -53052,6 +53054,7 @@ hongkongfp.com###block-54
 hongkongfp.com##a[href="https://hongkongfp.com/advertise/"] > img
 honglingjin.co.uk##.rs-side-ads
 honglingjin.co.uk##.rsads
+honkailab.com,genshinlab.com##div[id^="pw-incontent"]
 hoodtrendspredict.com##.generate-back-to-top + div[class*=" "]
 hookerhillstudios.com##div.items-center:has(> #articlead)
 hope1032.com.au##.s-supported-by
@@ -53290,6 +53293,7 @@ htmlsucai.com,sucai8.cn,ui.cn#@#.adv_img
 htmlweb.ru#@#div > .adsbygoogle
 htn.co.uk,game-2u.com,ps4pkg.com,torrentdownloads.me,glitched.online##a[href^="https://bit.ly/"] > img
 htnovo.net#$##wrapfabber { height: 1px!important; }
+htnovo.net#%#//scriptlet('prevent-setTimeout', 'baitElement.offsetHeight')
 htpcguides.com##.inside-right-sidebar > #text-18
 http$third-party,~image,domain=imgblaze.net|pixsera.net|imgfrost.net
 http://www.ads.$third-party
@@ -62204,6 +62208,7 @@ nawalakarsa.id#?#.jeg_header > .jeg_bottombar > .container > .jeg_nav_row > .jeg
 nayisahara.com##center > #btnx
 nayisahara.com##div[id$="-Ads"]
 nb.zol.com.cn##.article-cont > div.zol-eshop
+nb.zol.com.cn#%#//scriptlet('set-cookie', 'getIsToJd', '1')
 nba.com###scores-page-ad
 nba.com##.block-globalheaderadblock
 nba.com#%#(()=>{window.turner_getTransactionId=turner_getGuid=function(){},window.AdFuelUtils={getUMTOCookies(){}}})();
@@ -77415,6 +77420,8 @@ vuejs.org###special-sponsor
 vuejs.org##.sponsors-aside-text
 vuetifyjs.com##.v-sponsors
 vueuse.org###bb-banner
+vuinsider.com###adblock-message
+vuinsider.com#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'pagead2.googlesyndication.com')
 vukajlija.com#@#.large-advert
 vulture.com###article > #bottom > div.nymab-response
 vumoo.cc#%#//scriptlet("remove-attr", "href", "a[href]#clickfakeplayer")
@@ -85953,7 +85960,6 @@ zzzyk.com###Tinfo
 ||easymp3mix.com/js/re-ads-zone.js
 ||easypic.com/js/easypicads.js
 ||easyporn.xxx/tmp/
-||easysearch.click^$popup
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
 ||eavesofefinegoldf.info^$popup
@@ -89912,6 +89918,7 @@ zzzyk.com###Tinfo
 ||lswcdn.net/js/vendor/efldr.js
 ||lswcdn.net/js/vendor/frontend_loader.js
 ||lt*.tritondigital.com^
+||ltingecauyuksehi.com^$popup
 ||ltkcdn.net/ltkrev.js
 ||ltn.com.tw/js/ad_door.js
 ||ltwebstatic.com/she_dist/libs/devices/fpv2.
@@ -96271,6 +96278,7 @@ zzzyk.com###Tinfo
 ||wistia.com/assets/external/googleAds.js
 ||wit.qq.com^$third-party
 ||witbee.com^*/collect
+||withmefeyauknaly.com^$popup
 ||withnews.jp/assets/js/bcon.js
 ||witt-weiden.de^$ping
 ||wix.com/*utm_campaign=$third-party
