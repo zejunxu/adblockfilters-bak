@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251017163116
-! Last modified: 2025/10/17 16:31:16
-! Blocked Filters: 98273
+! Version: 20251018002845
+! Last modified: 2025/10/18 00:28:45
+! Blocked Filters: 98289
 !
 ###AC_ad
 ###AD_160
@@ -26502,6 +26502,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||assets.bilsyndication.com/prebid/default/prebid-$domain=atozmath.com
 @@||assets.bilsyndication.com/prebid/default/prebid-7.31.0.js$domain=atozmath.com
 @@||assets.bilsyndication.com/widget/$image,domain=atozmath.com
+@@||assets.connatix.com/Elements/*/jwpc-player-init-plugin_v2.js$domain=nypost.com
 @@||assets.ctfassets.net^$media,domain=ads.spotify.com
 @@||assets.evolutionadv.it/optiload/*/optiload_video.min.js$domain=adnkronos.com
 @@||assets.evolutionadv.it/prebid/*/prebid.min.js$domain=adnkronos.com
@@ -37810,6 +37811,7 @@ applegazette.com#?#.sidebar > section.widget:has(> div[class^="widget"] div[id^=
 applegazette.com#?#.sidebar > section.widget:has(> div[class^="widget"] ins.adsbygoogle)
 applegazette.com#?#.sidebar > section.widget:has(> div[class^="widget"] span[id^="ezoic"])
 appleinsider.com###mobile-article-anchor
+appleinsider.com##.article-body > div.block:has(> div.ad)
 appleinsider.com##.bottom
 appleinsider.com##.col-sm-12 > :has([id^="div-gpt-ad-"])
 appleinsider.com##.deals-widget
@@ -63774,6 +63776,7 @@ nypost.com##.widget_nypost_dfp_ad_widget
 nypost.com##.widget_nypost_vivid_concerts_widget
 nypost.com##.widget_text.no-mobile.box
 nypost.com##body .ad--container
+nypost.com#%#//scriptlet('adjust-setTimeout', '[native code]', '7000', '0.001')
 nypost.com#?#.recirc--outbrain
 nypost.com#@#.recirc
 nypost.com,pagesix.com##.billboard-overlay
@@ -65455,6 +65458,7 @@ photopea.com##[href*=".ivank.net"]
 photopea.com##div[style^="padding-top: 10px; overflow: hidden; padding-left:"] > a[target="_blank"] > img
 photopea.com##div[style^="padding-top: 10px; overflow: hidden; padding-left:"] > img
 photopea.com#%#(()=>{const e=new Event("resize");window.addEventListener("load",(()=>{const t=document.querySelector(".flexrow.app > div");(0===localStorage.length||void 0===JSON.parse(localStorage._ppp)["0_uid"])&&t&&t.clientWidth<window.innerWidth&&(Object.defineProperty(window,"innerWidth",{get:()=>document.documentElement.offsetWidth+320}),window.dispatchEvent(e))}))})();
+photopea.com#%#//scriptlet('set-constant', '__osw', 'undefined')
 photorumors.com##[href="https://topazlabs.com/ref/70/"]
 photos.freeones.com##a[href^="http://click.payserve.com/"]:not(#sponsorHref)
 photos.freeones.com#%#//scriptlet("remove-attr", "href", "a[href]#sponsorHref")
@@ -70414,6 +70418,15 @@ shopee.sg#?#div[class="N_YeYe"]:has(> .shopee_ic:-abp-contains(Ad))
 shopee.sg#?#div[class="oMSmr0"]:has(> .shopee_ic:-abp-contains(Ad))
 shopforex.online###con_me
 shoprite.com##[class^="CitrusBannerXContainer"]
+shopthemedetector.com###sticky-footer-id
+shopthemedetector.com##.storetasker
+shopthemedetector.com#$#.headmsg { display: none !important; }
+shopthemedetector.com#%#//scriptlet('remove-class', 'withmsg', 'nav#topNav')
+shopthemedetector.com#%#//scriptlet('set-cookie', 'ASG', '1')
+shopthemedetector.com#%#//scriptlet('set-cookie', 'fiverr', '1')
+shopthemedetector.com#%#//scriptlet('set-cookie', 'shopify', '1')
+shopthemedetector.com#%#//scriptlet('set-cookie', 'tiktok', '1')
+shopthemedetector.com#%#//scriptlet('set-cookie', 'wix', '1')
 short-wave.info#@#img[width="468"][height="60"]
 short.cliquebook.net##a[href="https://www.eonads.com"]
 shortearn.eu#%#//scriptlet("prevent-window-open")
@@ -70859,6 +70872,7 @@ skyracing.com.au#%#//scriptlet("abort-current-inline-script", "jQuery", "window.
 skyradar.pl##div[id^="crosscol-"] > .widget:has(> .widget-content > .adsbygoogle)
 skyradar.pl##div[id^="crosscol-"] > .widget:has(> .widget-content > center > .adsbygoogle)
 skyroad.downallbook.com##IMG[height='60'][width='98%']
+skyscanner.*##[data-testid="inline-ad-panel-desktop-layout"]:has([data-testid="adInfoBtn"])
 skyscanner.*,tianxun.com##[class^="FlightsResults"] > div:has([class^="Sponsored"])
 skyscanner.*,tianxun.com##div > a:has(div[class^="DefaultBanner_sponsorshipRow"])
 skyscanner.*,tianxun.com##div:has(> a[data-testid="inline-brand-banner"])
@@ -70867,7 +70881,6 @@ skyscanner.*,tianxun.com##div[class*="ItineraryInlinePlusWrapper" i]:has(button[
 skyscanner.*,tianxun.com##div[class^="ItineraryInlinePlusWrapper_"]:has(button[class^="SponsoredInfoButton_"])
 skyscanner.*,tianxun.com##div[id*="-first-result" i]:has(button[class*="SponsoredInfoButton" i])
 skyscanner.*,tianxun.com##section[data-testid="inline-ad-panel-desktop-layout"]
-skyscanner.com##[data-testid="inline-ad-panel-desktop-layout"]:has([data-testid="adInfoBtn"])
 skyscrapercity.com##img[src^="http://www.skyscrapercity.com/images/ads/"]
 skysports.com##.sdc-site-outbrain
 skysports.com##.site-component-vertical-margin
@@ -72349,8 +72362,8 @@ startpage.com##.css-1j5r2ie
 startpage.com##.pa-bg
 startpage.com##.pa-bg + section
 startpage.com##a[href^="https://ww44.affinity.net/"]
+startpage.com##div.result[style="margin-bottom: 10px;"]:has(path[d^="m6.07067"])
 startpage.com##div[style="display: block; padding: 12px; margin: 0px 0px 10px; border-radius: 4px; border: 1px solid rgb(59, 67, 91);"]
-startpage.com##div[style^="display: block; padding:"]:has(path[d^="m6.07067"])
 startpage.com#%#//scriptlet('spoof-css', '.ad.a-bg', 'display', 'block')
 startpage.com#%#//scriptlet('trusted-set-constant', 's1PxyAdsTag', '"01234567890123456789"')
 startribune.com###highImpactAd
@@ -76332,6 +76345,7 @@ tupaki.com##.live-ads
 tupaki.com##.pwa_Ad
 tupaki.com##.roadblocker-container
 tupaki.com##div[id^="ad_"]:not(#style_important)
+tupaki.com##div[id^="detail_wrap_ad_"]
 tupaki.com#?#.to-be-async-loaded-ad:not(.header_btn,.footer_1)
 tupaki.com#@#.ads-section
 turbo.az,tap.az##.bg-bnr-container
@@ -77759,6 +77773,7 @@ videogamegeek.com,boardgamegeek.com##gg-leaderboard-ad
 videogamemods.com##.topbanners
 videogamer.com###block-aside-ad-unit
 videogameschronicle.com##.sticky-container
+videogameschronicle.com##.vgc-layout__adbreak
 videogameschronicle.com##.vgc-productsblock
 videohelp.com###headerbanner
 videohelp.com##.maingray div[style*="width"] #headerbanner > center
@@ -78756,6 +78771,7 @@ weartesters.com#?#.sidebar-content-inner > div:has(> div > div > div[id^="wearte
 weather.com###wx-top-wrap
 weather.com##.admodule_burda_tfm
 weather.com##.adsSectionOuterWrapper
+weather.com##.combinedTopAdsSectionWrapper
 weather.com##.regionStickyAds
 weather.com##div[id*="Taboola-sidebar"]
 weather.com##div[id^="Taboola-main-"]
