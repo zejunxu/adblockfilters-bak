@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251022163406
-! Last modified: 2025/10/22 16:34:06
+! Version: 20251023003152
+! Last modified: 2025/10/23 00:31:52
 ! Blocked Filters: 98277
 !
 ###AC_ad
@@ -23309,6 +23309,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 1cloudfile.com#@#.advert-wrapper
 1escorts.net##a[target="_blank"] > img[width="250"]
 1filesharing.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "bannerad")
+1flex.ru#%#//scriptlet('trusted-set-local-storage-item', '__DL_SESSION_9140916', '2761123008204')
 1full4movies.beer###customAdPopup
 1in.am##.baner_zone_main
 1in.am##.header_logo_wrapper > div > a[href^="https://www.caucasus.am"][target="_blank"]
@@ -26219,7 +26220,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||anzplus-web.app.link^$stealth=useragent
 @@||aobi.100bt.com/play/ad/ad*.swf
 @@||aone-soft.com/style/images/ad2.jpg
-@@||aosmark.com/ads.js
 @@||aphim.co^$generichide
 @@||api-*.cludo.com/api/$stealth=referrer
 @@||api-*.mappy.net^$stealth=referrer
@@ -26378,6 +26378,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||app.aboutyou.com/sign_in_with_apple$stealth=referrer
 @@||app.adjust.io/*&utm_source=desktop_kleiderkreisel.de
 @@||app.adjust.net.in/*?campaign=*&redirect=
+@@||app.axenthost.com^$generichide
 @@||app.clickfunnels.com/assets/lander.js$script,domain=propanefitness.com
 @@||app.datapacket.com^$content
 @@||app.focusmate.com^$stealth=webrtc
@@ -33216,11 +33217,11 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||s.jacquieetmichelelite.com/assets/popunder.js
 @@||s.jsrdn.com/s/1.js$domain=lcpdfr.com
 @@||s.nitropay.com/*.gif?*&adslot=$domain=minecraft.buzz
-@@||s.nitropay.com/ads-*.js$domain=app.axenthost.com
 @@||s.nitropay.com/ads-*.js$domain=dankmemer.lol
 @@||s.nitropay.com/ads-*.js$domain=soccerguru.live
 @@||s.nitropay.com/ads-*.js$domain=th.gl
 @@||s.nitropay.com/ads-437.js$domain=wago.io
+@@||s.nitropay.com^$domain=app.axenthost.com
 @@||s.ntv.io/serve/load.js$domain=bloomberg.com
 @@||s.ntv.io/serve/load.js$domain=titantv.com
 @@||s.stormedia.info/*.mp4$stealth
@@ -33889,6 +33890,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||sozcu.com.tr^$generichide
 @@||sozcukbul.com^$generichide
 @@||sozi.cn/images/ad/tj
+@@||sp.auth.adobe.com/reggie/*/regcode$stealth=3p-auth
 @@||spanishdict.com^$generichide
 @@||spankbang.com^*/prebid-ads.js$domain=spankbang.com
 @@||spareroom.co.uk/*/offered-$domain=spareroom.co.uk
@@ -34068,6 +34070,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||static.cloudflareinsights.com/beacon.min.js$domain=topsporter.net
 @@||static.cloudflareinsights.com/beacon.min.js$xmlhttprequest,domain=werfgt.fun
 @@||static.cloudflareinsights.com/beacon.min.js^$domain=sportshub.to
+@@||static.cloudflareinsights.com^$domain=app.axenthost.com
 @@||static.criteo.net/images/pixel.gif$domain=diariodenavarra.es
 @@||static.criteo.net/js/ld/publishertag.js$domain=shinden.pl
 @@||static.criteo.net/js/ld/publishertag.prebid.js$domain=streetdir.com|roaddir.com
@@ -34244,8 +34247,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||streamwish.com/js/dnsads.js?ads
 @@||streanplay.cc^$stealth
 @@||strimov.site/embed$stealth=referrer
+@@||stripe.com^$domain=app.axenthost.com
 @@||stripe.com^$domain=pay.openai.com
-@@||stripe.com^$xmlhttprequest,domain=app.axenthost.com
 @@||strmrdr*/index.php?id=$stealth=referrer
 @@||sts.wavewalt.me/scripts/v*/embedv*.min.js$domain=cricstreams.re
 @@||studioclassroom.com/ad/
@@ -37770,8 +37773,6 @@ app.appvalley.vip##.notification-item
 app.appvalley.vip#@##ad-overlay
 app.appvalley.vip#@#.ad-bar
 app.appvalley.vip#@#.ad-text
-app.axenthost.com#%#//scriptlet('prevent-fetch', 'stripe.com')
-app.axenthost.com#%#//scriptlet('set-constant', 'nitroAds.loaded', 'true')
 app.daily.dev#?#article:-abp-contains(Promoted)
 app.fileszero.com,viralharami.com,wstream.cloud#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'destroyContent')
 app.fileszero.com,viralharami.com,wstream.cloud#@#.ad-space:not(.textads)
@@ -64041,9 +64042,9 @@ omuzaani.me#$#body:not(#style_important) > div[id].jwplayer { display: block !im
 omuzaani.me#%#//scriptlet('abort-current-inline-script', 'Number', 'probeScript')
 omuzaani.me#%#//scriptlet('prevent-element-src-loading', 'img', 'summerday.christmas')
 omuzaani.me#%#//scriptlet('prevent-fetch', 'summerday.christmas')
-omuzaani.me#%#//scriptlet('prevent-setTimeout', 'window.location.replace')
+omuzaani.me#%#//scriptlet('prevent-setTimeout', '/window\.location\.(replace|href)/')
 omuzaani.me#%#//scriptlet('trusted-replace-node-text', 'script', 'forceKillplayer', '/forceKillplayer\(/g', '//forceKillplayer(')
-omuzaani.me#%#//scriptlet('trusted-replace-node-text', 'script', 'window.location.replace', '/window.location.replace/g', '//window.location.replace')
+omuzaani.me#%#//scriptlet('trusted-replace-node-text', 'script', 'window.location', '/(window\.location\.(replace|href))/g', '//$1')
 omuzaani.me,wavewalt.me#@#.Ad-Container:not(.adsbygoogle)
 on.cc##.appinstall
 on3.com##.adhesionAd
@@ -68397,8 +68398,7 @@ redgifs.com##.adSideBar > *
 redgifs.com##.d_300x250_double
 redgifs.com##.placard-wrapper
 redgifs.com##.trafficstars_ad
-redgifs.com##div[class^="_adLiveButton_"]
-redgifs.com##div[class^="_liveAdButton_"]
+redgifs.com##div[class*="liveAdButton"]
 redgifs.com##ul.SideBar > li.SideBar-Item:has(> div[class] > div[class^="LiveButton_"])
 redgifs.com#$#.adSideBar { visibility: hidden !important; }
 redgifs.com#$?#.previewFeed > div[id^="gif_"]:has(.MetaInfo-BoostedBtn) { remove: true; }
@@ -77554,6 +77554,7 @@ vicksburgnews.com#%#//scriptlet('prevent-fetch', 'https://pagead2.googlesyndicat
 vicnews.com##.gam
 victoriabuzz.com##.victo-billboard-desktop
 vid2faf.*,vidplay.*,vidstream.*,vizcloud.*,mcloud.*,vizcloud2.*,vidstreamz.online#%#//scriptlet('remove-attr', 'data-ad-img|data-ad-target|data-id|data-p|data-cg', '#player-wrapper')
+vidapi.xyz###gate
 vidbob.com#%#(function(){var c=document.addEventListener;document.addEventListener=function(a,b,d,e){"mousedown"!=a&&-1==b.toString().indexOf('Z4P')&&c(a,b,d,e)}.bind(document); var b=window.setTimeout;window.setTimeout=function(a,c){if(!/Z4P/.test(a.toString()))return b(a,c)};})();
 vidbom.com#%#//scriptlet("abort-current-inline-script", "atob", "removeCookie")
 vidcloud9.me##.backdrop
@@ -86665,7 +86666,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eavesofefinegoldf.info^$popup
 ||ebay.com/delstats/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
@@ -92134,8 +92134,8 @@ zzzyk.com###Tinfo
 ||omonoia24.com/wp-content/uploads/*.gif
 ||omonoia24.com/wp-content/uploads/*/PANIKOS-*.png
 ||omsnative.de/tracking/
+||omuzaani.me^$replace=/(window\.location\.(replace|href))/\/\/\$1/,document,subdocument
 ||omuzaani.me^$replace=/forceKillplayer\(/\/\/forceKillplayer(/,document,subdocument
-||omuzaani.me^$replace=/window.location.replace/\/\/window.location.replace/,document,subdocument
 ||on-push.com^$third-party
 ||ondigitalocean.app/*/index.php?cezp=$document
 ||ondigitalocean.app/*^phone=+1-$document
