@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251024003010
-! Last modified: 2025/10/24 00:30:10
-! Blocked Filters: 97997
+! Version: 20251024094332
+! Last modified: 2025/10/24 09:43:32
+! Blocked Filters: 97999
 !
 ###AC_ad
 ###AD_160
@@ -16423,6 +16423,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .cn/*-*-*.xc$script,third-party
 .cn/2022/*/*.txt$third-party
 .cn/2023/*/*.txt$third-party
+.cn/Ao390sW2.js
 .cn/Hl390cN2.js$script,third-party
 .cn/Qi390eC2.js$script,third-party
 .cn/TA390hz2.js$script,third-party
@@ -16430,6 +16431,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .cn/ads/
 .cn/bid?url=*$third-party
 .cn/by389.js$script,third-party
+.cn/cS389.js
 .cn/gg/$script,third-party
 .cn/hL389.js$script,third-party
 .cn/js/ads/
@@ -25600,9 +25602,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||ad.a-ads.com/13368^$domain=bitcoinfaucet.tk
 @@||ad.admitad.com/*/*&ulp=
 @@||ad.admitad.com/*/?ulp=
-@@||ad.admitad.com/3rd-party/*/cookie/?f=CookieChecker.remoteTest
-@@||ad.admitad.com/3rd-party/advert.js
-@@||ad.admitad.com/goto/$domain=atavi.com
 @@||ad.adverticum.net/*.js$domain=metabro.hu
 @@||ad.adverticum.net/cc.js
 @@||ad.adverticum.net/g3.js$domain=hvg.hu
@@ -26072,7 +26071,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||alwingulla.com^$domain=nhutgg.com
 @@||am730.com.hk^$generichide
 @@||amazon-adsystem.com/aax2/amzn_ads.js^$domain=kino.de
-@@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|barstoolsports.com|blastingnews.com|cnn.com|familyhandyman.com|foxbusiness.com|gamingbible.co.uk|history.com|independent.co.uk|inquirer.com|keloland.com|radio.com|rd.com|si.com|sportbible.com|tasteofhome.com|the-independent.com|thehealthy.com|time.com|wboy.com|wellgames.com|wkrn.com|wlns.com|wvnstv.com
+@@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|barstoolsports.com|blastingnews.com|familyhandyman.com|foxbusiness.com|gamingbible.co.uk|history.com|independent.co.uk|inquirer.com|keloland.com|radio.com|rd.com|si.com|sportbible.com|tasteofhome.com|the-independent.com|thehealthy.com|time.com|wboy.com|wellgames.com|wkrn.com|wlns.com|wvnstv.com
 @@||amazon-adsystem.com/aax2/apstag.js$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com|uniladtech.com
 @@||amazon-adsystem.com/aax2/apstag.js$domain=macworld.co.uk
 @@||amazon-adsystem.com/aax2/apstag.js$domain=watchtv24.com
@@ -43428,7 +43427,6 @@ courseclub.me#$?#.listing-item-ad { remove: true; }
 coursedown.com##.sidebar > #custom_html-2
 coursedown.com#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adlinkfly_url")
 courseforfree.com#?##secondary > aside[id^="custom_html-"]:has(> .textwidget > .adsbygoogle)
-coursekingdom.xyz#@#[href^="https://ad.admitad.com/"]
 coursewikia.com##.custom-infeed-wrap-article
 coursewikia.com##.gt-section-ad
 coursewikia.com#?##secondary > .widget_text:has(> div.textwidget ins.adsbygoogle)
@@ -49970,7 +49968,6 @@ gamemodding.com##.big_banner
 gamemodding.com##.right_banner
 gamemodding.com,royalcams.com,adultcams.me,adultchat2100.com,alphafreecams.com,bimbolive.com,bongacam.net,bongacam.org,bongacams-chat.ru,bongacams.com,bongacams.eu,bongacams2.com,cammbi.com,prostocams.com,r2games.com,smutcam.com##.right_banner
 gamemodels3d.com##.friends-banner
-gamemodels3d.com##a[href^="https://ad.admitad.com/"]
 gamemodsbase.com,mc-plugin.com,joymaxtr.net,nullsto.com,onlybabes.site,gamcka.com,ebookdz.com,lewdcorner.com,scriptzhub.com,iptvapps.net,nabzclan.vip,galaxyos.net,blackhatworld.com,vuinsider.com,secuhex.com,null-scripts.net,aroratr.club,forum.admiregirls.com,worldofiptv.com,mobilkulup.com,vsro.org,crazydl.net,spigotunlocked.com,iptvkalite.com,coldfrm.org,htforum.net,nullscripts.net,onlytech.com,defense-arab.com,metin2hub.com,spigotunlocked.org,crackturkey.com,dpkghub.com,eurocccam.net,forum.shoppingtelly.com,hostingunlock.com,iptvsat-forum.com,isgfrm.com,playstationhaber.com,tamilbrahmins.com,tattle.life,turkishaudiocenter.com##body > div[class*=" "][style^="background"][style*="display: block;"]
 gamemodsbase.com,mc-plugin.com,joymaxtr.net,nullsto.com,onlybabes.site,gamcka.com,ebookdz.com,lewdcorner.com,scriptzhub.com,iptvapps.net,nabzclan.vip,galaxyos.net,blackhatworld.com,vuinsider.com,secuhex.com,null-scripts.net,aroratr.club,forum.admiregirls.com,worldofiptv.com,mobilkulup.com,vsro.org,crazydl.net,spigotunlocked.com,iptvkalite.com,coldfrm.org,htforum.net,nullscripts.net,onlytech.com,defense-arab.com,metin2hub.com,spigotunlocked.org,crackturkey.com,dpkghub.com,eurocccam.net,forum.shoppingtelly.com,hostingunlock.com,iptvsat-forum.com,isgfrm.com,playstationhaber.com,tamilbrahmins.com,tattle.life,turkishaudiocenter.com#%#//scriptlet("abort-current-inline-script", "$", "!document.getElementById(btoa")
 gamemonetize.co##div[id^="imaContainer"]
@@ -67702,6 +67699,10 @@ qq.com,sogou.com##div[pbflag="coolsitefeed_ad"]
 qq.com,yxad.com##.l_qq_com
 qq3009qq.link##.box li:has(> a[href] > img[onclick])
 qqaiqin.com#@#.ad_468
+qqdsw8.cn##.ad
+qqdsw8.cn##.advert
+qqdsw8.cn##.joe_index__ad
+qqdsw8.cn##.joe_post__ad
 qqxiazai.com##.bt_abtn2
 qqxiuzi.cn##div[onclick][style]
 qqyouyue.com##.table-responsive
@@ -86626,6 +86627,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||ebay.com/delstats/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
 ||ebay.com/scl/js/ScandalLoader.js
