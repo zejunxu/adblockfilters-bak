@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251029003205
-! Last modified: 2025/10/29 00:32:05
-! Blocked Filters: 97483
+! Version: 20251029095432
+! Last modified: 2025/10/29 09:54:32
+! Blocked Filters: 97486
 !
 ###AC_ad
 ###AD_160
@@ -16689,7 +16689,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .fun/nd389.js
 .fuse-cloud.com/$popup
 .fuse-cloud.com/$~xmlhttprequest
-.gameleads.ru^
 .gatracking.js
 .getblueshift.com/q/
 .getsendmail.com/p/$image
@@ -18693,6 +18692,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /brightspot/analytics/*
 /bsa-plugin-pro-scripteo/frontend/js/script.js$script
 /bsa-pro-scripteo/frontend/js/script.js$script
+/bsf-bing-scripts/custom-pixels/*
 /bsp-analytics.min.
 /bstat.js
 /bt*.com/imgs.js?t=
@@ -27559,6 +27559,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||codare.fun^$generichide
 @@||code.adsales.snidigital.com/conf/ads-config.js^$domain=foodnetwork.com
 @@||code.jquery.com/*.min.js$domain=audioz.download
+@@||code.jquery.com^$domain=clickndownload.*|clicknupload.*
 @@||codec.kyiv.ua^$generichide
 @@||codehelppro.com^$generichide
 @@||codepen.io^$generichide
@@ -34882,6 +34883,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||type.jp/common/js/clicktag.js
 @@||typhoon.zjwater.gov.cn^$stealth=donottrack
 @@||typingtestnow.com^$generichide
+@@||uab.gov.tr^$stealth=dpi
 @@||uaprom.net/image/blank.gif?$image
 @@||ucoz.net/cgi/uutils.fcg?$script,third-party
 @@||udemypremiumcourses.com^$generichide
@@ -57033,6 +57035,7 @@ kqed.org##.components-Ad-__Ad__ad
 krajskelisty.cz###wpBannerPlace
 krajskelisty.cz##.advert
 krajskelisty.cz##div[id^="ra-r2b2-code"]
+krakenfiles.com##.native-banner
 krakenfiles.com#?#.row > div.col-md-12:has(> div.file-top-ad)
 krayot.com##.krayo-slider
 krcrtv.com,ktxs.com,wcti12.com,wcyb.com##.pageHeaderRow1
