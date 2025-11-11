@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251111003224
-! Last modified: 2025/11/11 00:32:24
-! Blocked Filters: 97459
+! Version: 20251111095320
+! Last modified: 2025/11/11 09:53:20
+! Blocked Filters: 97472
 !
 ###AC_ad
 ###AD_160
@@ -16225,6 +16225,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 -1316899192.cos.
 -1321533417.cos.
 -1325890192.cos.
+-1367066484.cos.
 -160-600.
 -160x600-$image,subdocument
 -160x600.
@@ -18537,6 +18538,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /aztracker.js
 /b.banners.impress.
 /b.gif?
+/b.k3r.jp/?a=$image
 /b.rnc?
 /b/s/beacon
 /b/ss/*&aqe=
@@ -37358,6 +37360,8 @@ animeshqip.org#@#.ad-space:not(.textads)
 animeshqip.org#@#.ad-unit:not(.textads)
 animesrbija.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "blockadblock")
 animesuge.io#%#//scriptlet('set-constant', 'fired', 'true')
+animesuperhero.com##.p-body-sidebar > div.block:has(> div.block-container > div.block-body > div.monumetric-ads)
+animesuperhero.com##.p-body-sidebar > div.block:has(> div.block-container > div.block-body > ins.adsbygoogle)
 animet.net###fbox-background
 animet.net###inx-content
 animet.net###inx-overlay
@@ -46431,6 +46435,7 @@ emalm.com,linkdecode.com,up-4ever.net##a[href^="https://s.click.aliexpress.com/"
 emaporn.com##td[width="360"] > center > p
 emathhelp.net$$script[tag-content="if (window.TextDecoder)return(new window.TextDecoder(""utf-8"")).decode("][max-length="30000"]
 embed-player.space#%#//scriptlet('set-constant', 'vast_urls', 'emptyArr')
+embed.acast.com#%#(()=>{let e=0;const t=new WeakSet,n=t=>{const n=t?.currentTarget||t?.target;if(n)try{if(e>0&&n.currentTime<e)return void(n.currentTime=e)}catch(e){}},r={apply:(r,c,i)=>{try{const r=c.currentSrc;e>0&&c.currentTime<e&&r?.includes("livestitches")&&(c.currentTime=e,t.has(c)||(c.addEventListener("timeupdate",n),t.add(c)))}catch(e){}return Reflect.apply(r,c,i)}};window.HTMLMediaElement.prototype.play=new Proxy(window.HTMLMediaElement.prototype.play,r);const c={apply:(t,n,r)=>{try{const t=r[1]?.response?.result;if(t){const n=t?.timeline?.[0];n&&"ad"===n?.type&&(e=n?.duration||0,delete r[1].response.result.timeline)}}catch(e){}return Reflect.apply(t,n,r)}};window.Function.prototype.call=new Proxy(window.Function.prototype.call,c)})();
 embed.dugout.com##div[data-testid="keep-watching"]
 embed.indavideo.hu#%#//scriptlet("set-constant", "AdHandler.adblocked", "0")
 embed.indavideo.hu#%#//scriptlet("set-constant", "videodata.adBlockEnabled", "0")
@@ -50258,6 +50263,7 @@ gearspace.com##.thread__sidebar-ad-container
 gearspace.com#?##site-notice-container > .noticeBit:has(> center > a)
 gearspace.com#@#a[onclick]
 gearspace.com#@#iframe[width="100%"][height="120"]:not([src*="bandcamp.com"])
+gearupbooster.com##.pop-hyperev
 gebi1.com###fwin_dialog
 gebi1.com###fwin_dialog_cover
 gebi1.com##.offical-account
@@ -64802,6 +64808,8 @@ pilipali.cc##.tips-widget-weixin
 pilipili.site##.block-sales
 pilkareczna.com##.sticky > .hidden:has(> .rounded-lg:only-child > .ad-container)
 pilkareczna.com##body > .w-full:has(> .w-full:only-child > .adsbygoogle)
+pilkareczna.com##div[style="min-height: 280px; min-width: 300px;"]
+pilkareczna.com##main > section > div.container > div.w-full:has(> div > div > div > ins.adsbygoogle[data-ad-slot])
 pilkarskiswiat.com###secondary > #custom_html-37
 pilkarskiswiat.com##center > a[href*="/go/"][target="_blank"] > img
 pilkarskiswiat.com##iframe[data-src="https://typuje.pl/rectangle"]
@@ -70171,6 +70179,7 @@ slant.co##.SummaryPage-LustreEmbed
 slant.co##._SummaryPageSponsoredOptionView
 slashdot.org###announcement
 slashdot.org###cloud
+slashdot.org###floating-ad-unit
 slashdot.org###main-nav-badge-link
 slashdot.org###slashdot_deals
 slashdot.org##.ad-blocked-newsletter
@@ -72367,6 +72376,7 @@ szjjzs.com##a[href^="/pic/tiao/"]
 sznlink.xyz#%#//scriptlet("abort-current-inline-script", "jQuery", "/ai_|ai-|detected|use_current_selector|JSON.stringify|insertion_before|AdSense|jquery-migrate\.min\.js/")
 szonline.net##.ad_1000_90
 szonline.net##.layout_ad
+szukampracy.pl#@#[class^="ad-"]
 szxx.com.cn###A0
 szxx.com.cn###A1
 szxx.com.cn###A2
@@ -73004,6 +73014,8 @@ techyv.com##.wpb_raw_code
 techzim.co.zw##.special-container
 tecmint.com###tecmint_incontent
 tecmint.com###tecmint_leaderboard_article_top
+tecnoandroid.it##.aawp
+tecnoandroid.it##.code-block
 tecnoandroid.it#$#body.td-background-link { cursor: auto !important; }
 tecnoandroid.it#%#//scriptlet('set-constant', 'td_ad_background_click_link', 'undefined')
 tecnoandroid.net##div[itemprop="articleBody"] > div[style*="height:"].code-block
@@ -86174,6 +86186,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||ebay.com/delstats/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
 ||ebay.com/scl/js/ScandalLoader.js
@@ -88747,6 +88760,7 @@ zzzyk.com###Tinfo
 ||itchygame.com/assets/cnd/7x9/6.mp4
 ||itechpost.com*adbk
 ||iterable.com/analytics.js
+||ithardware.pl/js/mediaexpert-widget.js
 ||itheat.com/?show=
 ||ithinkthereforeiam.net^$third-party
 ||ithome.com.tw/media/serve?
@@ -94642,7 +94656,6 @@ zzzyk.com###Tinfo
 ||tag-based.s3.*.amazonaws.com^
 ||tag.flvcdn.net/lytag.js
 ||tagdatax.com^$third-party
-||taggstar.com^*/taggstar.min.js
 ||tagsd.com^$popup
 ||tahoe.com/imp
 ||taijuba.com/js/*_
