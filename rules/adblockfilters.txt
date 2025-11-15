@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251115003123
-! Last modified: 2025/11/15 00:31:23
-! Blocked Filters: 98156
+! Version: 20251115094902
+! Last modified: 2025/11/15 09:49:02
+! Blocked Filters: 98161
 !
 ###AC_ad
 ###AD_160
@@ -26097,6 +26097,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||app.freeinvoicebuilder.com/*/index.php$xmlhttprequest,elemhide,jsinject,extension
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.humanornot.ai^$stealth=referrer
+@@||app.hype.it/assets/packages/mixpanel_flutter/assets/mixpanel.js$~third-party
 @@||app.impact.com^$jsinject,elemhide,extension
 @@||app.khz.se/api/*&ad_type=preroll-channel$domain=ilikeradio.se
 @@||app.plex.tv^$extension
@@ -37195,6 +37196,7 @@ anon-v.com##div[style="max-width: 640px; text-align: center; margin: 0 auto;"]
 anon-v.com,camwhorescloud.com,dirtyship.com#%#//scriptlet("abort-current-inline-script", "onload", "onclick")
 anon.tools#%#//scriptlet('prevent-setTimeout', 'Ad Blocker Detected')
 anoneko.com,dmhy.org,ye1213.com##div[id$="_ad"] > a:first-child > img
+anonfile.co,arahdrive.com,fastupload.io,video.hizliresim.com##.vr-adv-unit
 anonym.to##a[href^="https://www.spyoff.com"]
 anonymouse.org#%#window.addEventListener('DOMContentLoaded', function() { document.body.innerHTML = document.body.innerHTML.replace(/Adverts/g, ""); })
 anonymousemail.me##.center > a[target="_blank"] > img
@@ -37619,7 +37621,6 @@ arabseed.net##center > a[rel="nofollow"] > img
 arabtimesonline.com,independent.co.ug,udaipurkiran.com##.e3lan
 arageek.com##main div[class^="css-ar-"]:has(> .chakra-aspect-ratio > ins[id*="_"])
 arahcloud.com#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
-arahdrive.com,fastupload.io,video.hizliresim.com##.vr-adv-unit
 arahtekno.com,gnaija.net#%#//scriptlet('prevent-fetch', 'adsbygoogle')
 arangscans.com##body > div[class="font-sans"]
 aranzulla.it###ad97090
@@ -39231,6 +39232,7 @@ bestbuy.ca#@#.text_ad
 bestbuy.ca#@#.text_ads
 bestbuy.ca,bestbuy.com##[id^="atwb-ninja-carousel"]
 bestbuy.com###sponsored-carousel-na
+bestbuy.com##.atwa-ninja-carousel:has(div[data-testid="sponsored-sbb"])
 bestbuy.com##.atwb-display-ad
 bestbuy.com##.display-ad-wrapper
 bestbuy.com##.generic-morpher:has(.spns-label)
@@ -84802,6 +84804,7 @@ zzzyk.com###Tinfo
 ||calcul-pagerank.fr/client/$third-party
 ||calendly.com/telemetry.js
 ||calguns.net/images/ad
+||call_domainname_here.$all
 ||callisto.fm^$third-party
 ||calltouch.ru^$third-party
 ||calm.com/api/12Xk43jk/init.js
@@ -86709,6 +86712,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||ebay.com/delstats/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
 ||ebay.com/scl/js/ScandalLoader.js
@@ -91510,6 +91514,7 @@ zzzyk.com###Tinfo
 ||mxtoolbox.com/Public/Lookup.aspx/GetNextInlineAd
 ||mxzmz.com/js/
 ||my-dirty-hobby.com/?sub=$third-party
+||my-redirect-bucket-unique-*.s3.ap-northeast-1.amazonaws.com^$all
 ||my0511.com/*/ad_
 ||my0538.com^*/thumb_1000_70_
 ||my0832.com/xyz/xx/
