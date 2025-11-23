@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251123002750
-! Last modified: 2025/11/23 00:27:50
-! Blocked Filters: 98742
+! Version: 20251123100554
+! Last modified: 2025/11/23 10:05:54
+! Blocked Filters: 98745
 !
 ###AC_ad
 ###AD_160
@@ -40307,9 +40307,7 @@ bleedingcool.com,heatmap.news,jamaicaobserver.com###bottom_leaderboard
 bleedingcool.com,jamaicaobserver.com,pastemagazine.com###top_leaderboard
 bleepingcomputer.com###after_dl
 bleepingcomputer.com###bc-home-news-main-wrap > li:has(> div > a[href^="https://www.bleepingcomputer.com/offer/deals/"])
-bleepingcomputer.com###bc-home-news-main-wrap > li:has(> div > a[rel="sponsored nofollow"])
 bleepingcomputer.com###ips_Posts > .post_block:has(div.apb)
-bleepingcomputer.com###pinned
 bleepingcomputer.com##.articleBody > div:has(a[href^="https://www.wiz.io/"])
 bleepingcomputer.com##.articleBody > div[data-key] > div[style^="width:"]:not([class]):has(> a[target="_blank"])
 bleepingcomputer.com##.articleBody > div[style^="width:"]:not([class]):has(> a[target="_blank"])
@@ -40320,8 +40318,9 @@ bleepingcomputer.com##.cz-post-comment-wrapp + .cz-related-article-wrapp:has(> .
 bleepingcomputer.com##.cz-sponsorposts
 bleepingcomputer.com##.cz-toa-wrapp
 bleepingcomputer.com##.ia_ad
-bleepingcomputer.com##.s-ou-wrap
+bleepingcomputer.com##[href*="https://www.bleepingcomputer.com/mgo/"]
 bleepingcomputer.com##[href^="https://www.bleepingcomputer.com/go/"]
+bleepingcomputer.com##[src*="https://www.bleepstatic.com/c/t/threatlocker/"]
 bleepingcomputer.com##a.center-link-image[target="_blank"][rel="sponsored noopener"]
 bleepingcomputer.com##a[href="https://try.flare.io/bleeping-computer/"] > img
 bleepingcomputer.com##ul#bc-home-news-main-wrap > li:has(> .bc_latest_news_text > h4 > a[rel="nofollow"]:not([href*="bleepingcomputer.com"]))
@@ -79863,6 +79862,7 @@ word-grabber.com,thebridgechronicle.com,maharashtratimes.com##div[class^="ad-wra
 word.tips##.result-top-ad
 word.tips##.result-words-ad
 word.tips##.result-words-ad-new
+wordcount.im##[value="DIRECT DOWNLOAD"]
 wordcount.im##input[value="DIRECT DOWNLOAD"]
 wordcounter.io##.page-aside__display
 wordcounter.io##.sidebar__display
@@ -97703,6 +97703,7 @@ zzzyk.com###Tinfo
 ||woonboulevardpoortvliet.nl/*/Tagging_GTM/
 ||woozooo.com/img/*.js
 ||wopweb.net/services/counters/
+||wordcount.im/js/ad.js
 ||wordpress.com/geo/
 ||work.3dmgame.com/js/statistics.js
 ||workandmoney.com/assets/di_ads.*.js
@@ -97786,6 +97787,8 @@ zzzyk.com###Tinfo
 ||wts2.one^$third-party
 ||wudizuqiu.com/fy
 ||wudizuqiu.com/img/dasai8/ybbj.png
+||wujinyuzhou.top/ny/*00x
+||wujinyuzhou.top/ny/ny852x116.
 ||wujinzy.com/images/ok.gif
 ||wuxianxs.net/mm.
 ||wuxiaworld.com/images/pw^
