@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251127003216
-! Last modified: 2025/11/27 00:32:16
-! Blocked Filters: 97181
+! Version: 20251127095125
+! Last modified: 2025/11/27 09:51:25
+! Blocked Filters: 97184
 !
 ###AC_ad
 ###AD_160
@@ -16862,6 +16862,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 .php?key=*&clickid=*&sub1=$all
 .php?logRefer=
 .php?logType=
+.php?logid=$image
 .php?notrack=
 .php?p=stats&
 .php?ping=
@@ -61545,6 +61546,7 @@ nameberry.com##.Pagination-ad
 nameberry.com##.htlad-InContent_Flex
 nameberry.com##.htlad-Leaderboard_Flex
 namemc.com###skin_wrapper
+namemc.com##.mb-3:has(#nn_player1)
 namemc.com##.my-3:has(> div[id^="nn_player"])
 namemc.com##.small-gutters > div[class="col-12"]
 namemc.com##[style="min-height: 238px"]
@@ -67722,6 +67724,7 @@ readonepiece.com##div > b
 readopm.com,readkaguyasama.com,readjujutsukaisen.com,readtowerofgod.com,readnoblesse.com##.justify-center > center > a[href] > img
 readsnk.com##.pages > div.img_container+div[class^="d-flex justify-content-center text-center"]
 readthedocs.io,godotengine.org##.rtd-pro
+readtheoryapp.com##[data-pmd-placement-idx]
 readwhere.com###clip-ad
 readwhere.com#$#.adunit { margin-top: 0!important; }
 readwhere.com#@#.adunit
