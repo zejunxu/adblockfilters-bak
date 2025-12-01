@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251201002851
-! Last modified: 2025/12/01 00:28:51
-! Blocked Filters: 98870
+! Version: 20251201101212
+! Last modified: 2025/12/01 10:12:12
+! Blocked Filters: 98875
 !
 ###AC_ad
 ###AD_160
@@ -32736,6 +32736,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||pladform.ru/player$subdocument
 @@||planet-streaming1.com^$generichide
 @@||planetazdorovo.ru/pics/transparent_pixel.png$image,~third-party
+@@||plans.humana.com/assets/analytics-events-$script,~third-party
 @@||plantswith.com^$generichide
 @@||plantyn.com/optiext/optiextension.dll$~third-party
 @@||platform-eu.cloud.coveo.com^$stealth=3p-auth,domain=fiskars.com
@@ -33499,6 +33500,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||secure.ccavenue.com/transaction/$stealth
 @@||secure.chase.com/web/auth/$stealth=referrer
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
+@@||secure.moneygram.com/embed/*/webAnalytics/pageMapping.json?$~third-party,xmlhttprequest
+@@||secure.moneygram.com/embed/*/webAnalytics/pageMappingOverrides.json?$~third-party,xmlhttprequest
 @@||secure.quantserve.com/quant.js$domain=listeamed.net|gaystream.click
 @@||secure.quantserve.com/quant.js$xmlhttprequest,domain=bigbuttshub2.top|bigbuttshubvideos.com
 @@||secure.quantserve.com/|$xmlhttprequest,domain=facciabuco.com
@@ -44128,6 +44131,7 @@ csshello.com###topgg
 cssmoban.com##.btn-host
 cssmoban.com##.page-banner
 cssreference.io###alo
+csst.at##.max-h-48
 csst.at##a[href^="https://trk.clash.gg/"]
 csstats.gg###faceit-banner
 cswarzone.com##.col-md-4 > .widget-2
@@ -77039,6 +77043,7 @@ tvtropes.org###asteri-sidebar
 tvtropes.org###mobile_1
 tvtropes.org###mobile_2
 tvtropes.org###stick-cont
+tvtropes.org##.ad-caption-subscribe-wrapper
 tvtropes.org##.fad
 tvtropes.org##.outer_ads_by_salon_wrapper
 tvtropes.org##.sb-fad-unit
