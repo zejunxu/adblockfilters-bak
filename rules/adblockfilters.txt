@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251202003450
-! Last modified: 2025/12/02 00:34:50
-! Blocked Filters: 98836
+! Version: 20251202100107
+! Last modified: 2025/12/02 10:01:07
+! Blocked Filters: 98842
 !
 ###AC_ad
 ###AD_160
@@ -17687,7 +17687,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /^https:\/\/[a-z]{2,14}\.wp\.pl\/[a-zA-Z0-9_-]{200,}/$script,domain=poczta.o2.pl,badfilter
 /^https:\/\/[a-z]{2,5}\.[a-z]{10,14}\.com\/[a-zA-Z0-9]{10,16}\/[a-zA-Z]{5,6}$/$script,third-party,match-case,domain=lookmovie.foundation
 /^https:\/\/[a-z]{2}\.[a-z]{7,14}\.com\/r[0-9A-Za-z]{10,16}\/[A-Za-z]{4,5}$/$script,third-party,match-case
-/^https:\/\/[a-z]{3,4}\.[a-z]{8,14}\.com\/loader\.min\.js$/$script,third-party,match-case,header=etag:/^W\/"[0-9a-f]{32}-\d{13}"$/
+/^https:\/\/[a-z]{3,4}\.[a-z]{8,16}\.com\/loader\.min\.js$/$script,third-party,match-case,header=etag:/^W\/"[0-9a-f]{32}-\d{13}"$/
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}$/$script,third-party,match-case,domain=moviesjoy.is|rawkuma.com|anichin.top
 /^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}(?:\?d=\d)?$/$script,third-party,match-case
 /^https:\/\/[a-z]{6,13}\.(cloud|xyz)\/[A-Za-z0-9_-]{48}[A-Z]{3}$/$document
@@ -18843,6 +18843,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /chcounter/counter.php
 /check.php?referrer=
 /chicken.gif?*=
+/chronos?dune=*&token=$~third-party,xmlhttprequest
 /cjs/cprt.js$domain=dailygh.com|xgcartoon.com
 /ck.m.honto.jp/c/*$image
 /cklink.gif?
@@ -22657,6 +22658,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /zaius.js
 /zanox.js
 /zaraz/s.js
+/zclkredirect?$document
+/zclkvisitor/*$document
 /zcool-analytics.js
 /zcredirect?$document
 /zcredirect?$popup
@@ -27262,6 +27265,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||cdn.digiteka.com/player/PrebidLibrary.js$domain=ultimedia.com
 @@||cdn.dotstream.buzz^$stealth=referrer,domain=megaplay.*
 @@||cdn.engine.addroplet.com/Scripts/infinity.js.aspx^$domain=mirrored.to
+@@||cdn.evgnet.com/beacon/homedepotofcainc/engage/scripts/evergage.min.js$script,domain=homedepot.ca
 @@||cdn.evolutionadv.it/money.it/*.mp4$domain=money.it
 @@||cdn.ex.co/player/$domain=reviewjournal.com
 @@||cdn.ex.co/player/*.js$domain=pagesix.com
@@ -64374,6 +64378,7 @@ olamovies.*#%#//scriptlet('set-constant', 'adsbygoogle', 'emptyObj')
 olarila.com#%#//scriptlet('prevent-fetch', 'adsbygoogle')
 olawa24.pl##.place-items-center > div > a[href^="https://olawa24.pl/redirect?token="][rel]
 old.reddit.com##.native-ad-container
+old.reddit.com##.sb-unit
 older-mature.net##.content > div[style^="width:728px;"][style*="margin:auto;"]
 older-mature.net##div.box1[style^="height:"]
 oldroms.com###adb
@@ -87263,7 +87268,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eavesofefinegoldf.info^$popup
 ||ebay.com/delstats/
 ||ebay.com/nkfytkqtoxtljvzbxhr.js$script,domain=ebay.com
@@ -91881,6 +91885,7 @@ zzzyk.com###Tinfo
 ||moengage.com^$third-party
 ||moerats.com/usr/affpc/
 ||mofa.go.jp^*/count.cgi?
+||moflix-stream.click/ad?
 ||moja-ostroleka.pl//uploads/banery/
 ||moja-ostroleka.pl/uploads/banery/
 ||mojakoja.pl/anchor.gif
@@ -97712,6 +97717,7 @@ zzzyk.com###Tinfo
 ||wipo.int/wipo-analytics/
 ||wireless-bolt.hu/logos/*banner*.
 ||wish.com/api/analytics/
+||wishabi.net^$third-party
 ||wistia.com/assets/external/googleAds.js
 ||wit.qq.com^$third-party
 ||witbee.com^*/collect
