@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251209003406
-! Last modified: 2025/12/09 00:34:06
-! Blocked Filters: 99009
+! Version: 20251209095641
+! Last modified: 2025/12/09 09:56:41
+! Blocked Filters: 99017
 !
 ###AC_ad
 ###AD_160
@@ -27590,6 +27590,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||chpadblock.com/wp-content/uploads/$image,domain=forum.release-apk.com
 @@||chpadblock.com^|$xmlhttprequest,domain=keyrblx.com
 @@||chrome.google.com/webstore/detail/$stealth=3p-cookie
+@@||chsi-zyghds.oss-cn-beijing.aliyuncs.com^$stealth=referrer,domain=zgs.chsi.com.cn
 @@||chtoen.com/js/adsbygoogle.js
 @@||chuangkit.com^$generichide
 @@||chuomilk.co.jp^$stealth=dpi
@@ -40882,7 +40883,6 @@ boots.com#?#.oct-listers-hits__item:-abp-contains(Sponsored)
 boots.com#?#.oct-listers-hits__item:contains(Sponsored)
 boots.com#@#.adcard
 bootyheroes.com##.cross-promo-bnr
-boqushu.com##div[style="display:block;width:100%;height:100px;overflow:hidden;"]
 boredbro.com###AdBox728
 bosejk.in,rlxoff.com,innateblogger.com,gfx-station.com##.popSc
 bosejk.in,rlxoff.com,innateblogger.com,gfx-station.com#%#//scriptlet('abort-on-property-write', 'checkAdsStatus')
@@ -44638,6 +44638,8 @@ dailysocial.id,tiktok.com##.banner-ads
 dailysportscar.com,honor.com#@#.ad-wrap:not(#google_ads_iframe_checktag)
 dailystar.co.uk##.commercial-box-style
 dailystar.co.uk##[data-testid="commercial-above-header-box-1"] {remove:true;}
+dailystar.co.uk##[data-testid="commercial-label-gpt"]
+dailystar.co.uk##[data-tmdatatrack-type="commercial"]
 dailystar.co.uk##amp-iframe[height="40"]
 dailystar.co.uk#$?#[data-testid="commercial-above-header-box-1"] { remove: true; }
 dailystar.co.uk,abcnews.go.com,manchestereveningnews.co.uk,euronews.com,wgrz.com,newatlas.com,plymouthherald.co.uk,chroniclelive.co.uk,hulldailymail.co.uk,thesportbible.com,foreignpolicy.com##.taboola
@@ -45359,6 +45361,7 @@ digit.in##.gadgetDealSideBar
 digit.in##.hot_deals
 digit.in##.inside-container > .gift > a[href^="https://www.digit.in/tracker/"][target="_blank"]
 digit.in##.marchantListOnImage > div.m_list_In
+digit.in##.news_adhide_device
 digit.in##.recommended-box
 digit.in##.textads_list
 digit.in##.top-promo
@@ -65202,10 +65205,6 @@ oregonlive.com#@##adTower
 oregonlive.com#@##adv_header
 oregonlive.com#@#.adTower
 oremanga.net##.header-ads-section
-oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,examsnews.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,procinehub.com#$##AdbModel { display: none !important; }
-oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,examsnews.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,procinehub.com#$#body { overflow: auto !important; }
-oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,examsnews.com,mhfragristack.in#$##myNextInst { display: block !important; }
-oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,examsnews.com,mhfragristack.in#$?##VerifyBtn { display: block !important; }
 orgasm.com###orgasm-girl-banner
 orgyxxxhub.com###invideo_2
 orgyxxxhub.com###objad
@@ -74768,12 +74767,15 @@ theblast.com##div[class]:has(> div[class*="lngtd-dynamic"])
 theblast.com##div[style="height:640px"]
 theblaze.com##.ad-top-padding
 theblaze.com##[data-category="SPONSORED"]
+theblock.co##.bottom-5
 theblock.co##.fixedUnit
 theblock.co##.fullWidthDisplay
+theblock.co##.py-4.my-6:has-text(Advertisement)
 theblock.co##.stickyFooter
 theblock.co##div[ga-event-category="Advertisement"]
 theblock.co#$#.modal-container[ga-event-label$="Prime Trust_Modal"] { display: none !important; }
 theblock.co#$#.overflow-hidden { overflow: auto !important; }
+theblock.co#?#.py-4.my-6:contains(Advertisement)
 theblock.co,thekitchn.com##.stickyFooter
 theblueoceansgroup.com##.av-label
 theblueoceansgroup.com##.ss-on-media-container
@@ -74934,6 +74936,7 @@ thefreedictionary.com#$#div[class][id][style="height: auto;"] { position: absolu
 thefreelibrary.com##.yn
 thefunpost.com##.ad-spacing
 thegamerstation.com##.universal-js-insert
+thegatewaypundit.com###enhancedtextwidget-30
 thegatewaypundit.com##.adcovery
 thegatewaypundit.com##.adcovery-home-01
 thegatewaypundit.com##.adcovery-postbelow-01
@@ -75837,6 +75840,10 @@ timesascent.com#?#.place-content-center:has(> .bg-gray-100:only-child > div[id^=
 timeshighereducation.com###block-the-dfp-the-dfp-oop
 timesindonesia.co.id###modal_ad
 timesindonesia.co.id###modal_ad ~ div.modal-backdrop
+timesnewss.com,oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,examsnews.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,procinehub.com#$##AdbModel { display: none !important; }
+timesnewss.com,oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,examsnews.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,procinehub.com#$#body { overflow: auto !important; }
+timesnewss.com,oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,examsnews.com,mhfragristack.in#$##myNextInst { display: block !important; }
+timesnewss.com,oreopix.com,jobernnews.com,bhumibihar.co.in,abresult.in,merainsurance.xyz,siliconcraft.in,jankarishala.com,coinnai.com,merainsurance.xyz,emipe.online,sankarmusic.in,rozgarguide.com,sarkaricarer.com,tallgalls.com,variedvortex.com,pubgmobile.cloud,general24news.in,arceusxdownload.com,htmlgames.website,iqmastered.com,jobjankari.online,examsnews.com,mhfragristack.in#$?##VerifyBtn { display: block !important; }
 timesnownews.com###app > div[class] > div:not([class], [id]) > div[class]:empty
 timesnownews.com###atf103388570
 timesnownews.com##._1ML8q
@@ -80786,6 +80793,7 @@ xgan.cn##body > center > a[target="_blank"][rel="nofollow"]
 xgaytube.com##a[href^="https://stats.hprofits.com"]
 xgaytube.tv##.b-header > .b-row > .b-main-nav > ul > li > a[href^="https://hd100546b.com/"]
 xgcartoon.com,dailygh.com###video-top-ad
+xgeshu.com,boqushu.com##div[style="display:block;width:100%;height:100px;overflow:hidden;"]
 xgore.net,mehndihairachnewaali.com##.e3lan
 xgp.pl###hdrbnr
 xgp.pl###screeningBg
