@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20251228002955
-! Last modified: 2025/12/28 00:29:55
-! Blocked Filters: 99329
+! Version: 20251228101110
+! Last modified: 2025/12/28 10:11:10
+! Blocked Filters: 99338
 !
 ###AC_ad
 ###AD_160
@@ -22236,6 +22236,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /u/_sponsor/*
 /uc123_no/*/index/js/activity.
 /ucount.php?
+/udp-analytics.js
 /uds/stats?
 /uecomscore_cmp_event_mundo.js
 /uedata?
@@ -52282,6 +52283,7 @@ gta5-mods.com#?#.file-list > .row > .col-xs-12 > .file-list-obj > .ad-inline-mod
 gtaall.com##div[class^="banner-content-"]
 gtaforums.com###ipsLayout_mainArea div:has(> #pwDeskLbAtf)
 gtaforums.com##div[style^="text-align: center; margin: 0px 0px 10px;"]
+gtagarage.com##.ads-playwire-container-250h
 gtagarage.com##.loonybin td > div[style="height: 90px; text-align: center; margin: 10px 0px;"]
 gtagarage.com##div[class^="ads-playwire-container-"]
 gtainside.com#?#.col-lg-4 > .bar_container > .bar_headline:contains(/^Advertising$/):upward(1)
@@ -59031,6 +59033,12 @@ livescores.biz##.make-a-bet_wrap
 livescores.biz##.odds-market
 livescores.biz##.predict_bet
 livescores.biz##.top-bk
+livesoccertv.com###container-hp-ic
+livesoccertv.com###container-hp-rs1
+livesoccertv.com###container-hp-top
+livesoccertv.com###container-md-ic
+livesoccertv.com###container-md-rs1
+livesoccertv.com###container-md-top
 livesoccertv.com##.desktop-ad-container
 livesoccertv.com##.r-sections > div[v-pre]
 livesport.ge###banner
@@ -87666,7 +87674,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eavesofefinegoldf.info^$popup
 ||ebay.com/delstats/
@@ -94428,6 +94435,8 @@ zzzyk.com###Tinfo
 ||qualtrics.com/sie/$script,third-party
 ||qualtrics.com^*/metrics
 ||quangcao-*.epicdn.me^
+||qub.ca/api/log
+||qub.ca/collector-service/event
 ||qudao.com/common/minisite.js
 ||quebecormedia.com/*/lib/cheezwhiz/*index.js
 ||quellavelinge.com/referer.php?
