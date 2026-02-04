@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260204165123
-! Last modified: 2026/02/04 16:51:23
-! Blocked Filters: 97342
+! Version: 20260205005646
+! Last modified: 2026/02/05 00:56:46
+! Blocked Filters: 97352
 !
 ###AC_ad
 ###AD_160
@@ -30873,6 +30873,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||looptorrent.net^$generichide
 @@||lootlinks.*/js/prebid-ads.js
 @@||lootup.me/assets/js/ads-prebid.js
+@@||lootup.me/assets/js/flashAd.js
 @@||lostpod.space/static/streaming-playlists/$domain=videos.john-livingston.fr
 @@||love-stoorey210.net^$generichide
 @@||loveawake.com^$generichide
@@ -39716,6 +39717,8 @@ bestbuy.com##div[id^="shop-display-ad-"]
 bestbuy.com##li.embedded-sponsored-listing
 bestbuy.com#?#.plp-ninja-carousel:-abp-contains(Sponsored)
 bestbuy.com#?#.plp-ninja-carousel:contains(Sponsored)
+bestbuy.com#?#div[data-testid="Row_testID"]:-abp-has(span:-abp-contains(Sponsored))
+bestbuy.com#?#div[data-testid="Row_testID"]:has(span:contains(Sponsored))
 bestcam.tv##.widget-banner
 bestcash2020.com#%#//scriptlet("prevent-window-open")
 bestcash2020.com#@#.banner-468x60
@@ -43122,6 +43125,7 @@ coincodex.com##.bottom9
 coincodex.com##.ldb-top2
 coincodex.com##.ldb-top6
 coincodex.com##.middle9
+coincodex.com##.no-transition.article-ogl
 coincodex.com##.side-col > div[style="text-align: center; position: relative;"]
 coincodex.com##.side-col div[class][style]:has(> a[target="_blank"] > img)
 coincodex.com##.sidebar-4skyscraper
@@ -56920,6 +56924,7 @@ kogan.com#?#.slider-slide:-abp-contains(Sponsored)
 kogan.com#?#.slider-slide:contains(Sponsored)
 kohls.com###PDP_monetization_HL
 kohls.com###PMP_monetization_HL
+kohls.com###kmn-featured-carousel
 kohls.com###kmncarousel-add_buy_carousel-anchor:has(.KMNProductSlider__sponsored)
 kohls.com###kmnsponsoredbrand-sponsored_top-anchor
 kohls.com###open-drawer
@@ -58481,6 +58486,7 @@ lootdest.org,lootdest.com,loot-link.com,lootlinks.co,loot-links.com#%#//scriptle
 lootdest.org,lootdest.com,loot-link.com,lootlinks.co,loot-links.com#%#//scriptlet('prevent-window-open', '', '5')
 lootlink.org#%#//scriptlet('prevent-fetch', 'pagead2.googlesyndication.com')
 lootlinks.*#%#//scriptlet("set-constant", "canRunAds", "true")
+lootup.me#%#//scriptlet("abort-current-inline-script", "document.getElementById", ".style.display='block")
 lordz.io###crossPromotion
 lordz.io###lordz-io_300x250
 lordz.io###lordz-io_300x250_2
@@ -73890,6 +73896,7 @@ thepointsguy.com#%#//scriptlet('set-session-storage-item', 'exitModal', '1')
 thepoorcoder.com##.adtester-container
 thepoorcoder.com##.side-ad
 thepoorcoder.com#%#//scriptlet("set-constant", "adblockDetector", "noopFunc")
+thepopinsider.com##.header-drop-zone
 thepopverse.com##.autoad
 thepopverse.com##div[class^="google-ad_"]
 theporn.cc##.gg-config
@@ -76295,6 +76302,7 @@ ulifestyle.com.hk#$#body { overflow: auto !important; }
 uloz.to###bandzoneHint
 ulozto.net#$#.l-wrapper { padding-top: 0!important; }
 ulta.com##.CriteoProductRail
+ulta.com##li.ProductListingResults__productCard:has(.pal-c-ProductCardFooter__sponsored)
 ulta.com#?#li.ProductListingResults__productCard:has(.ProductCard__badge:-abp-contains(Sponsored))
 ulta.com#?#li.ProductListingResults__productCard:has(.ProductCard__badge:contains(Sponsored))
 ultimate-catch.eu,bedrat.xyz,fx-22.com###page ~ div[id][class*=" "]
@@ -76950,6 +76958,7 @@ vegasslotsonline.com#$?#body > .most-popular-games + section[class][style*="!imp
 velo.outsideonline.com##.o-ad--leaderboard
 velo.outsideonline.com#$#main.l-main { margin-top: 10px !important; }
 velo.outsideonline.com#%#//scriptlet('remove-class', 'c-main-header__nav--prestitial', '.c-main-header__nav')
+velrix.net##a[href^="/adrouter/go/"]
 venea.net##.ag_banner
 venea.net##.ag_content
 venea.net##.ag_line
@@ -86259,6 +86268,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eazydata.io^$third-party
 ||ebay.com/delstats/
