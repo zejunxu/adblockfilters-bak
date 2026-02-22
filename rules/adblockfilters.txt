@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260222163912
-! Last modified: 2026/02/22 16:39:12
-! Blocked Filters: 99879
+! Version: 20260223003730
+! Last modified: 2026/02/23 00:37:30
+! Blocked Filters: 99884
 !
 ###AC_ad
 ###AD_160
@@ -35002,6 +35002,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||tpc.googlesyndication.com/simgad/$image,domain=soranews24.com
 @@||tpc.googlesyndication.com/simgad/$xmlhttprequest,domain=soranews24.com
 @@||tpc.googlesyndication.com/simgad/*$domain=simple.ripley.cl
+@@||tpc.googlesyndication.com^$domain=ads.google.com
 @@||tpc.googlesyndication.com^$domain=edition.cnn.com
 @@||tpc.googlesyndication.com^$domain=hoyts.com.au
 @@||tpc.googlesyndication.com^$domain=ytlarge.com
@@ -61304,6 +61305,8 @@ missav.*,missav123.com,missav888.com##div[x-show^="recommendItems"] ~ div[class]
 missav.*,missav123.com,missav888.com#%#//scriptlet('prevent-window-open')
 missav.*,missav123.com,missav888.com#%#//scriptlet('remove-attr', '@keyup.space.window|@click', 'div')
 missav.*,missav123.com,missav888.com,njavtv.com##[style^="width: 300px; height: 250px;"]
+missav78.top##.streamer-container2
+missav78.top#%#//scriptlet('remove-attr', 'onerror', 'img[onerror="this.src=\'/sample/placeholder.jpg\'"]', 'stay')
 missavtv.com#%#//scriptlet('prevent-element-src-loading', 'script', 'adsbygoogle')
 missavtv.com#%#//scriptlet('prevent-fetch', 'www3.doubleclick.net')
 missavtv.com#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
@@ -92800,6 +92803,7 @@ zzzyk.com###Tinfo
 ||missav*/herebyad
 ||missav.com/pop?$popup
 ||missav.com/pop?url=
+||missav78.top/sample/placeholder.jpg$image,redirect=1x1-transparent.gif
 ||missevan.com^$domain=jijidown.com
 ||missyuan.com/sy/
 ||mistat.*.xiaomi.com^
@@ -93521,6 +93525,7 @@ zzzyk.com###Tinfo
 ||notion.so/api/v3/etClient
 ||notube.*/p/$popup
 ||notyf.com/pixel/
+||nougacoush.com^$popup
 ||novanthealth.org/v1/tagular/beam
 ||novelcool.com/files/js/auto_ads.js
 ||novelcool.com/files/js/yh_tj.js
