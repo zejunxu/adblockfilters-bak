@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260309003552
-! Last modified: 2026/03/09 00:35:52
-! Blocked Filters: 99141
+! Version: 20260309103610
+! Last modified: 2026/03/09 10:36:10
+! Blocked Filters: 99142
 !
 ###AC_ad
 ###AD_160
@@ -10645,6 +10645,7 @@
 ##.floatads
 ##.floated-ad
 ##.floated_right_ad
+##.floating-ad
 ##.floating-ads
 ##.floating-advert
 ##.floatingAds
@@ -31662,6 +31663,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||nbcolympics.com/profiles/olympics/*$domain=nbcolympics.com
 @@||nbe.com.eg/NBEeChannelManager/CallMW.aspx$~third-party
 @@||nbyts.online^$generichide
+@@||nc-cdn.oss-us-west-1.aliyuncs.com/videotranscriber/upload/$stealth=3p-auth
 @@||ncaa.com^$generichide
 @@||neads.io^$domain=neads.io
 @@||nebo.app/auth?$stealth=3p-auth
@@ -61198,6 +61200,7 @@ metv.com##ark-bottom-ad
 metv.com,nydailynews.com##ark-top-ad
 mexa.sh#%#//scriptlet("abort-on-property-write", "installBtnvar")
 mexashare.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "adblockinfo")
+meyka.com##.etoro-ad-scroll
 meyka.com##.relative > section[class=""] > .md\:mt-28.lg\:mt-44
 mezha.media##a[aria-label^="Банер"]
 mezzo.tv##.pp_overlay
@@ -86425,6 +86428,7 @@ zzzyk.com###Tinfo
 ||cifnews.com/yuguo3.0/live_dynamic/js/live_dynamic.js
 ||cig.com.cn^$third-party
 ||cilimao.*/amaod/
+||cilipa.com^*0.js
 ||ciliyinqing.top^$third-party
 ||cimeterbren.top^$popup
 ||cimg.cnyes.cool/prod/adContent/$image
@@ -88555,7 +88559,6 @@ zzzyk.com###Tinfo
 ||fourchette-et-bikini.fr/core/modules/statistics/
 ||foureyes.io/fe-init.js
 ||foursquare.com/v2/private/logactions
-||fourwhenstatistics.com^$popup
 ||foxhq.com/cyltuy.gif
 ||foxhq.com/gabtab.webm$media,redirect=noopmp4-1s
 ||foxsports.com.au/akam/
@@ -89020,7 +89023,6 @@ zzzyk.com###Tinfo
 ||globovision.com/js/ads-home.js
 ||glomera.com/stats
 ||glomex.com^$ping
-||gloogruk.com^$popup
 ||glospowiatusredzkiego.pl/pl/_ajax/getBanners.php
 ||glospowiatusredzkiego.pl/pl/js/qp.js
 ||gloytrkb.com^$popup
@@ -89352,7 +89354,6 @@ zzzyk.com###Tinfo
 ||haszon.hu/images/banners/
 ||hatarako.net/api/recommend/analyze_logger
 ||hatena.ne.jp/api/log?
-||hauchiwu.com^$popup
 ||havysoft.cl/mt_b.png
 ||hawk.live/images/a/bb/large-*-*.gif
 ||hawk.live/images/a/bb/medium-*-*.gif
@@ -89634,7 +89635,6 @@ zzzyk.com###Tinfo
 ||holdonstranger.com^$third-party
 ||holidaycheck.*/svc/ubt/v1/events
 ||hollaforums.com/if/rc
-||hollysocialspuse.com^$popup
 ||holyfamilyradio.org/banners/
 ||homad-global-configs-eu-fra.schneevonmorgen.com.s3.amazonaws.com/www.vgtv.no/config.json$replace=/"enabled": true\,/"enabled": false\,/i
 ||homad-global-configs-eu-fra.schneevonmorgen.com.s3.amazonaws.com/www.vgtv.no/config.json$replace=/"enabled": true\,/"enabled": false\,/i,important
@@ -91143,6 +91143,7 @@ zzzyk.com###Tinfo
 ||klarnaservices.com^$image,third-party
 ||klaviyo.com/onsite/js/sentry.
 ||klaviyo.com/onsite/track-analytics?
+||kleenscan.com/storage/images/banners/
 ||klix.ba/pixel/
 ||klm.us/CWZUvc/
 ||kloth.net/images/pixel.gif
