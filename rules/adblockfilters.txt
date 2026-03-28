@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260328010028
-! Last modified: 2026/03/28 01:00:28
-! Blocked Filters: 99931
+! Version: 20260328103635
+! Last modified: 2026/03/28 10:36:35
+! Blocked Filters: 99945
 !
 ###AC_ad
 ###AD_160
@@ -26430,6 +26430,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
 @@||analytics.edgekey.net/ma_library/html5/html5_malibrary.js$script,domain=mxplayer.in
+@@||analytics.google.com/analytics/$~third-party
 @@||analytics.itunes.apple.com^$~third-party
 @@||ananas.chaoxing.com^*video/ad/
 @@||anandabazar.com/*ad$script
@@ -40722,6 +40723,7 @@ blog.csdn.net##SCRIPT[src^="https://csdnimg.cn/release/phoenix/vendor/linkCatche
 blog.csdn.net##div[style="min-height:250px;"]
 blog.csdn.net##dl[id^="yd_a_d_feed_"]
 blog.hubspot.com###hs_cos_wrapper_blog_post_sticky_cta
+blog.hubspot.com##.blog-cta-with-form
 blog.icook.tw##span[class^="style_adUnit"]
 blog.ipleaders.in##.shwPops
 blog.ipleaders.in##figure[style="width: 300px"]
@@ -47194,6 +47196,7 @@ elecfans.com##div[style^="width: 960px;height: 40px;"]
 elecinfo.com##div[class$="-advert"]
 electrek.co##.post-body > div[class^="th"]
 electrek.co##.post-content > div[class^="th"]
+electrek.co##[href^="https://www.energysage.com/landing/"]
 electrek.co##body > div[class^="th"]
 electrical-engineering-portal.com##.page-ad-topline
 electrical-engineering-portal.com##.reklama-text
@@ -48530,9 +48533,13 @@ fapnado.*##[class^="zpot-horizontal"]
 fapnado.*##center > a[href="/signup/"]
 fapnado.*##div[class*="pause-ad-"]
 fapnado.com##.content > div[style="text-align:center; width:100%;"]
+fapnado.com##.fluid_html_on_pause_container
 fapnado.com##[class^="xpot"]
 fapnado.com##a[href="https://theporndude.com/"]
+fapnado.com##a[href^="https://go.gsrv.dev/"]
 fapnado.com##a[href^="https://tsyndicate.com/"]
+fapnado.com##a[href^="https://www.tckcandy.com/"]
+fapnado.com##div[style="height: 400px; width: 1240px; margin: 0 auto; text-align: center;"]
 fapnado.com##iframe[width="95%"][height="400"]
 fapnado.com#$#.block-video > div.table { visibility: hidden!important; }
 fapnado.com#?##list_videos_related_videos > center:contains(Advertisement)
@@ -56118,6 +56125,8 @@ itchygame.com##div[class^="ntkSide"]
 itchygame.com#$?#.a-th:not([itemscope]) { remove: true; }
 itdmusics.com##.content > * > div[style="width:300px;height:250px"]
 itdmusics.com##.itdmu-widget
+itdmusicy.com,janammusic.in.net##body > div[id][class*=" "]:has(div.adblock_subtitle)
+itdmusicy.com,xporn.to,irootapk.net,ourcoincash.xyz,idrom.top,claimtrx.com,claimsatoshi.xyz#%#//scriptlet('abort-on-property-write', 'AdblockRegixFinder')
 itdog.cn##.card[style="padding: 6px 10px 5px 5px;"]
 itdog.cn##.col-12 > .card.mb-3[style="padding: 5px;"]
 itdog.cn##.div-tg
@@ -56341,7 +56350,6 @@ jame-world.com##.small.text-muted > small
 jamesedition.com#@#.advert2
 jamieoliver.com##.top-avocado
 jamieoliver.com#%#//scriptlet('remove-class', 'has-leaderboard-ad', 'header#main-header.has-leaderboard-ad')
-janammusic.in.net##body > div[id][class*=" "]:has(div.adblock_subtitle)
 jandan.net###random-ads
 jandan.net###sidebar > div#box
 jandan.net###sidebar > ul:nth-child(2)
@@ -62706,7 +62714,7 @@ mydrivers.com##div[style="text-align: center;margin-top: 10px;"]
 mydrivers.com##div[style^="position:fixed;left:50%;bottom:200px;"]
 mydrivers.com#?#.newslist > li:has(> span:contains(广 告))
 mydrivers.com#?#div[class^="news_info"] > ul.newslist > li:has(> span:contains(广告))
-mydrivers.com#?#li:-abp-has(>.titl+:-abp-contains(好物))
+mydrivers.com#?#li:-abp-has(>.titl+:-abp-contains(/好\s*物/))
 mydrivers.com#?#li:has(>.titl+:contains(好物))
 mydrivers.com,wmzhe.com##a[href*=".jd.com/"]
 myevreview.com###ad_aside_1
@@ -77005,6 +77013,9 @@ travelironguide.com,kreditexperte.online,goo.st#@#.adbadge
 travelironguide.com,kreditexperte.online,goo.st#@#.ads
 travelironguide.com,kreditexperte.online,goo.st#@#.adsbox
 travelironguide.com,kreditexperte.online,goo.st#@#.doubleclick
+travelm.de###ad__banner
+travelm.de##.ad__row
+travelm.de##.header__banner
 traverseticker.com##a[onclick*="Ads"]
 traverseticker.com##div[class*="adBox"]
 traverseticker.com##div[class*="bannersBox"]
@@ -80325,11 +80336,11 @@ win7simu.visnalize.com#%#//scriptlet('prevent-fetch', 'adsbygoogle')
 win7w.com###xldz
 win7xzb.com##.four_box
 win7xzb.com##.ware_gs
-winaero.com###inbll
-winaero.com###jkhskdfsdf-iycc-5
+winaero.com###inbll:not(.thank-you-adguard)
+winaero.com###jkhskdfsdf-iycc-5:not(.thank-you-adguard)
 winaero.com##.gad-gads
 winaero.com##.site-content > div > p[style="margin: 22px"]
-winaero.com##.windia
+winaero.com##.windia:not(.thank-you-adguard)
 winaero.com##.windiv:has(> a.winrec)
 winaero.com#$#a[href^="/"][target="_blank"][rel*="nofollow"].subrec { height: 48px !important; }
 winaero.com#%#//scriptlet('abort-current-inline-script', 'jQuery', '/\.innerHTML[\s\S]*?(R[ЕE]COMM[ЕE]ND[ЕE]D|to fix Wind[оo]ws|\.parentNode\.insertBefore)/')
@@ -80338,6 +80349,7 @@ winaero.com#?##qcihrbv5 > p:contains(Tip)
 winaero.com#?##qcihrbv5 > p:has-text(Tip)
 winaero.com#@##custom_html-10
 winaero.com#@##jkhskdfsdf-iycc-4
+winaero.com#@##jkhskdfsdf-iycc-5
 winaero.com$$script[wildcard="*.innerHTML*.parentNode.insertBefore*"][max-length="2000"]
 winandmac.com,nicekkk.com###custom_html-3
 winbuzzer.com##.mfp-figure::before
@@ -81498,7 +81510,6 @@ xplay.gg##a[href*="?utm_promo="][href*="_banner"][target="_blank"]
 xplay.gg##a[target="_blank"]:has(> div:is([url], [src]))
 xplay.gg##div[class^="sc-"]:has(> a[target="_blank"]:only-child > div:is([url], [src]))
 xplay.gg#?##__next > div[class*=" "] > div[class*=" "]:first-child:has(> a[href*="?utm_promo="][href*="_banner"][target="_blank"]:only-child)
-xporn.to,irootapk.net,ourcoincash.xyz,idrom.top,claimtrx.com,claimsatoshi.xyz#%#//scriptlet('abort-on-property-write', 'AdblockRegixFinder')
 xporn.tv##.standalonead
 xpornium.net##body > div[style^="position:"][onclick*="inject"]
 xpornium.net#%#//scriptlet("prevent-addEventListener", "", "dtnoppu")
@@ -85185,6 +85196,9 @@ zzzyk.com###Tinfo
 ||avforme.com/nutaku/script.*.js
 ||avforme.com/templates/default/js/arf-app.js
 ||avgle.topgirlsdating.com^$domain=avgle.com
+||aviasales.*-analytics.
+||aviasales.*/analytics_pv.
+||aviasales.*/sentry-replay.
 ||aviatica.rs/static/uploads/*/*/*-banner-*x*.gif
 ||aviatica.rs/static/uploads/*/*/aviatica-1atravel-*.gif
 ||aviole.com/script/pustrck.js
@@ -88143,7 +88157,6 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
-||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eavesofefinegoldf.info^$popup
 ||eazydata.io^$third-party
@@ -88569,6 +88582,7 @@ zzzyk.com###Tinfo
 ||fapix.porn/front/js/unwanted.js
 ||fapnado.*.php|
 ||fapnado.*/bump/
+||fapnado.com/ads/$media
 ||fapnado.com/api/
 ||fapnado.com/bump
 ||fapnow.xxx/bump/
