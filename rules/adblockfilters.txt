@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260522020342
-! Last modified: 2026/05/22 02:03:42
-! Blocked Filters: 102182
+! Version: 20260522120247
+! Last modified: 2026/05/22 12:02:47
+! Blocked Filters: 102191
 !
 ###AC_ad
 ###AD_160
@@ -12191,6 +12191,7 @@
 ##.news-ad-square-box
 ##.news-ads-top
 ##.news-item--ad
+##.newsAD
 ##.news_ad_box
 ##.news_vibrant_ads_banner
 ##.newsad
@@ -21125,7 +21126,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 /player/*/vast.js$domain=designparty.sx
 /player/ads/*$~xmlhttprequest
 /player/html.php?aid=*&video_id=*&referer=
-/player/stats.php$image,redirect-rule=1x1-transparent.gif,domain=camhub.world|wxx.wtf|porn4fans.com
+/player/stats.php$image,redirect-rule=1x1-transparent.gif,domain=camhub.world|wxx.wtf|porn4fans.com|fyxxr.to
 /player/stats.php?
 /player/video.js/videojs-vast-vpaid/*
 /player_embed_cu.php?s=$popup
@@ -23564,7 +23565,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 18j.tv##div[class="container"] > div[class="warp"]
 18moe.org##.alignnone[alt="恰饭广告"]
 18moe.vip##a[href^="http"]:not([href*="18moe.vip"]) > img[src*="tc.18moe.net"]
-18porn.sex,18teensex.tv,429men.com,4kporn.xxx,4wank.com,alotporn.com,amateur8.com,amateurporn.co,amateurporn.me,bigtitslust.com,camwhores.tv,danude.com,daporn.com,epicgfs.com,fapnow.xxx,fpo.xxx,freeporn8.com,fuqer.com,gayck.com,hentai-moon.com,hentai0day.com,heroero.com,hoes.tube,intporn.com,japaneseporn.xxx,javwind.com,jizzberry.com,mmshub.online,multi.xxx,onlyhentaistuff.com,porndr.com,sexjav.tv,sextubespot.com,sortporn.com,tabootube.xxx,trueamateurporn.org,vilevideos.com,watchmygf.xxx,xcavy.com,xgroovy.com,xmateur.com,xxxshake.com##.table
+18porn.sex,18teensex.tv,429men.com,4kporn.xxx,4wank.com,alotporn.com,amateur8.com,amateurporn.co,amateurporn.me,bigtitslust.com,camwhores.tv,danude.com,daporn.com,epicgfs.com,fapnow.xxx,fpo.xxx,freeporn8.com,fuqer.com,gayck.com,hentai-moon.com,hentai0day.com,heroero.com,hoes.tube,intporn.com,japaneseporn.xxx,javwind.com,jizzberry.com,mmshub.online,multi.xxx,onlyhentaistuff.com,porndr.com,sexjav.tv,sextubespot.com,sortporn.com,tabootube.xxx,trueamateurporn.org,vilevideos.com,watchmygf.xxx,watchporn.to,xcavy.com,xgroovy.com,xmateur.com,xxxshake.com##.table
 18porn.sex,amateur8.com,anyporn.com,area51.porn,bigtitslust.com,eachporn.com,fapster.xxx,fpo.xxx,freeporn8.com,hentai-moon.com,hentai0day.com,its.porn,izlesimdiporno.com,mmshub.online,pervertslut.com,porngem.com,pornmeka.com,porntop.com,sexvid.xxx,sortporn.com,tktube.com,uiporn.com,xhamster.com##.sponsor
 18porno.tv##.toplist
 18pornsex.com##.video-page > .ad
@@ -25115,6 +25116,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 :81/c/i.php?id=$script
 :81/s/i.php?id=$script
 :818/nowscore/
+:866/o.js$script,third-party
 :8686/8888/*.gif$third-party,image
 :88/999pc/
 :88/lighttpd/default/
@@ -25530,8 +25532,8 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@/needsharebutton.min.js$domain=leetcode-cn.com
 @@/owa/service.svc$document
 @@/player/*$stealth=referrer,domain=ibomma.*
-@@/player/stats.php$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|watchmdh.to|porn4fans.com|porno24.to
-@@/player_ads.html$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|camwhoresbay.porn|watchmdh.to|ebalovo.porn|ebalovo.adult|camlovers.tv|camhub.tv|pornissimo.org|porntn.com|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|sexcams-24.com|watchmdh.to|porno24.to
+@@/player/stats.php$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|watchmdh.to|porn4fans.com|porno24.to|fyxxr.to
+@@/player_ads.html$domain=camwhores.tv|viralxxxporn.com|thothub.vip|yesporn.vip|85po.com|85po.net|85xo.com|85xo.com|watchporn.to|viralpornhub.com|camwhoresbay.porn|watchmdh.to|ebalovo.porn|ebalovo.adult|camlovers.tv|camhub.tv|pornissimo.org|porntn.com|femdomtb.com|pornoham.me|tubsexer.com|homegrownfreaks.net|pornfd.com|sexcams-24.com|watchmdh.to|porno24.to|fyxxr.to
 @@/playlist.m3u8$stealth=referrer|ip
 @@/playlist/*caxi.m3u8$xmlhttprequest,stealth=referrer,domain=crackstreamer.net|streameast.app|1stream.eu|buffstreams.app
 @@/playlists/*/play*.jpeg$xmlhttprequest,stealth=referrer
@@ -26843,7 +26845,7 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||app.adjust.net.in/*?campaign=*&redirect=
 @@||app.axenthost.com^$generichide
 @@||app.clarity.so^$~third-party
-@@||app.clickfunnels.com/assets/lander.js$script,domain=propanefitness.com
+@@||app.clickfunnels.com/assets/lander.js$script,domain=painprophet.com|propanefitness.com
 @@||app.datapacket.com^$content
 @@||app.focusmate.com^$stealth=webrtc
 @@||app.freeinvoicebuilder.com/*/index.php$xmlhttprequest,elemhide,jsinject,extension
@@ -42230,8 +42232,6 @@ camwhores.tv#%#//scriptlet('set-constant', 'flashvars.adv_pre_url', '')
 camwhores.tv#%#//scriptlet('set-constant', 'flashvars.protect_block_html', '')
 camwhores.tv#%#//scriptlet('set-constant', 'flashvars.protect_block_html_after', '')
 camwhores.tv,camwhores.video###camsoda-embed
-camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@##ads_iframe
-camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@#.ads-iframe
 camwhores.video##.content > a[target="_blank"]
 camwhores.video,camwhores.tv##.container > .content ~ .headline
 camwhores.video,camwhores.tv##.footer-wrap > div[style="text-align:center;margin-top:5px;margin-bottom:5px;font-size:20px;"]
@@ -43482,6 +43482,7 @@ clickhole.com,lifehacker.com,splinternews.com,avclub.com,deadspin.com,gizmodo.co
 clickhole.com,lifehacker.com,splinternews.com,avclub.com,deadspin.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,qz.com,theinventory.com,theonion.com,theroot.com,thetakeout.com#?#section div[class] div[class] > .ad-container:upward(1)
 clickndownload.*##html > div[style^="position: fixed;"]
 clickondetroit.com##.fixedAd
+clickondetroit.com##.hRmgEt
 clickthis.blog,speechnotes.co##div.ad
 clien.net,mediafire.com#@#.ad_banner
 client.falixnodes.net##div[id^="adngin-"]
@@ -45745,6 +45746,8 @@ defence-industry.eu##.has-small-font-size.has-text-align-center
 defence24.com,defence24.pl,energetyka24.com,infosecurity24.pl##:is(aside, .block) a:is([rel="sponsored"], [href*="utm_campaign"]) > span
 defence24.pl#?#main > section.block:has(> div > a > span > figure > figcaption:contains(Reklama))
 defenceweb.co.za#%#//scriptlet('set-constant', 'td_ad_background_click_link', '')
+defenseone.com##.advert-placeholder
+defenseone.com##.promo-rail-img-container
 defenseworld.net##.flex-header-ad
 defenseworld.net##.sidebar-section > div[style*="min-height:"]:has(> .adsbygoogle)
 defenseworld.net##[href^="https://www.marketbeat.com/scripts/redirect.aspx"]
@@ -45894,6 +45897,7 @@ deserttechairconditioning.com###r-ad-banner
 deshdoaba.com##.site-branding
 desi-porn.tube##.content > div > div[class]:has(> .wrapper:only-child > div[class]:first-child + div[class]:last-child > div[class]:only-child > .da-container)
 desi-porn.tube#%#//scriptlet('remove-node-text', 'script', 'utm_mapping')
+desi-porn.tube,shemalez.*##.content > div > .wrapper + div[class]
 desidime.com##.google-ads-section
 desidime.com##div[id^="div-ad"]
 designboom.com##.aside-adv-box
@@ -51242,6 +51246,11 @@ fxykx.com,pantsu.cat#@##banner_ad
 fydisk.com###vbox
 fyi.tv,aetv.com,mylifetime.com,history.com##div[class^="Component-adBreak-"]
 fyi.tv,aetv.com,mylifetime.com,history.com#%#//scriptlet('m3u-prune', '/redirector\.googlevideo\.com\/videoplayback[\s\S]*?dclk_video_ads/', '.m3u8')
+fyxxr.to,camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@##ads_iframe
+fyxxr.to,camwhores.tv,viralxxxporn.com,thothub.vip,yesporn.vip,85po.com,85po.net,85xo.com,85xo.com,watchmdh.to,watchporn.to,viralpornhub.com,camwhoresbay.porn,watchmdh.to,ebalovo.porn,ebalovo.adult,camlovers.tv,camhub.tv,pornissimo.org,porntn.com,femdomtb.com,pornoham.me,tubsexer.com,homegrownfreaks.net,pornfd.com,sexcams-24.com#@#.ads-iframe
+fyxxr.to,hihentaiporn.com,watchporn.to,camwhores.tv,japan-whores.com,thothub.vip,3dporndude.com,xcadr.tv,fapnow.xxx,bobs-tube.com##.fp-brand
+fyxxr.to,porn4fans.com,porno24.to,viralxxxporn.com#%#//scriptlet('prevent-setTimeout', '.style.visibility', '2000')
+fyxxr.to,trannymovs.com,xpee.com,thothub.to,thothub.ch,thothub.*,host4fap.com,teenxy.com,alotporn.com,tubsexer.*,cambabe.me##.block-video > .table
 fz.se##body .bnr:not(#style_important)
 fzmovies.*##center > a[href="https://fzstudios.app/"]
 fzmovies.*#%#//scriptlet("abort-current-inline-script", "confirm", "Download the official Android app")
@@ -51849,7 +51858,6 @@ gaytiger.com##.content-inner-col > .aside-itempage-col
 gaytiger.com##.inner-box-container > .row > center
 gaytxxx.com##.index-page > div.wrapper > div.row + div[class]
 gaytxxx.com#?#div[class^="video-conten"] > div[class]:first-child > div[class]:has(> div[class] > div[class] > div[id])
-gaytxxx.com,thegay.com,txxx.*,txxxporn.tube,desi-porn.tube,desi-porn.xyz,onlyporn.tube,transtxxx.com##a[class^="tag"][target="_blank"]
 gaytxxx.com,transtxxx.com##.video-content > div[class] > div:has(> div.pplayer) + div[class]
 gaytxxx.com,txxxporn.tube,txxx.*##div[class^="video-conten"] div[class]:has(> div[class] > div[class] > div.direct-abnner)
 gaytxxx.com,vjav.tube,vjav.com,transtxxx.com,upornia.*,txxxporn.tube,txxx.*##.video-videos-slider
@@ -52227,7 +52235,6 @@ gfsoso.99lb.net##center > a[target="_blank"][rel="nofollow"] > img
 gfthai.com,boobse.com,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,uanal.com,pornl.tube,xshemale.tube,keporn.vip,fuxxx.com,pornl.com##.video-ntv-wrapper
 gfthai.com,boobse.com,keporn.vip,fuxxx.com,keporn.com,peporn.com,teen21.com,ourgay.tube,pornuse.com,uanal.com,pornl.tube,xshemale.tube,ourgay.com,lesbigo.com,porn-latina.com,pornl.com,ooxxx.com,privatehomeclips.com##section[style="padding: 20px;"]
 gfthai.com,keporn.vip,keporn.com,peporn.com,teen21.com,pornuse.com,uanal.com##div[class^="top-categories"] > a[href][target="_blank"]
-gfthai.com,mrgay.tube,boobse.com,vjav.tube,pornl.tube,keporn.com,voyeurhit.tube,uanal.com,peporn.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,ourgay.tube,pornuse.com,desi-porn.xyz,onlyporn.tube,in-porn.com,pornclassic.tube,transtxxx.com,gaytxxx.com,xshemale.tube,ourgay.com,fuxxx.com,txxxporn.tube,mrgay.com,xjav.tube,lesbigo.com,porn-latina.com,bdsmx.tube,blackporn.tube,inporn.com,porntop.com,vxxx.com,aniporn.com,txxx.*,vjav.com,voyeurhit.com,pornl.com,ooxxx.com,txxx.com,01tube.com,tubepornclassic.com,keporn.vip,transtxxx.com,abtranny.com,shemalez.*,upornia.*,privatehomeclips.com,gettranny.com,desi-porn.tube,thegay.com,xmilf.com,hotmovs.com,hclips.com,manysex.*,hdzog.com,hdzog.tube##.nopop
 gfxtra31.com##center > a[target="_blank"] > h4
 gg-animes.com##.container_ads
 gg-animes.com##div[id^="ads"]
@@ -54549,7 +54556,6 @@ hightimes.com##a[href^="http://medicalcard.leafwell.co/"] > img
 highwayradio.com##.hiway-widget
 hihentaiporn.com##.main-cams-wrap
 hihentaiporn.com,rat.xxx,hdtube.porn,pornid.*##.player-top-line
-hihentaiporn.com,watchporn.to,camwhores.tv,japan-whores.com,thothub.vip,3dporndude.com,xcadr.tv,fapnow.xxx,bobs-tube.com##.fp-brand
 hij.com.pl#?##mvp-home-body > .clearfix + article > h1:contains(/^Reklama$/)
 hij.com.pl#?##mvp-home-body > .clearfix + article > h1:contains(/^Reklama$/) + .master-slider-parent
 hilltimes.com###locked-sponsored-stories-inline
@@ -60335,10 +60341,10 @@ linkedin.com#?#.core-rail > div > div[id^="ember"]:has(.feed-shared-actor__sub-d
 linkedin.com#?#.feed-shared-update-v2:has(.update-components-actor__sub-description:contains(/Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|الترويج/))
 linkedin.com#?#.msg-overlay-list-bubble__conversations-list:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
 linkedin.com#?#.msg-overlay-list-bubble__conversations-list:has-text(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
-linkedin.com#?#[componentkey*="MAIN_FEED_RECENT"] > [data-view-name]:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
-linkedin.com#?#[componentkey*="MAIN_FEED_RECENT"] > [data-view-name]:has-text(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
-linkedin.com#?#[componentkey*="MAIN_FEED_RELEVANCE"] > [data-view-name]:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
-linkedin.com#?#[componentkey*="MAIN_FEED_RELEVANCE"] > [data-view-name]:has-text(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
+linkedin.com#?#[componentkey*="MAIN_FEED_RECENT"] > [data-display-contents]:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
+linkedin.com#?#[componentkey*="MAIN_FEED_RECENT"] > [data-display-contents]:has-text(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
+linkedin.com#?#[componentkey*="MAIN_FEED_RELEVANCE"] > [data-display-contents]:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
+linkedin.com#?#[componentkey*="MAIN_FEED_RELEVANCE"] > [data-display-contents]:has-text(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/)
 linkedin.com#?#div.feed-shared-update-v2:has(span.update-components-actor__description:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
 linkedin.com#?#div.feed-shared-update-v2:has(span.update-components-actor__description:has-text(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
 linkedin.com#?#div.feed-shared-update-v2:has(span.update-components-actor__sub-description--tla:contains(/Anzeige|Sponsored|Promoted|Dipromosikan|Propagováno|Promoveret|Gesponsert|Promocionado|促銷內容|Post sponsorisé|프로모션|Post sponsorizzato|广告|プロモーション|Treść promowana|Patrocinado|Promovat|Продвигается|Marknadsfört|Nai-promote|ได้รับการโปรโมท|Öne çıkarılan içerik|Gepromoot|الترويج/))
@@ -68546,7 +68552,6 @@ porn4fans.com##footer > div.section:has(>div.container > script[src*="slimespell
 porn4fans.com#$##spot_player { position: absolute !important; left: -3000px !important; }
 porn4fans.com#%#//scriptlet('prevent-addEventListener', 'load', 'adblock')
 porn4fans.com,bussyhunter.com#%#//scriptlet('trusted-replace-node-text', 'script', 'protect_block', '/protect_block.*?\,/', '')
-porn4fans.com,porno24.to,viralxxxporn.com#%#//scriptlet('prevent-setTimeout', '.style.visibility', '2000')
 porn555.com##.vda-x2
 porn5f.com###dprecommend
 porn5f.com##.alb_320x250
@@ -72768,8 +72773,6 @@ shemalestube.com#$#.cover { background-image: none!important; }
 shemalestube.com#%#//scriptlet('prevent-window-open')
 shemaletubevideos.com##.buttonsale
 shemaletubevideos.com##.mainvt > .right-2
-shemalez.*##.content > div > .wrapper + div[class]
-shemalez.*##.header__nav > div.left > div.dropdown ~ a[href][target="_blank"]
 shemalez.*##.video-page__content > .left  + div[class]
 shemalez.*##iframe[src^="https://go.mnaspm.com/"]
 shemalez.com#%#//scriptlet("set-constant", "adver", "noopFunc")
@@ -74906,6 +74909,7 @@ stat-nba.com###ad_video
 statecollege.com##div[class^="ad_code_"]
 statecollege.com##div[class^="adapex"]
 statesman.com##article > div:has(> div:first-child + div[data-block-type="ad"]:last-child)
+staticfile.link###player_pause
 staticice.com.au##a[href^="http://prf.hn/click/"]
 staticice.com.au##table[width="100%"] > tbody > tr > td[height="15"][valign="top"]:only-child
 staticice.com.au##table[width="500"][align="center"] > tbody > tr > td[height="21"]:only-child
@@ -76876,6 +76880,7 @@ thediplomat.com##.td-ad-container--labeled
 thediplomat.com##[class*="td-ad"]
 thedirect.com##.mv-ad-box
 thedrinknation.com###fcBanner
+thedrive.com##.sellwild-container
 thedriven.io###solarchoice_banner_1
 thedronegirl.com###text-17
 thedronegirl.com##a[href^="http://dronepilotgroundschool.com/"] > img
@@ -76972,6 +76977,9 @@ thegay.com,thegay.tube,hotmovs.*##.underplayer__info > div[class]:first-child
 thegay.com,upornia.com,upornia.tube##.video-page__content > .right
 thegay.tube##.wtxmmmmdmdtta
 thegay.tube#%#//scriptlet("set-constant", "adver", "noopFunc")
+thegay.tube,gaytxxx.com,thegay.com,txxx.*,txxxporn.tube,desi-porn.tube,desi-porn.xyz,onlyporn.tube,transtxxx.com##a[class^="tag"][target="_blank"]
+thegay.tube,gfthai.com,mrgay.tube,boobse.com,vjav.tube,pornl.tube,keporn.com,voyeurhit.tube,uanal.com,peporn.com,abbdsm.com,abgay.tube,abjav.com,abxxx.com,abmilf.com,ourgay.tube,pornuse.com,desi-porn.xyz,onlyporn.tube,in-porn.com,pornclassic.tube,transtxxx.com,gaytxxx.com,xshemale.tube,ourgay.com,fuxxx.com,txxxporn.tube,mrgay.com,xjav.tube,lesbigo.com,porn-latina.com,bdsmx.tube,blackporn.tube,inporn.com,porntop.com,vxxx.com,aniporn.com,txxx.*,vjav.com,voyeurhit.com,pornl.com,ooxxx.com,txxx.com,01tube.com,tubepornclassic.com,keporn.vip,transtxxx.com,abtranny.com,shemalez.*,upornia.*,privatehomeclips.com,gettranny.com,desi-porn.tube,thegay.com,xmilf.com,hotmovs.com,hclips.com,manysex.*,hdzog.com,hdzog.tube##.nopop
+thegay.tube,shemalez.com,shemalez.tube,vjav.tube,vjav.com,desi-porn.tube,desi-porn.xyz##.header__nav > * > a[href][target="_blank"]
 thegay.tube,thegay.com#%#//scriptlet("abort-on-property-read", "adver.popunder.neverblock")
 thegazette.com###billboard-wrap
 thegazette.com###high-impact
@@ -78683,7 +78691,6 @@ trannygem.com,uiporn.com##.related-videos:has(> span[id$="-Nat-vip"])
 trannylime.com###_iframe_content
 trannylime.com##div.twocolumns > div.viewlist ~ div.aside
 trannymovs.com##.block-video > .video-holder > .sponsor
-trannymovs.com,xpee.com,thothub.to,thothub.ch,thothub.*,host4fap.com,teenxy.com,alotporn.com,tubsexer.*,cambabe.me##.block-video > .table
 trannytube.tv##.b-secondary-column__banners
 trannytube.tv,icegaytube.tv##.b-secondary-column__banners
 trannyvideosx.com###ad-controls
@@ -81011,7 +81018,6 @@ vjav.tube,boobse.com,ourgay.tube,pornclassic.tube,pornl.tube,upornia.*,hclips.co
 vjav.tube,hclips.com,upornia.com,in-porn.com,boobse.com,tubepornclassic.com,pornl.com,pornl.tube,vjav.com,ourgay.tube,pornclassic.tube,porn-latina.com,lesbigo.com,privatehomeclips.com,manysex.*,xmilf.com,inporn.com,xshemale.tube,ourgay.com,ooxxx.com##.tag__item:has(> a[target="_blank"][href])
 vjav.tube,privatehomeclips.com##.jwplayer > div.afs_ads + span[class]
 vjav.tube,vjav.com##.headline:has(+ .video-videos-slider)
-vjav.tube,vjav.com,desi-porn.tube,desi-porn.xyz##.header__nav > * > a[href][target="_blank"]
 vjmedia.com.hk###author-spotlight + .clear + div
 vjmedia.com.hk###text-33
 vjmedia.com.hk##.code-block
@@ -82757,6 +82763,7 @@ wpu24.pl,ddwloclawek.pl,ddtorun.pl##.TOPNewsB
 wpu24.pl,ddwloclawek.pl,ddtorun.pl##.banner--toplayer
 wpu24.pl,ddwloclawek.pl,ddtorun.pl##.topLayer
 wral.com###exco
+wral.com##.exco-wrapper
 wral.com##.vw3Klj
 wralsportsfan.com##.sponsor-label
 wrestletalk.com###belowVideoAd
@@ -90279,6 +90286,7 @@ zzzyk.com###Tinfo
 ||easyporn.xxx/tmp/
 ||easysol.net^$third-party
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eazydata.io^$third-party
 ||ebay.com/delstats/
@@ -100822,6 +100830,7 @@ zzzyk.com###Tinfo
 ||watchmynewgf.com/js/mes.js
 ||watchonlinemovies.com.pk/wp-content/uploads/2016/10/logo.png$popup
 ||watchporn.to/banners.php
+||watchporn.to/banners/
 ||watchporn.to/banners/summer2.gif
 ||watchporn.to/contents/djifbwwmsrbs/player/seduced_vast.mp4
 ||watchpornfree.info/wp-content/themes/toroflix/nex1.
