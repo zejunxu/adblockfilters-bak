@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260603034406
-! Last modified: 2026/06/03 03:44:06
-! Blocked Filters: 101227
+! Version: 20260603124207
+! Last modified: 2026/06/03 12:42:07
+! Blocked Filters: 101216
 !
 ###AC_ad
 ###AD_160
@@ -24560,8 +24560,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 9am.ro##.ad-in-artilce
 9am.ro##.minh-250
 9am.ro##.retail_insert_in_article
-9anime-hub.com###mdl-register
-9anime-hub.com#%#//scriptlet('prevent-setTimeout', '-register')
 9anime-tv.com##body > iframe[class][style^="border:"][style*="z-index:"]:not([src])
 9anime-tv.com#?#.theiaStickySidebar > div[id^="text-html-widget-"]:has(> .widget-title > h4:contains(/^Advertisement$/))
 9anime.*#%#//scriptlet("abort-current-inline-script", "document.createElement", "ppu_")
@@ -49505,7 +49503,7 @@ forums.redflagdeals.com###header_billboard_bottom
 forums.redflagdeals.com###primisContainer
 forums.redflagdeals.com###primisPlayerContainerDiv
 forums.redflagdeals.com##.forum_topic_inline_bigbox
-forums.redflagdeals.com##.topic-card:has(> .sponsored-offer)
+forums.redflagdeals.com##.topiclist > .topic:has(span.sponsored)
 forums.redflagdeals.com##div[class$="_post_ad"]
 forums.redflagdeals.com##li[class^="forum_topic_inline_container_"]
 forums.sailinganarchy.com##div[data-widget-key="postcast_sponsors"]
@@ -68573,8 +68571,6 @@ powiatowa.info#?#.jm-title-wrap > .jm-title:contains(/^REKLAMA$/)
 powstream.*,stre4mplay.*,streampiay.*,stemplay.*,steamplay.*,steanplay.*,streamp1ay.*,streanplay.*###uverlay
 powstream.*,stre4mplay.*,streampiay.*,stemplay.*,steamplay.*,steanplay.*,streamp1ay.*,streanplay.*##.ad
 powv1deo.cc##iframe[src^="//tontent.powv1deo.cc/"]
-powvideo.net###keepFloatin
-powvideo.net##iframe[src^="//wontent.powvideo.net/apw.hh"]
 powvideo.net,streamplay.to,uxstyle.com###overlay
 poynter.org###above-the-brands
 pp.ua###id_ad_image
@@ -69513,7 +69509,6 @@ quicksounds.com#%#//scriptlet("abort-current-inline-script", "document.getElemen
 quienhabla.mx#%#//scriptlet('prevent-xhr', 'pagead2.googlesyndication.com')
 quikr.com##.promotion_banners
 quikr.com,theync.com,all-that-is-interesting.com##.header-banner
-quins.us###mgStickyBanner
 quintenews.com##center > a[target="_blank"][href]
 quintenews.com##div[id^="placement_"]
 quipmag.com##.nlg-sidebar-inner > .widget_text
@@ -82805,7 +82800,6 @@ xxxporn.me#$#.kPYsnxpplayer-promo-col { visibility: hidden !important; }
 xxxporn.pics##.download
 xxxporn.tube###watch_sidevide
 xxxporn.tube###watch_undervideo
-xxxpornhd.pro##.video-container > div.link
 xxxrapid.com##.video-actions-content
 xxxscenes.net###execphp-3
 xxxshake.com##.fluid-b > div.fluid-b-title
@@ -89067,7 +89061,6 @@ zzzyk.com###Tinfo
 ||downlinker.*/ad_dl.js
 ||downlinker.*/ads.js
 ||download-adblockgenius.com^$popup
-||download-performance.com^$popup
 ||download.2345.cn/2345yd1/apk/
 ||download.cnet.com/revamp.js
 ||download.megaup.net/*.jpg$~third-party,image,redirect=1x1-transparent.gif
@@ -89815,7 +89808,6 @@ zzzyk.com###Tinfo
 ||fetishshrine.com/jsb/js_script.js
 ||fetishshrine.com/plugin.js
 ||fetlife.com/ads/
-||fewcents.co^$third-party
 ||feyorra.top/next.js
 ||ffdm*.cc/dd.js
 ||ffdm2.cc/ht_cpc.js
@@ -95858,9 +95850,6 @@ zzzyk.com###Tinfo
 ||powv1deo.cc/js/dpu*/pu*.min.js
 ||powv1deo.cc/player*/*/vast.js
 ||powvibeo.*/ben/$subdocument,~third-party
-||powvideo.net/bon/exonat.html
-||powvideo.net/bun/$important
-||powvideo.net/js/pu*/pu*.min.js?v=
 ||poxiao.com/template/default/images/12345.js
 ||ppcdn.it/iol/tracklib.3.js
 ||ppcnt.*/go.php?id=$popup
