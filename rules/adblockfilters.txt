@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260613021055
-! Last modified: 2026/06/13 02:10:55
-! Blocked Filters: 103328
+! Version: 20260613121151
+! Last modified: 2026/06/13 12:11:51
+! Blocked Filters: 103325
 !
 ###AC_ad
 ###AD_160
@@ -13299,7 +13299,6 @@
 ##.sponsored-ad-label
 ##.sponsored-add
 ##.sponsored-ads
-##.sponsored-article
 ##.sponsored-article-item
 ##.sponsored-article-widget
 ##.sponsored-block
@@ -71676,6 +71675,7 @@ reelsmunkey.com#%#//scriptlet('trusted-set-local-storage-item', 'adsTimer', '$no
 reelviews.net##.picHolder
 reference.medscape.com#%#//scriptlet("set-constant", "webmd.ads2.setPageTarget", "noopFunc")
 reflex.cz#@%#//scriptlet('ubo-acis.js', 'atob')
+refooty.com##.ad-placement-wrapper
 regex101.com#?#div > header + div > div + div:contains(Sponsors)
 regex101.com#?#div > header + div > div + div:has-text(Sponsors)
 regexlearn.com##.w-full.mb-3:has(a[href="/learn/regex-for-seo"])
@@ -82944,6 +82944,7 @@ wetransfer.com##.wallpaper
 wetter.com#%#//scriptlet('set-constant', 'wcomBlock', 'noopFunc')
 wetv.vip###google-ads-player
 wetv.vip#%#//scriptlet("adjust-setTimeout", "onAdsCompleted", "5000", "0.02")
+weworkremotely.com##.feature--ad
 wezhicms.com##.activity
 wezhicms.com#?#.card-main:-abp-has(.waimai-item-img)
 wezhicms.com#?#.card-main:has(.waimai-item-img)
@@ -93880,7 +93881,6 @@ zzzyk.com###Tinfo
 ||infibeam.com/affiliate/
 ||infinitehentai.com/uploads/banners/
 ||infinityscans.net/api/collect
-||inflectionquake.com^$popup
 ||info-milfme.com/landing/$popup
 ||info-war.gr/wp-content/uploads/2020/01/DEBTFREE-300X300-GR2.jpg
 ||info.com/pingback
@@ -93900,7 +93900,6 @@ zzzyk.com###Tinfo
 ||ingress.rebelboost.com/_ingest-rbst-stats?
 ||inhe.*/Uploadfiles/adpublish
 ||inhe.net/Uploadfiles/inhegg2016/
-||inheritknow.com^$popup
 ||inhumanity.com/ajax/cb_iframe_data.php
 ||inimbus.com.au^$third-party
 ||ininav.com/sites/default/files/js/js
@@ -94166,7 +94165,6 @@ zzzyk.com###Tinfo
 ||iwan.$third-party
 ||iwantgalleries.com/axxa^
 ||iwantmature.com/ixxi^
-||iwantusingle.com^$popup
 ||iwarship.net/wowsdb/static/img/banner.png
 ||ixiaa.com^$third-party
 ||ixigua.com/at/log/
@@ -94675,7 +94673,6 @@ zzzyk.com###Tinfo
 ||kijimea.it/javascript/script.js
 ||kikibobo.com/banner/
 ||kikinote.net/iframe
-||kiksajex.com^$popup
 ||kimonix.com/analytics/
 ||kindgirls.com/banners2/
 ||kinguin.net/affiliatepluswidget/$third-party
@@ -101017,7 +101014,6 @@ zzzyk.com###Tinfo
 ||tracking-*.trnox.com^
 ||tracking-v*.a.run.app^
 ||tracking.*.miui.com^
-||tracking.cds.dmm.
 ||tracking.donnemagazine.it^$script
 ||tracking.foodblog.it^$script
 ||tracking.geo.*.amazonaws.com^
@@ -102125,6 +102121,7 @@ zzzyk.com###Tinfo
 ||wetpussygames.com/includes/skin-istripper.js
 ||wetpussygames.com/t78d42b806a3.js
 ||wewomedia.com^$third-party
+||weworkremotely.com/listing_ads/8/impression?
 ||wf-box.net/sandboxed_ad_vendor_iframe.html
 ||wfla.com/CvbtpUrj/init.js
 ||wgno.com/CvbtpUrj/init.js
