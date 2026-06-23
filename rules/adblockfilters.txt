@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260623033442
-! Last modified: 2026/06/23 03:34:42
-! Blocked Filters: 102321
+! Version: 20260623115655
+! Last modified: 2026/06/23 11:56:55
+! Blocked Filters: 102323
 !
 ###AC_ad
 ###AD_160
@@ -46910,6 +46910,7 @@ drawize.com#%#//scriptlet('set-constant', 'recreateAds', 'noopFunc')
 drawize.com#%#//scriptlet('set-constant', 'showVideoAd', 'noopFunc')
 drc1bk94f7rq8.cloudfront.net,shiropro-re.net#@##ad_link
 dreadcentral.com#%#//scriptlet('trusted-suppress-native-method', 'Element.prototype.setAttribute', ' |"html-load.com"')
+dreadcentral.com,justjared.com##.widget_tpd_ad_widget
 dreamdth.com#%#//scriptlet('prevent-addEventListener', 'load', 'document.createElement')
 drednot.io##.shipyard-ad
 dredyson.com###bloghash-scroll-top + div[id][class*=" "]
@@ -58527,7 +58528,6 @@ justfullporn.net##.order-1:has(> .video-block-happy)
 justinweather.com##.top-ad-banner-wrapper
 justjared.com##.banner-spacer-top {max-height: 50px !important;}
 justjared.com##.header-container__main
-justjared.com##.widget_tpd_ad_widget
 justjared.com##[role="banner"] {top:0 !important}
 justjared.com#$#.banner-spacer-top { max-height: 50px !important; }
 justjared.com#$#[role="banner"] { top:0 !important }
@@ -68383,7 +68383,7 @@ pluspremieres.*#%#//scriptlet("abort-current-inline-script", "$", "var selector"
 pluspremieres.*#%#//scriptlet("prevent-setInterval", "/\['\\x[\s\S]*?checkInterval/")
 pluto.tv##.pauseAdContainer
 pluto.tv#%#//scriptlet('json-prune', 'adBreaks.*')
-pluto.tv#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[name()="BaseURL" and contains(text(),"_ad")]] | //*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start)', '', '/\/episode\/.+?\.mpd\?/')
+pluto.tv#%#//scriptlet('xml-prune', 'xpath(//*[name()="Period"][.//*[name()="BaseURL" and contains(text(),"_ad") and contains(text(),"/mp4/")]] | //*[name()="MPD"]/@mediaPresentationDuration | //*[name()="Period"]/@start)', '', '/\/episode\/.+?\.mpd\?/')
 plutomovies.com###dl-btn-wrapper + a[rel="nofollow"]
 plutomovies.com##a[href^="https://go.wapdg.com/"]
 plutomovies.com#@#.ad-slot
@@ -80257,6 +80257,8 @@ umatechnology.org,geekchamp.com#%#//scriptlet('abort-current-inline-script', 'Ev
 umbooks.com#%#//scriptlet('abort-current-inline-script', 'document.writeln')
 ummid.com##body > .gridContainer > #Header
 umod.org##ins[data-revive-id]
+umogames.com,quizzop.com,gamezop.com,gamezop.io,feedzop.com,criczop.com,astrozop.com#%#//scriptlet('trusted-replace-argument', 'HTMLScriptElement.prototype.setAttribute', '1', '', '/error-report|new Promise|;await new|:\[?window|&&window,|void 0\]|location\.href|void 0\|\|window|,window,|void 0,window|\[0,window\]|\)\.join\(String\.fromCharCode/')
+umogames.com,quizzop.com,gamezop.com,gamezop.io,feedzop.com,criczop.com,astrozop.com#%#//scriptlet('trusted-replace-argument', 'HTMLScriptElement.prototype.setAttribute', '1', 'replace:/.+(error-report|new Promise|:window|&&window,|\|\|window,|void 0\]|html-load\.com[\s\S]*_onerror).+//g')
 unb.com.bd##img[style^="width:700px; height:70px;"]
 unblocked.*##div[class="hidden-xs hidden-sm"] > div[class$="-bordered"]
 unblocked.*##script[type="application/javascript"] + div[class$="-bordered"]
