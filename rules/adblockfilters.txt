@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilters.txt
-! Version: 20260702020141
-! Last modified: 2026/07/02 02:01:41
-! Blocked Filters: 103337
+! Version: 20260702115642
+! Last modified: 2026/07/02 11:56:42
+! Blocked Filters: 103342
 !
 ###AC_ad
 ###AD_160
@@ -4975,6 +4975,7 @@
 ##._ads
 ##._ads-full
 ##._ap_adrecover_ad
+##._ap_apex_ad
 ##._articleAdvert
 ##._bannerAds
 ##._bottom_ad_wrapper
@@ -30043,7 +30044,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||hobby-machinist.com^$generichide
 @@||hobbykafe.com^$generichide
 @@||hobbyking.com^*/gtm.js$script,~third-party
-@@||hollaforums.com/js/adcash.js
 @@||hollywoodmask.com^$generichide
 @@||holmesmind.com/js/drawV2.$domain=bingfong.com
 @@||holywarsoo.net^$stealth
@@ -72073,6 +72073,8 @@ rmf.fm##body > div[style^="height:300px"]
 rmf.fm##div[id^="RMF_FM_podstrony_"]
 rmf24.pl###RMF_24_podstrony_top_bill
 rmf24.pl##.reklamaPage
+rmf24.pl##.text-muted[style*="min-height:"]:has(> div[id^="RMF_24_"])
+rmf24.pl##aside .text-muted[style*="min-height:"]:has(> .sticky-wrapper > #sticker > #adsSmall)
 rmfmaxx.pl,rmfmaxxx.pl##.ph-ad-zone
 rmfmaxxx.pl#$##videojs-player-container { display: none !important; }
 rmfmaxxx.pl#$##yt-player-container { display: block !important; }
@@ -89962,6 +89964,9 @@ zzzyk.com###Tinfo
 ||clickferret.com^$third-party
 ||clickhouse-collector.*.prod.plat.agency^
 ||clickindia.com/cimem/ad-post-ajax.php?FormName=browsingHistory
+||clicknplay.to/api/$popup
+||clicknplay.to/api/spots/
+||clicknplay.to/q3gSxw5.js
 ||clicksentry.nl^$third-party
 ||clicksfly.com/img/ref/*.gif
 ||clickstream-*.homedepot.com^
@@ -91239,6 +91244,7 @@ zzzyk.com###Tinfo
 ||easysol.net^$third-party
 ||easytechguides.com/b/
 ||easyview.eu/sw.js
+||eatcells.com/land/$popup
 ||eatwell101.com/wp-content/themes/*/custom/ads/
 ||eazydata.io^$third-party
 ||ebay.com/delstats/
@@ -93206,7 +93212,6 @@ zzzyk.com###Tinfo
 ||hog.tv/sw.js^
 ||holdonstranger.com^$third-party
 ||holidaycheck.*/svc/ubt/v1/events
-||hollaforums.com/if/rc
 ||hollysocialspuse.com^$popup
 ||holyfamilyradio.org/banners/
 ||homad-global-configs-eu-fra.schneevonmorgen.com.s3.amazonaws.com/www.vgtv.no/config.json$replace=/"enabled": true\,/"enabled": false\,/i
