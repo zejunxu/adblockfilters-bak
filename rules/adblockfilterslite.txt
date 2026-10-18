@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、xinggsf rule、jiekouAD、1Hosts (Lite)、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockfilterslite.txt
-! Version: 20261018114750
-! Last modified: 2026/10/18 11:47:50
-! Blocked Filters: 43510
+! Version: 20261018203145
+! Last modified: 2026/10/18 20:31:45
+! Blocked Filters: 43493
 !
 ###AC_ad
 ###AD_160
@@ -25492,7 +25492,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||lenovo.com/_ui/desktop/common/js/AdobeAnalyticsEvent.js$script,~third-party
 @@||lenovo.com/fea/js/adobeAnalytics/$script,~third-party,xmlhttprequest
 @@||lensfrontend-pa.clients6.google.*/v*/crupload$stealth=referrer
-@@||lesports.com/pc/??*/click_statistics/
 @@||lestore.lenovo.com^$stealth=referrer
 @@||letsgocdn*.shop/*.png$xmlhttprequest,stealth=referrer
 @@||lewd.ninja^$csp
@@ -26784,7 +26783,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||ssl.google-analytics.com^|$domain=topsporter.net
 @@||ssl.google-analytics.com^|$xmlhttprequest,domain=werfgt.fun
 @@||sso.*.gov.vn^$stealth=dpi
-@@||ssports.com/images/resources/web/live/js/LiveAds.js
 @@||stacksnippets.net^$jsinject,elemhide,extension
 @@||static*.nytimes.com/newsgraphics/*/_assets/graphics/$xmlhttprequest,elemhide,jsinject,extension
 @@||static-*.xvideos.com/*/js/
@@ -26941,8 +26939,6 @@ $~third-party,xmlhttprequest,script,redirect-rule=nooptext,domain=zertalious.xyz
 @@||video*.yxhhdl.com^$media,stealth=referrer,domain=video.5054399.com
 @@||vidnest-*.workers.dev/mp4-proxy$stealth=referrer
 @@||vidsrc.*/embed/$stealth=referrer
-@@||vip.sp-flv.com^*/?url=age_$subdocument,stealth=referrer
-@@||vipstatic.com/img/share/blank.png
 @@||vod*.myqcloud.com^$stealth=referrer,domain=cloud.tencent.com
 @@||vox-xov-cdn-*.$xmlhttprequest,stealth=referrer,domain=nepu.*|4k.beer
 @@||vvic.com/monetize/ads/index/
@@ -31719,7 +31715,6 @@ guru.porn,many.xxx##.avd-desc
 gushiwen.cn###threeWeixin2
 gvhot.net,gvhot.com###adblock-overlay
 gvhot.net,gvhot.com###clickCounterText
-gxeea.cn##.m-wrap-school
 gyanitheme.com,meclipstudy.in,adzz.in###adtera
 gyanitheme.com,paid4.link,miklpro.com##.blog-content
 gywb.cn##.bill-vertical
@@ -36198,7 +36193,6 @@ rivestream.*#%#//scriptlet('abort-on-stack-trace', 'globalThis', '/https?:\/\/.{
 rivianforums.com,macheforum.com##.samCodeUnit > .samItem:has(> .customizedBox > div[data-aa-adunit])
 rivianforums.com,redgifs.com##.bannerWrapper
 rjfcw.cn##li[style*="1200px"]
-rkanr.com##.bill
 rlsbb.ru,rlsbb.cc,rlsbb.to,rlsbb.in##.entry-summary > a > img.aligncenter[alt]
 rlsbb.ru,rlsbb.cc,rlsbb.to,rlsbb.in,jav.guru,analyticsinsight.net,slutsounds.com,theboobsblog.com##p > a[target="_blank"] > img
 rlsbb.ru,rlsbb.cc,rlsbb.to,rlsbb.in,watchcartoononline.bz,etherealgames.com,vivahentai4u.net,windowsnoticias.com,alitajran.com,mojobb.com,freecoursesites.net,javhoho.com###text-5
@@ -37043,7 +37037,6 @@ spyur.am,bestvpn.com##.top_banner
 srnky.com,clksz.com,oii.la,tpi.li,tvi.la,oei.la,tii.la,iir.ai###link-view a[target="_blank"] > img
 srnky.com,clksz.com,payskip.org,oii.la,tpi.li,tvi.la,oei.la,tii.la,cutw.in##.box-main > a[target="_blank"] > img
 srnky.com,pahe.plus#%#//scriptlet('abort-on-property-write', '__aw')
-sspai.com##.content hr:nth-last-child(-n+4) ~ p
 ssuip.com###mask
 stacktv.ca,globaltv.com#$#body .topAds { display: block !important; }
 stacktv.ca,globaltv.com#%#//scriptlet('set-constant', 'abTest', 'emptyObj')
@@ -41147,6 +41140,7 @@ zzztube.com,videoporn.tube##.b-random-column
 ||gucheng.com/2016/ggimg/
 ||gucheng.com/gcwad/
 ||guhai.com.cn/AD/
+||guifun.com/psptool/ad/
 ||gumgo.cn^$third-party
 ||gunmi.cn^$third-party
 ||guokr.com/apis/flowingboard/item/guokrapp_
@@ -41518,7 +41512,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||javbest.cc^$referrerpolicy=origin
 ||javplayer.me/*/views^
 ||jb51.net/imgby/logo_
-||jbzyw.com/Application/M/adv/
 ||jc001.cn/ci/jad/fix.
 ||jc001.cn/img/yhj.gif
 ||jc001.cn/indexnew/js/yuyue.js
@@ -41565,7 +41558,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||jjwxc.net/jjad*.html$popup
 ||jlmhk.com/images/data/
 ||jmbbs.cn/sjgg/
-||jmhfw.com/index.php?/ajax/get_adv/
 ||jmw.com.cn/m_v2/js/active.js
 ||jnlc.com/www/fund/newsmarket
 ||joporn.*/player/vast.xml
@@ -42479,7 +42471,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||rjsos.com/channel/laomo_dibu.png
 ||rjzxw.com/include/
 ||rjzxw.com/temp/index.files/logo2.gif
-||rkanr.com/data/cpcache/cp*.js
 ||rkxy.com.cn/js/text_
 ||rotaban.
 ||rotabanner.
@@ -42762,10 +42753,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||ssl4us.*/pro_mov_min.js^$third-party
 ||ssp*.rtb.beeline.ru^
 ||ssp.qq.com/ad^$xhr
-||sspai.com/api/v1/recommend*=article_
-||sspai.com/attachment/sponsor/
-||ssports.iqiyi.com/app/$media,object-subrequest
-||ssports.iqiyi.com/json/shop/shopInfo
 ||sst.carwow.
 ||st-*.dynamicyield.com^
 ||st-n.ads*-adnow.com^
@@ -43080,10 +43067,6 @@ zzztube.com,videoporn.tube##.b-random-column
 ||vidnest.*/player/jw8/vast.js
 ||vidsrc-embed.*.js?_=
 ||vidsrc.*.js?_=
-||vip.luanren.com/data/*.gif
-||vip.video.qq.com/rpc/trpc.vip_ad_promotion
-||vipstatic.com/mars/
-||vista.tuwan.com/s.js
 ||vivaldi.*/rep/rep.js
 ||vivatube.*/templates/base_master/js/jquery.shows.min.js
 ||vivatube.*/templates/base_master/js/jquery.shows2.min.js
